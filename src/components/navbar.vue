@@ -23,12 +23,13 @@ export default {
 <style lang="scss" scoped>
 .navbar {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: 999;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 999;
   display: inline-flex;
   flex-wrap: nowrap;
+  width: 100%;
   .logo {
     width: 20%;
     text-align: center;

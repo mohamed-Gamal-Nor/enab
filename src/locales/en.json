@@ -1,5 +1,7 @@
 {
-    "main": {
-        "welcome": "Hello from {company}!"
+    "slider": {
+        "slider1": {
+            "first": "Welcome To {company}"
+        }
     }
 }
