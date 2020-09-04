@@ -1,9 +1,13 @@
 :root {
-    --main-color: #ede4c7;  
+    --main-color: #ede4c7;
+    --seconed-color:#455C56;
+    --font-title:'Dancing Script', cursive;
+    --main-font:  'Hind', sans-serif;
   }
   
 * {
     box-sizing: border-box;
+    
 }
 
 .container {

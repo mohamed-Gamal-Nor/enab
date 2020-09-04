@@ -1,7 +1,31 @@
 {
+    "menuLinks": {
+        "home": "Home",
+        "about": "About",
+        "MenuBook": "Menu Book",
+        "gallery": "Gallery",
+        "contact": "Contact",
+        "stores": "Stores",
+        "map": "Map"
+    },
+
     "slider": {
         "slider1": {
-            "first": "Welcome To {company}"
-        }
+            "firstHead": "Welcome To Enab Beirut",
+            "seconedHead": "Lebanese restaurant in Egypt",
+            "paragraph": "The most famous Lebanese food chain in Egypt is waiting for you to visit us at the nearest branch"
+
+        },
+        "slider2": {
+            "firstHead": "Best Lebanese Food",
+            "seconedHead": "Come And Eat With Us ",
+            "paragraph": "The most famous Lebanese food chain in Egypt is waiting for you to visit us at the nearest branch"
+        },
+        "slider3": {
+            "firstHead": "Enab Beirut brings you distances",
+            "seconedHead": "The grill is an art and the Lebanese artist",
+            "paragraph": "The most famous Lebanese food chain in Egypt is waiting for you to visit us at the nearest branch"
+        },
+        "button": "Learn More"
     }
 }
