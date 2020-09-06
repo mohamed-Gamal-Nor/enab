@@ -2,23 +2,23 @@
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" v-for="slider in sliders" :key="slider.id">
+      <div class="swiper-slide" v-for="slide in sliders" :key="slide.video">
         <video autoplay loop muted preload="auto">
-          <source :src="slider.video" type="video/mp4" />
-          <source :src="slider.video" type="video/ogg" />Your browser does not support the video tag.
+          <source :src="slide.video" type="video/mp4" />
+          <source :src="slide.video" type="video/ogg" />Your browser does not support the video tag.
         </video>
         <div class="overlay">
           <div class="container">
-            <div class="slider-intro">
-              <h3>{{$t(slider.firstHead)}}</h3>
-              <h1 class="animate__animated animate__slideInUp">{{$t(slider.seconedHead)}}</h1>
+            <div class="slider-intro slide-top">
+              <h3>{{$t(slide.firstHead)}}</h3>
+              <h1>{{$t(slide.seconedHead)}}</h1>
               <div class="icon-slider">
                 <div class="icon">
                   <font-awesome-icon icon="utensils" />
                 </div>
               </div>
-              <p class="animate__animated animate__slideInUp">{{$t(slider.paragraph)}}</p>
-              <button class="animate__animated animate__slideInUp">
+              <p>{{$t(slide.paragraph)}}</p>
+              <button >
                 <router-link :to="{ name: 'About' }">{{$t(button)}}</router-link>
               </button>
             </div>
@@ -93,7 +93,7 @@ export default {
     .swiper-slide {
       width: 100%;
       max-height: 100vh;
-
+        
       .overlay {
         position: absolute;
         top: 0;
@@ -106,6 +106,9 @@ export default {
           width: 100%;
           text-align: center;
           margin-top: 20%;
+          transition: 0.3s;
+          &.slide-top{-webkit-animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) reverse both;animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) reverse both}
+          @-webkit-keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}@keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}
           h3 {
             font-family: var(--font-title);
             font-weight: bold;

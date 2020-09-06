@@ -83,7 +83,7 @@ export default {
       document
         .querySelector(".navbar-all .navbar-mini")
         .classList.remove("active");
-    },
+    }
   },
 };
 </script>

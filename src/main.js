@@ -36,8 +36,7 @@ new Vue({
     i18n,
     render: h => h(App)
 }).$mount("#app");
-new Swiper(".swiper-container", {
-    loop: true,
+var mySwiper = new Swiper(".swiper-container", {
     speed: 1000,
     effect: "fade",
     navigation: {
@@ -53,5 +52,9 @@ new Swiper(".swiper-container", {
     keyboard: {
         enabled: true,
         onlyInViewport: false
-    }
+    },
 });
+mySwiper.on('slideChange', function () {
+    let slider = document.querySelectorAll(".swiper-container .swiper-slide .slider-intro");
+    console.log(slider);
+  });
