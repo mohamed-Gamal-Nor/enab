@@ -7,38 +7,17 @@
           <font-awesome-icon icon="concierge-bell" />
         </div>
         <div class="text">
-          <h4>TAKE LOOK AT</h4>
-          <h1>Our Exclusive Services</h1>
-          <span></span>
+          <h4>{{$t("ourExlosive.intro.head1")}}</h4>
+          <h1>{{$t("ourExlosive.intro.head2")}}</h1>
+          <span>&diams; &diams; &diams; &diams; &diams; &diams;</span>
         </div>
         <swiper class="swiper container" :options="swiperOption">
-          <swiper-slide class="swiper-slide">
+          <swiper-slide class="swiper-slide" v-for="our in ourData" :key="our.image">
             <div class="our-icon">
-              <img src="../../assets/Home/dinner.png" alt />
+              <img :src="our.image" alt />
             </div>
-            <h1>Private Dining</h1>
-            <p>Our highly trained staff’s genuine enthusi-asm is infectious & will carry over to your group, effectively.</p>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="our-icon">
-              <img src="../../assets/Home/serv.png" alt />
-            </div>
-            <h1>Private Dining</h1>
-            <p>Our highly trained staff’s genuine enthusi-asm is infectious & will carry over to your group, effectively.</p>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="our-icon">
-              <img src="../../assets/Home/delv.png" alt />
-            </div>
-            <h1>Private Dining</h1>
-            <p>Our highly trained staff’s genuine enthusi-asm is infectious & will carry over to your group, effectively.</p>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="our-icon">
-              <img src="../../assets/Home/fresh.png" alt />
-            </div>
-            <h1>Private Dining</h1>
-            <p>Our highly trained staff’s genuine enthusi-asm is infectious & will carry over to your group, effectively.</p>
+            <h1>{{$t(our.heading)}}</h1>
+            <p>{{$t(our.pragraph)}}</p>
           </swiper-slide>
         </swiper>
       </div>
@@ -57,6 +36,28 @@ export default {
   },
   data() {
     return {
+      ourData: [
+        {
+          image: require("@/assets/Home/dinner.png"),
+          heading: "ourExlosive.our1.heading",
+          pragraph: "ourExlosive.our1.pargraph",
+        },
+        {
+          image: require("@/assets/Home/serv.png"),
+          heading: "ourExlosive.our2.heading",
+          pragraph: "ourExlosive.our2.pargraph",
+        },
+        {
+          image: require("@/assets/Home/delv.png"),
+          heading: "ourExlosive.our3.heading",
+          pragraph: "ourExlosive.our3.pargraph",
+        },
+        {
+          image: require("@/assets/Home/menu.png"),
+          heading: "ourExlosive.our4.heading",
+          pragraph: "ourExlosive.our4.pargraph",
+        },
+      ],
       swiperOption: {
         slidesPerView: 3,
         spaceBetween: 50,
@@ -93,7 +94,7 @@ export default {
   background-size: cover;
   margin-top: 59px;
   position: relative;
-  min-height: 95vh;
+  min-height: 100vh;
   .overlay {
     position: absolute;
     top: 0;
@@ -140,12 +141,39 @@ export default {
         font-weight: bold;
         color: #fff;
         font-size: 50px;
+        margin-bottom: 25px;
+      }
+      span {
+        text-align: center;
+        position: relative;
+        padding: 5px;
+        color: transparent;
+        text-shadow: 0 0 0 var(--main-color);
+        &::after {
+          left: 100%;
+          top: 50%;
+          position: absolute;
+          content: "";
+          width: 200px;
+          height: 2px;
+          background: var(--main-color);
+        }
+        &::before {
+          right: 100%;
+          top: 50%;
+          position: absolute;
+          content: "";
+          width: 200px;
+          height: 2px;
+          background: var(--main-color);
+        }
       }
     }
     .swiper-slide {
       background-color: rgba($color: #455c56, $alpha: 0.8);
       border: 0.1px solid rgba($color: #eee3c7, $alpha: 0.5);
       padding: 51px 10px 50px 10px;
+      height: 350px;
       .our-icon {
         position: relative;
         left: 35%;
@@ -155,7 +183,7 @@ export default {
         line-height: 70px;
         border-radius: 50%;
         img {
-          width: 80%;
+          width: 70%;
         }
       }
       h1 {
@@ -184,6 +212,15 @@ export default {
         margin-top: 30px;
         h1 {
           font-size: 35px;
+        }
+        span {
+          font-size: 12px;
+          &::after {
+            width: 100px;
+          }
+          &::before {
+            width: 100px;
+          }
         }
       }
       .swiper-slide {

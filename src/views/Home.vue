@@ -4,6 +4,7 @@
     <slider />
     <seconedSection />
     <tihrdSection />
+    <forSection />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import navbar from "../components/navbar.vue";
 import slider from "../components/home/slider.vue";
 import seconedSection from "../components/home/seconed-section.vue";
 import tihrdSection from "../components/home/thired-section.vue";
+import forSection from "../components/home/fore-section.vue";
 export default {
   name: "Home",
   components: {
@@ -19,6 +21,7 @@ export default {
     navbar,
     seconedSection,
     tihrdSection,
+    forSection,
   },
   data() {
     return {
