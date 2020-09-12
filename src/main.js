@@ -6,55 +6,53 @@ import normlize from "normalize.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
-import "jquery/src/jquery.js";
-// import Swiper styles
-import "swiper/swiper-bundle.css";
-// core version + navigation, pagination modules:
-import Swiper, {
-    Navigation,
-    Pagination,
-    Autoplay,
-    EffectFade,
-    Keyboard
-} from "swiper";
+import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUtensils, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+    faUtensils,
+    faBars,
+    faTimes,
+    faArrowDown,
+    faGlassCheers,
+    faConciergeBell
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-library.add(faUtensils, faBars, faTimes);
-
+library.add(
+    faUtensils,
+    faBars,
+    faTimes,
+    faArrowDown,
+    faGlassCheers,
+    faConciergeBell
+);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
-
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination, Autoplay, EffectFade, Keyboard]);
 Vue.use(BootstrapVue);
 Vue.use(normlize);
+Vue.use(VueScrollProgressBar);
+var VueScrollTo = require("vue-scrollto");
+Vue.use(VueScrollTo);
 Vue.config.productionTip = false;
-
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title;
+    next();
+});
 new Vue({
     router,
     i18n,
     render: h => h(App)
 }).$mount("#app");
-var mySwiper = new Swiper(".swiper-container", {
-    speed: 1000,
-    effect: "fade",
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    autoplay: {
-        delay: 10000
-    },
-    fadeEffect: {
-        crossFade: true
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false
-    },
+
+Vue.use(VueScrollTo, {
+    container: "body",
+    duration: 1000,
+    easing: "ease",
+    offset: 0,
+    force: true,
+    cancelable: true,
+    onStart: false,
+    onDone: false,
+    onCancel: false,
+    x: false,
+    y: true
 });
-mySwiper.on('slideChange', function () {
-    let slider = document.querySelectorAll(".swiper-container .swiper-slide .slider-intro");
-    console.log(slider);
-  });

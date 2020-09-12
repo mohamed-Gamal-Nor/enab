@@ -27,5 +27,12 @@
             "paragraph": "The most famous Lebanese food chain in Egypt is waiting for you to visit us at the nearest branch"
         },
         "button": "Learn More"
+    },
+    "ourStory":{
+        "title":"our story",
+        "litleTitle":"Welcome To Enab Beriut",
+        "paragraph": "Enab Beirut is the story of every Lebanese house, the most famous Lebanese chain of restaurants in Egypt and Cairo, in terms of authentic Lebanese food and juices in the Lebanese way. The place is very quiet to relax and change the mood with the Lebanese house decor. Enab Beirut .. the story of every Lebanese house",
+        "countFood":"Food items",
+        "countbev":"Beverages"
     }
 }

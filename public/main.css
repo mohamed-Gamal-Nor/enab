@@ -1,5 +1,5 @@
 :root {
-    --main-color: #ede4c7;
+    --main-color: #eee3c7;
     --seconed-color:#455C56;
     --font-title:'Dancing Script', cursive;
     --main-font:  'Hind', sans-serif;
@@ -7,10 +7,18 @@
   
 * {
     box-sizing: border-box;
+    direction: ltr;
     
 }
 
 .container {
     max-width: 1400px;
     margin: auto;
+}
+
+.fade-enter-active,.fade-leave-active{
+    transition: opacity 0.5s;
+}
+.fade-enter,.fade-leave-to{
+    opacity: 0;
 }

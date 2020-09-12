@@ -1,39 +1,43 @@
 <template>
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" v-for="slide in sliders" :key="slide.video">
-        <video autoplay loop muted preload="auto">
-          <source :src="slide.video" type="video/mp4" />
-          <source :src="slide.video" type="video/ogg" />Your browser does not support the video tag.
-        </video>
-        <div class="overlay">
-          <div class="container">
-            <div class="slider-intro slide-top">
-              <h3>{{$t(slide.firstHead)}}</h3>
-              <h1>{{$t(slide.seconedHead)}}</h1>
-              <div class="icon-slider">
-                <div class="icon">
-                  <font-awesome-icon icon="utensils" />
-                </div>
+  <swiper :options="swiperOption" @slideChange="onSlideChange">
+    <swiper-slide class="swiper-slide" v-for="slide in sliders" :key="slide.video">
+      <video autoplay loop muted preload="auto">
+        <source :src="slide.video" type="video/mp4" />
+        <source :src="slide.video" type="video/ogg" />Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <div class="container">
+          <div class="slider-intro slide-top">
+            <h3>{{$t(slide.firstHead)}}</h3>
+            <h1>{{$t(slide.seconedHead)}}</h1>
+            <div class="icon-slider">
+              <div class="icon">
+                <font-awesome-icon icon="utensils" />
               </div>
-              <p>{{$t(slide.paragraph)}}</p>
-              <button >
-                <router-link :to="{ name: 'About' }">{{$t(button)}}</router-link>
-              </button>
             </div>
+            <p>{{$t(slide.paragraph)}}</p>
+            <button>
+              <router-link :to="{ name: 'About' }">{{$t(button)}}</router-link>
+            </button>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+    </swiper-slide>
+    <div class="swiper-button-prev" slot="button-prev"></div>
+    <div class="swiper-button-next" slot="button-next"></div>
+  </swiper>
 </template>
 <script>
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import SwiperCore, { Navigation, EffectFade, Autoplay, Keyboard } from "swiper";
+import "swiper/swiper-bundle.css";
+SwiperCore.use([Navigation, EffectFade, Autoplay, Keyboard]);
 export default {
   name: "slider",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
   data() {
     return {
       sliders: [
@@ -57,7 +61,38 @@ export default {
         },
       ],
       button: "slider.button",
+      swiperOption: {
+        speed: 1000,
+        effect: "fade",
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+        fadeEffect: {
+          crossFade: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
     };
+  },
+  methods: {
+    onSlideChange() {
+      let slider = document.querySelectorAll(".swiper-slide");
+
+      slider.forEach((slide) => {
+        if (slide.classList.contains("swiper-slide-active")) {
+          slide.classList.toggle("slide-top");
+        } else {
+          slide.classList.remove("slide-top");
+        }
+      });
+    },
   },
 };
 </script>
@@ -67,6 +102,7 @@ export default {
 .swiper-container {
   position: relative;
   min-height: 100vh;
+
   .swiper-button-next,
   .swiper-button-prev {
     background-color: var(--main-color);
@@ -93,7 +129,7 @@ export default {
     .swiper-slide {
       width: 100%;
       max-height: 100vh;
-        
+
       .overlay {
         position: absolute;
         top: 0;
@@ -107,8 +143,32 @@ export default {
           text-align: center;
           margin-top: 20%;
           transition: 0.3s;
-          &.slide-top{-webkit-animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) reverse both;animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) reverse both}
-          @-webkit-keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}@keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}
+          &.slide-top {
+            -webkit-animation: slide-top 0.5s
+              cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+            animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+              reverse both;
+          }
+          @-webkit-keyframes slide-top {
+            0% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+            }
+            100% {
+              -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+            }
+          }
+          @keyframes slide-top {
+            0% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+            }
+            100% {
+              -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+            }
+          }
           h3 {
             font-family: var(--font-title);
             font-weight: bold;
@@ -166,7 +226,7 @@ export default {
             transition: 0.3s;
             a {
               text-decoration: none;
-              color: black;
+              color: var(--seconed-color);
               font-family: var(--main-font);
               font-weight: bold;
             }
@@ -209,6 +269,12 @@ export default {
         }
       }
     }
+  }
+}
+
+@media (max-height: 326px) {
+  .arrow-down {
+    top: 50%;
   }
 }
 @media (min-width: 1200px) {

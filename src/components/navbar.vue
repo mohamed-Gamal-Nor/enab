@@ -2,6 +2,9 @@
   <div class="navbar-all">
     <div class="navbar-mini">
       <div class="close-button">
+          <router-link to="/">
+            <img src="../assets/logo.png" />
+          </router-link>
         <font-awesome-icon icon="times" @click="closeMenu()" />
       </div>
 
@@ -29,7 +32,7 @@
         </li>
       </ul>
     </div>
-    <div v-bind:class="{navbar:navbarStauts,'navbar-regular':navbarRegaulr}">
+    <div v-bind:class="{navbar:navbarStauts,'navbar-regular':navbarRegaulr,'navbar-fixed':getMainNavClasses}" >
       <div class="container-fluid">
         <div class="menu-icon">
           <font-awesome-icon icon="bars" @click="openMenu()" />
@@ -59,6 +62,7 @@
 </template>
 
 <script>
+const locallangStorge = localStorage.getItem("lang",);
 export default {
   name: "navbar",
   props: ["navbarStauts"],
@@ -66,13 +70,21 @@ export default {
     return {
       navbarRegaulr: false,
       locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
+      scrollingDown: false,
     };
+  },
+  computed:{
+      getMainNavClasses() {
+        return this.scrollingDown
+      }
   },
   methods: {
     switchLocale(locale) {
       if (this.$i18n.locale !== locale) {
+        localStorage.setItem("lang",locale);
         this.$i18n.locale = locale;
       }
+
     },
     openMenu() {
       document
@@ -83,8 +95,29 @@ export default {
       document
         .querySelector(".navbar-all .navbar-mini")
         .classList.remove("active");
-    }
+    },
+    scrollNow() {
+      const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos === 0) {
+        this.scrollingDown = false;
+      }else{
+        this.scrollingDown = true;
+      }
+    },
   },
+  beforeCreate(){
+      if(locallangStorge !== null){
+          this.$i18n.locale = locallangStorge;
+      }else{
+          this.$i18n.locale = "en"
+      }
+  },
+    created(){
+        window.addEventListener('scroll', this.scrollNow);
+    },
+    destroyed () {
+        window.removeEventListener('scroll', this.scrollNow);
+    },
 };
 </script>
 
@@ -163,6 +196,38 @@ export default {
       padding: 5px;
     }
   }
+  &.navbar-fixed{
+    position: fixed;
+    width: 100%;
+    background-color: rgba($color: #eee3c7, $alpha: 0.9);
+    transition: 0.3s;
+    .menu-icon {
+    color: var(--seconed-color);
+  }
+    .logo {
+      img {
+        max-width: 30%;
+      }
+    }
+    .pages-link {
+      a {
+        color: var(--seconed-color);
+        font-size: 25px;
+        &::after {
+          background-color: var(--seconed-color);
+        }
+      }
+    }
+  .translate {
+      li {
+        color: var(--main-color);
+        font-weight: 400;
+        background-color: var(--seconed-color);
+        padding: 3px;
+        font-size: 13px;
+      }
+    }
+  }
 }
 @media (max-width: 990px) {
   .navbar-mini {
@@ -171,12 +236,12 @@ export default {
     position: fixed;
     z-index: 1050505;
     background-color: var(--main-color);
-    width: 50%;
-    left: -50%;
+    width: 100%;
+    left: -100%;
     top: 0;
     height: 100vh;
     border-right: 1px solid var(--seconed-color);
-    transition: 0.3s;
+    transition: 0.5s;
     &.active {
       left: 0%;
     }
@@ -200,8 +265,17 @@ export default {
     }
     .close-button {
       text-align: right;
-      padding-right: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      a{
+          text-align: left;
+          width: 70%;
+          display: inline-block;
+      }
       svg {
+          width:20%;
+          display: inline-block;
+          text-align: right;
         font-weight: bold;
         font-size: 23px;
         margin: 10px;
@@ -240,6 +314,18 @@ export default {
         margin: 4px;
         padding: 3px;
       }
+    }
+    &.navbar-fixed{
+        .menu-icon {
+            svg{
+                color: var(--seconed-color);
+            }
+        }
+        .logo {
+        img {
+            max-width: 60%;
+        }
+        }
     }
   }
 }
