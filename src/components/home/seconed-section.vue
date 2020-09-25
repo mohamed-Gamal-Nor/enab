@@ -151,7 +151,7 @@ export default {
         position: absolute;
         &:nth-of-type(1) {
           left: 50%;
-          z-index: 2;
+          z-index: 1;
           top: 30%;
           width: 55%;
           border: 5px solid #fff;
@@ -172,7 +172,7 @@ export default {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     height: 59px;
-    z-index: 30;
+    z-index: 1;
     text-align: center;
     padding: 20px 0 0 0;
     svg {
@@ -183,8 +183,9 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .our-story {
+    min-height: auto;
     .story-conent {
       display: block;
       width: 100%;
@@ -213,9 +214,19 @@ export default {
       }
       .image-story {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 20px;
+        display: inline-flex;
         img {
-          width: 70%;
+          width: 50%;
+          position: relative;
+           &:nth-of-type(1) {
+            left: 0%;
+            z-index: 1;
+            top: 0%;
+            width: 50%;
+            border: 5px solid #fff;
+            transform: rotate(0deg);
+            }
         }
       }
     }

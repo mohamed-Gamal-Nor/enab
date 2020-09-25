@@ -92,9 +92,10 @@ export default {
   background-image: url("../../assets/Home/our-services.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   margin-top: 59px;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   .overlay {
     position: absolute;
     top: 0;
@@ -119,7 +120,7 @@ export default {
       -o-transform: translateX(-50%) rotate(180deg);
       transform: translateX(-50%) rotate(180deg);
       height: 59px;
-      z-index: 30;
+      z-index: 1;
       text-align: center;
       padding: 20px 0 0 0;
       svg {
@@ -130,7 +131,7 @@ export default {
     }
     .text {
       margin-top: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       h4 {
         font-family: var(--main-font);
         font-weight: bold;
@@ -173,7 +174,7 @@ export default {
       background-color: rgba($color: #455c56, $alpha: 0.8);
       border: 0.1px solid rgba($color: #eee3c7, $alpha: 0.5);
       padding: 51px 10px 50px 10px;
-      height: 350px;
+      height: 320px;
       .our-icon {
         position: relative;
         left: 35%;

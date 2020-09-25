@@ -56,5 +56,53 @@
             "heading": "Various Menu",
             "pargraph": "Our menu features more than a variety of Lebanese food and drinks menus"
         }
+    },
+    "timeFood": {
+        "time1": {
+            "name": "Breakfast",
+            "time": "10.00 am / 12.00 pm"
+        },
+        "time2": {
+            "name": "Lunch",
+            "time": "1.00 pm / 8.00 pm"
+        },
+        "time3": {
+            "name": "Dinner",
+            "time": "8.00 pm / 12.00 pm"
+        },
+        "time4": {
+            "name": "Dessert",
+            "time": "All Day"
+        }
+    },
+    "album": {
+        "head": "#Enab_Beirut",
+        "pragraph": "Enjoyed your stay at Enab Beirut? Share your moments with us. Follow us on Instagram and FaceBook"
+    },
+    "footer": {
+        "pargraph": "Lebanese ambiance with Lebanese decor for dining, bar! Experienced staff are waiting to give you a unique dining experience."
+    },
+    "footerText": {
+        "location": {
+            "heading": "Branch addresses",
+            "address1": {
+                "address": "Cairo Festival City , New Cairo",
+                "phone": "(+2) 01228444424"
+            },
+            "address2": {
+                "address": "Tivoli Dome , Heliopolis",
+                "phone": "(+2) 01270884444"
+            },
+            "address3": {
+                "address": "City Square, Al Rehab, New Cairo",
+                "phone": "(+2) 01208144441"
+            },
+            "address4": {
+                "address": "Mall, Mohamed Naguieb Axes, New Cairo - O1",
+                "phone": "(+2) 01277042444"
+            }
+        },
+        "openinHours": "Opening Hours"
     }
+
 }

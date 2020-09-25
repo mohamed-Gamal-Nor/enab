@@ -130,7 +130,7 @@ export default {
   left: 0;
   position: absolute;
   right: 0;
-  z-index: 999;
+  z-index:999;
   display: inline-flex;
   flex-wrap: nowrap;
   width: 100%;

@@ -15,8 +15,13 @@ import {
     faTimes,
     faArrowDown,
     faGlassCheers,
-    faConciergeBell
+    faConciergeBell,
+    faCameraRetro,
+    faCaretUp,
+    faMapMarkerAlt,
+    faMobileAlt
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF,faInstagram,faGoogle} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
     faUtensils,
@@ -24,7 +29,15 @@ library.add(
     faTimes,
     faArrowDown,
     faGlassCheers,
-    faConciergeBell
+    faConciergeBell,
+    faCameraRetro,
+    faCaretUp,
+    faFacebookF,
+    faInstagram,
+    faGoogle,
+    faMapMarkerAlt,
+    faMobileAlt
+
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(BootstrapVue);
@@ -45,7 +58,7 @@ new Vue({
 
 Vue.use(VueScrollTo, {
     container: "body",
-    duration: 1000,
+    duration: 2000,
     easing: "ease",
     offset: 0,
     force: true,

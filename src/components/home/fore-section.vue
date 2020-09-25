@@ -5,10 +5,10 @@
     </div>
     <div class="container-fluid">
       <div class="time">
-        <div class="conent" v-for="time in timeData" :key="time.image">
+        <div class="content" v-for="time in timeData" :key="time.image">
           <img :src="time.image" alt />
-          <h1>{{time.heading}}</h1>
-          <h6>{{time.time}}</h6>
+          <h1>{{$t(time.heading)}}</h1>
+          <h6>{{$t(time.time)}}</h6>
         </div>
       </div>
     </div>
@@ -23,26 +23,142 @@ export default {
       timeData: [
         {
           image: require("../../assets/Home/break.png"),
-          heading: "Breakfast",
-          time: "8.00 am / 10.00 am",
+          heading: "timeFood.time1.name",
+          time: "timeFood.time1.time",
         },
         {
           image: require("../../assets/Home/lanuch.png"),
-          heading: "Lunch",
-          time: "1.00 am / 2.00 am",
+          heading: "timeFood.time2.name",
+          time: "timeFood.time2.time",
         },
         {
           image: require("../../assets/Home/dinner.png"),
-          heading: "Dinner",
-          time: "7.00 am / 9.00 am",
+          heading: "timeFood.time3.name",
+          time: "timeFood.time3.time",
         },
         {
           image: require("../../assets/Home/dessert.png"),
-          heading: "Dessert",
-          time: "All Day",
+          heading: "timeFood.time4.name",
+          time: "timeFood.time4.time",
         },
       ],
     };
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.time-food{
+    position: relative;
+    .icon{
+        position: absolute;
+        left: 50%;
+        top: -59px;
+        width: 254px;
+        background: url(../../assets/Home/pattern-white.png) no-repeat center center;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        height: 59px;
+        z-index: 1;
+        text-align: center;
+        padding: 20px 0 0 0;
+        svg {
+        cursor: pointer;
+        font-size: 20px;
+        color: var(--seconed-color);
+        }
+    }
+    .time{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding-top: 120px ;
+        padding-bottom: 120px ;
+        .content{
+            width: 25%;
+            text-align: center;
+            margin: 0px 70px 0px 70px;
+            height: 200px;
+            line-height: 100px;
+            &:nth-of-type(2),&:nth-of-type(3){
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 150px;
+                    height: 2px;
+                    border-top: 2px dashed var(--seconed-color);
+                    left:  100%;
+                    top: 25%;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 150px;
+                    height: 2px;
+                    border-top: 2px dashed var(--seconed-color);
+                    right:   100%;
+                    top: 25%;
+                }
+            }
+            img{
+                margin-bottom: 10px;
+            }
+            h1{
+                color: var(--main-color);
+                filter: brightness(85%);
+                margin-bottom: 10px;
+                
+                font-family: var(--main-font);
+            }
+            h6{
+                color:var(--seconed-color);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .time-food{
+        .icon{
+            svg {
+            font-size: 18px;
+            }
+        }
+        .time{
+            display: block;
+            width: 100%;
+            padding-top: 60px ;
+            padding-bottom: 30px ;
+            .content{
+                width: 100%;
+                text-align: center;
+                height: auto;
+                margin: 10px 0px 20px 0px;
+                &:nth-of-type(2),&:nth-of-type(3){
+                    position: relative;
+                    &::after{
+                        display:none;
+                    }
+                    &::before{
+                        display:none;
+                    }
+                }
+                h1{
+                    font-size: 25px;
+                    
+                    font-family: var(--main-font);
+                }
+                h6{
+                    color:var(--seconed-color);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+</style>

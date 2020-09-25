@@ -1,0 +1,172 @@
+<template lang="pug">
+.footer
+  .container-fluid 
+    .footer-text
+      .logo
+        img(src="@/assets/logo.png")
+      .text
+        p {{ $t('footer.pargraph') }}
+      .socail-media
+        a(
+          href="https://www.facebook.com/EnabbeirutEg",
+          v-b-tooltip.hover,
+          title="FaceBook Page",
+          target="_blank"
+        )
+          font-awesome-icon(:icon="{ prefix: 'fab', iconName: 'facebook-f' }")
+        a(
+          href="https://www.instagram.com/enabbeiruteg/",
+          v-b-tooltip.hover,
+          title="Instagram Page",
+          target="_blank"
+        )
+          font-awesome-icon(:icon="{ prefix: 'fab', iconName: 'instagram' }")
+        a(
+          target="_blank",
+          href="https://www.google.com.eg/search?sxsrf=ALeKk02GVt_xdgC6rjB835mJyUNZBby7ig%3A1600866668702&source=hp&ei=bElrX7btJ_Ly5gLZ96XAAg&q=%D8%B9%D9%86%D8%A8+%D8%A8%D9%8A%D8%B1%D9%88%D8%AA&oq=%D8%B9%D9%86%D8%A8+%D8%A8%D9%8A%D8%B1%D9%88&gs_lcp=CgZwc3ktYWIQARgAMgQIIxAnMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgUILhCxAzoICAAQsQMQgwE6CAguELEDEIMBOgUIABCxAzoCCC5Q7uwLWPn6C2DZiQxoAHAAeACAAZACiAHZDZIBBTAuNC40mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab",
+          v-b-tooltip.hover,
+          title="Google search"
+        )
+          font-awesome-icon(:icon="{ prefix: 'fab', iconName: 'google' }")
+    .footer-links
+      .location
+        h1 {{ $t('footerText.location.heading') }}
+        .address(v-for="addres in address", :key="address.phone")
+          .info
+            .icon
+              font-awesome-icon(icon="map-marker-alt")
+            .text
+              p {{ $t(addres.address1) }}
+          .phone
+            .icon
+              font-awesome-icon(icon="mobile-alt")
+            .text
+              p {{ $t(addres.phone) }}
+      .opening-hours
+        h1 {{ $t('footerText.openinHours') }}
+        .text
+          .time All Weak: ........10AM - 12AM
+      .footer-video
+        h1 #Enab Beruit Video
+        <vue-plyr>
+          <video poster="../assets/Home/footer-video.jpg" src="video.mp4">
+            <source src="../assets/Home/footer-video.mp4" type="video/mp4" size="720">
+            <source src="../assets/Home/footer-video.mp4" type="video/mp4" size="1080">
+          </video>
+        </vue-plyr>
+</template>
+
+<script>
+import Vue from "vue";
+import VuePlyr from "vue-plyr";
+Vue.use(VuePlyr);
+export default {
+  name: "footter",
+  data() {
+    return {
+      address: [
+        {
+          address1: "footerText.location.address1.address",
+          phone: "footerText.location.address1.phone",
+        },
+        {
+          address1: "footerText.location.address2.address",
+          phone: "footerText.location.address2.phone",
+        },
+        {
+          address1: "footerText.location.address3.address",
+          phone: "footerText.location.address3.phone",
+        },
+        {
+          address1: "footerText.location.address4.address",
+          phone: "footerText.location.address4.phone",
+        },
+      ],
+    };
+  },
+};
+</script>
+<style lang="scss" scoped>
+.footer {
+  padding-top: 50px;
+  .footer-text {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--seconed-color);
+    margin-bottom: 10px;
+    .logo {
+      margin-bottom: 25px;
+    }
+    p {
+      width: 30%;
+      margin: auto;
+      margin-bottom: 25px;
+      font-weight: bold;
+      font-family: var(--main-font);
+    }
+    .socail-media {
+      a {
+        margin-right: 10px;
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+        border: 1px solid var(--seconed-color);
+        border-radius: 50%;
+        color: var(--seconed-color);
+        transition: 0.3s;
+        &:hover {
+          transition: 0.3s;
+          background-color: var(--seconed-color);
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+  .footer-links {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .location {
+      width: 25%;
+      margin-right: 10px;
+      h1 {
+        color: var(--seconed-color);
+        font-family: var(--main-font);
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      .address {
+        border-bottom: 1px solid rgba($color: #455c56, $alpha: 0.3);
+        max-width: 100%;
+        .info,
+        .phone {
+          display: flex;
+          flex-wrap: nowrap;
+          width: 100%;
+          .icon {
+            margin-right: 10px;
+            color: var(--seconed-color);
+          }
+          .text {
+            font-family: var(--main-font);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .opening-hours {
+      width: 30%;
+    }
+    .footer-video {
+      width: 35%;
+      h1 {
+        color: var(--seconed-color);
+        font-family: var(--main-font);
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+    }
+  }
+}
+</style>
