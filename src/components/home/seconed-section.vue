@@ -6,22 +6,22 @@
     <div class="container-fluid">
       <div class="story-conent">
         <div class="text">
-          <h6>{{$t("ourStory.title")}}</h6>
-          <h1>{{$t("ourStory.litleTitle")}}</h1>
-          <p>{{$t("ourStory.paragraph")}}</p>
+          <h6>{{ $t("ourStory.title") }}</h6>
+          <h1>{{ $t("ourStory.litleTitle") }}</h1>
+          <p>{{ $t("ourStory.paragraph") }}</p>
           <div class="counter-story">
             <div class="counter">
               <font-awesome-icon icon="utensils" />
               <div class="counter-num">
                 <h1 data-target="400">0</h1>
-                <h6>{{$t("ourStory.countFood")}}</h6>
+                <h6>{{ $t("ourStory.countFood") }}</h6>
               </div>
             </div>
             <div class="counter">
               <font-awesome-icon icon="glass-cheers" />
               <div class="counter-num">
                 <h1 data-target="300">0</h1>
-                <h6>{{$t("ourStory.countbev")}}</h6>
+                <h6>{{ $t("ourStory.countbev") }}</h6>
               </div>
             </div>
           </div>
@@ -219,14 +219,14 @@ export default {
         img {
           width: 50%;
           position: relative;
-           &:nth-of-type(1) {
+          &:nth-of-type(1) {
             left: 0%;
             z-index: 1;
             top: 0%;
             width: 50%;
             border: 5px solid #fff;
             transform: rotate(0deg);
-            }
+          }
         }
       }
     }

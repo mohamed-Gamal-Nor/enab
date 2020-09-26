@@ -2,46 +2,68 @@
   <div class="navbar-all">
     <div class="navbar-mini">
       <div class="close-button">
-          <router-link to="/">
-            <img src="../assets/logo.png" />
-          </router-link>
+        <router-link to="/">
+          <img src="../assets/logo.png" />
+        </router-link>
         <font-awesome-icon icon="times" @click="closeMenu()" />
       </div>
 
       <ul class="pages-link-mini">
         <li>
-          <router-link to="/">{{$t('menuLinks.home')}}</router-link>
+          <router-link to="/">{{ $t("menuLinks.home") }}</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.about')}}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.about")
+          }}</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.MenuBook')}}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.MenuBook")
+          }}</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.gallery')}}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.gallery")
+          }}</router-link>
         </li>
         <li>
-          <router-link to="/">{{$t('menuLinks.contact')}}</router-link>
+          <router-link to="/">{{ $t("menuLinks.contact") }}</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.stores')}}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.stores")
+          }}</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.map')}}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.map")
+          }}</router-link>
         </li>
       </ul>
     </div>
-    <div v-bind:class="{navbar:navbarStauts,'navbar-regular':navbarRegaulr,'navbar-fixed':getMainNavClasses}" >
+    <div
+      v-bind:class="{
+        navbar: navbarStauts,
+        'navbar-regular': navbarRegaulr,
+        'navbar-fixed': getMainNavClasses,
+      }"
+    >
       <div class="container-fluid">
         <div class="menu-icon">
           <font-awesome-icon icon="bars" @click="openMenu()" />
         </div>
         <div class="pages-link one">
-          <router-link to="/">{{$t('menuLinks.home')}}</router-link>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.about')}}</router-link>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.MenuBook')}}</router-link>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.gallery')}}</router-link>
+          <router-link to="/">{{ $t("menuLinks.home") }}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.about")
+          }}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.MenuBook")
+          }}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.gallery")
+          }}</router-link>
         </div>
         <div class="logo">
           <router-link to="/">
@@ -49,12 +71,22 @@
           </router-link>
         </div>
         <div class="pages-link two">
-          <router-link to="/">{{$t('menuLinks.contact')}}</router-link>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.stores')}}</router-link>
-          <router-link :to="{ name: 'About' }">{{$t('menuLinks.map')}}</router-link>
+          <router-link to="/">{{ $t("menuLinks.contact") }}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.stores")
+          }}</router-link>
+          <router-link :to="{ name: 'About' }">{{
+            $t("menuLinks.map")
+          }}</router-link>
         </div>
         <ul class="translate">
-          <li v-for="locale in locales" :key="locale" @click="switchLocale(locale)">{{locale}}</li>
+          <li
+            v-for="locale in locales"
+            :key="locale"
+            @click="switchLocale(locale)"
+          >
+            {{ locale }}
+          </li>
         </ul>
       </div>
     </div>
@@ -62,7 +94,7 @@
 </template>
 
 <script>
-const locallangStorge = localStorage.getItem("lang",);
+const locallangStorge = localStorage.getItem("lang");
 export default {
   name: "navbar",
   props: ["navbarStauts"],
@@ -73,18 +105,17 @@ export default {
       scrollingDown: false,
     };
   },
-  computed:{
-      getMainNavClasses() {
-        return this.scrollingDown
-      }
+  computed: {
+    getMainNavClasses() {
+      return this.scrollingDown;
+    },
   },
   methods: {
     switchLocale(locale) {
       if (this.$i18n.locale !== locale) {
-        localStorage.setItem("lang",locale);
+        localStorage.setItem("lang", locale);
         this.$i18n.locale = locale;
       }
-
     },
     openMenu() {
       document
@@ -100,24 +131,24 @@ export default {
       const currentScrollPos = window.pageYOffset;
       if (currentScrollPos === 0) {
         this.scrollingDown = false;
-      }else{
+      } else {
         this.scrollingDown = true;
       }
     },
   },
-  beforeCreate(){
-      if(locallangStorge !== null){
-          this.$i18n.locale = locallangStorge;
-      }else{
-          this.$i18n.locale = "en"
-      }
+  beforeCreate() {
+    if (locallangStorge !== null) {
+      this.$i18n.locale = locallangStorge;
+    } else {
+      this.$i18n.locale = "en";
+    }
   },
-    created(){
-        window.addEventListener('scroll', this.scrollNow);
-    },
-    destroyed () {
-        window.removeEventListener('scroll', this.scrollNow);
-    },
+  created() {
+    window.addEventListener("scroll", this.scrollNow);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.scrollNow);
+  },
 };
 </script>
 
@@ -130,7 +161,7 @@ export default {
   left: 0;
   position: absolute;
   right: 0;
-  z-index:999;
+  z-index: 999;
   display: inline-flex;
   flex-wrap: nowrap;
   width: 100%;
@@ -149,7 +180,7 @@ export default {
     text-align: right;
     a {
       text-decoration: none;
-      margin: 10px;
+      margin: 15px;
       font-family: var(--font-title);
       color: var(--main-color);
       font-size: 30px;
@@ -196,14 +227,14 @@ export default {
       padding: 5px;
     }
   }
-  &.navbar-fixed{
+  &.navbar-fixed {
     position: fixed;
     width: 100%;
     background-color: rgba($color: #eee3c7, $alpha: 0.9);
     transition: 0.3s;
     .menu-icon {
-    color: var(--seconed-color);
-  }
+      color: var(--seconed-color);
+    }
     .logo {
       img {
         max-width: 30%;
@@ -218,7 +249,7 @@ export default {
         }
       }
     }
-  .translate {
+    .translate {
       li {
         color: var(--main-color);
         font-weight: 400;
@@ -267,15 +298,15 @@ export default {
       text-align: right;
       margin-bottom: 10px;
       margin-top: 10px;
-      a{
-          text-align: left;
-          width: 70%;
-          display: inline-block;
+      a {
+        text-align: left;
+        width: 70%;
+        display: inline-block;
       }
       svg {
-          width:20%;
-          display: inline-block;
-          text-align: right;
+        width: 20%;
+        display: inline-block;
+        text-align: right;
         font-weight: bold;
         font-size: 23px;
         margin: 10px;
@@ -315,17 +346,17 @@ export default {
         padding: 3px;
       }
     }
-    &.navbar-fixed{
-        .menu-icon {
-            svg{
-                color: var(--seconed-color);
-            }
+    &.navbar-fixed {
+      .menu-icon {
+        svg {
+          color: var(--seconed-color);
         }
-        .logo {
+      }
+      .logo {
         img {
-            max-width: 60%;
+          max-width: 60%;
         }
-        }
+      }
     }
   }
 }

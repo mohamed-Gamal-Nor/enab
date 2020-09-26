@@ -7,17 +7,21 @@
           <font-awesome-icon icon="concierge-bell" />
         </div>
         <div class="text">
-          <h4>{{$t("ourExlosive.intro.head1")}}</h4>
-          <h1>{{$t("ourExlosive.intro.head2")}}</h1>
+          <h4>{{ $t("ourExlosive.intro.head1") }}</h4>
+          <h1>{{ $t("ourExlosive.intro.head2") }}</h1>
           <span>&diams; &diams; &diams; &diams; &diams; &diams;</span>
         </div>
         <swiper class="swiper container" :options="swiperOption">
-          <swiper-slide class="swiper-slide" v-for="our in ourData" :key="our.image">
+          <swiper-slide
+            class="swiper-slide"
+            v-for="our in ourData"
+            :key="our.image"
+          >
             <div class="our-icon">
               <img :src="our.image" alt />
             </div>
-            <h1>{{$t(our.heading)}}</h1>
-            <p>{{$t(our.pragraph)}}</p>
+            <h1>{{ $t(our.heading) }}</h1>
+            <p>{{ $t(our.pragraph) }}</p>
           </swiper-slide>
         </swiper>
       </div>
@@ -95,7 +99,7 @@ export default {
   background-attachment: fixed;
   margin-top: 59px;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   .overlay {
     position: absolute;
     top: 0;

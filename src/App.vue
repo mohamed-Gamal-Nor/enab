@@ -14,16 +14,19 @@
     </transition>
     <buttonUp />
     <footter />
+    <loader />
   </div>
 </template>
 <script>
 import buttonUp from "./components/buttonUp.vue";
 import footter from "./components/footter.vue";
+import loader from "./components/loader.vue";
 export default {
   name: "app",
   components: {
     buttonUp,
     footter,
+    loader,
   },
 };
 </script>

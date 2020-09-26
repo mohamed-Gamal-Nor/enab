@@ -1,14 +1,13 @@
 :root {
     --main-color: #eee3c7;
-    --seconed-color:#455C56;
-    --font-title:'Dancing Script', cursive;
-    --main-font:  'Hind', sans-serif;
-  }
-  
+    --seconed-color: #455C56;
+    --font-title: 'Dancing Script', cursive;
+    --main-font: 'Hind', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     direction: ltr;
-    
 }
 
 .container {
@@ -16,23 +15,33 @@
     margin: auto;
 }
 
-.fade-enter-active,.fade-leave-active{
+.fade-enter-active,
+.fade-leave-active {
     transition: opacity 0.5s;
 }
-.fade-enter,.fade-leave-to{
+
+.fade-enter,
+.fade-leave-to {
     opacity: 0;
 }
+
+
 /*this slien box css code make global in five section*/
+
 .silentbox-item {
     max-height: 145px;
     border-radius: .5rem;
     margin-right: 1rem;
-    overflow: hidden;   
+    overflow: hidden;
     border: 1px solid var(--main-color);
     transition: 0.3s ease-in-out;
 }
-.silentbox-item:hover img{
+
+.silentbox-item img {
+    transition: 0.3s;
+}
+
+.silentbox-item:hover img {
     transition: 0.3s ease-in-out;
     transform: scale(1.2);
-    
 }
