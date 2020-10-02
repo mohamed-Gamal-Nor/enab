@@ -45,7 +45,6 @@
     <div
       v-bind:class="{
         navbar: navbarStauts,
-        'navbar-regular': navbarRegaulr,
         'navbar-fixed': getMainNavClasses,
       }"
     >
@@ -100,7 +99,6 @@ export default {
   props: ["navbarStauts"],
   data() {
     return {
-      navbarRegaulr: false,
       locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
       scrollingDown: false,
     };
@@ -259,6 +257,7 @@ export default {
       }
     }
   }
+ 
 }
 @media (max-width: 990px) {
   .navbar-mini {

@@ -27,6 +27,7 @@
           </div>
         </div>
         <div class="image-story">
+            
           <img src="@/assets/Home/store1.jpg" />
           <img src="@/assets/Home/store2.jpg" />
         </div>

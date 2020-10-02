@@ -54,6 +54,9 @@
             <source src="../assets/Home/footer-video.mp4" type="video/mp4" size="1080">
           </video>
         </vue-plyr>
+    .copyright
+        h3 Copyright © 2020 Enab Beirut Website. By 
+            a(href="https://www.facebook.com/MohamedJemyNour" target="_blank") Eng.Mohamed Gamal.
 </template>
 
 <script>
@@ -128,7 +131,7 @@ export default {
     padding-top: 25px;
     padding-bottom: 25px;
     .location {
-      width: 25%;
+      width: 30%;
       margin-right: 10px;
       h1 {
         color: var(--seconed-color);
@@ -168,5 +171,42 @@ export default {
       }
     }
   }
+  .copyright{
+      h3{
+          text-align: center;
+          font-size: 13px;
+          font-weight: bold;
+          a{
+              text-decoration: none;
+              color: var(--seconed-color);
+          }
+      }
+  }
+}
+@media (max-width: 991px) {
+    .footer {
+    .footer-text {
+        p {
+        width: 100%;
+        font-weight: 400;
+        }
+        
+    }
+    .footer-links {
+        display: block;
+        width: 100%;
+        .location {
+        width: 100%;
+        margin-bottom: 10px;
+        }
+        .opening-hours {
+        width: 100%;
+        margin-bottom: 10px;
+        }
+        .footer-video {
+        width: 100%;
+        }
+    }
+}
 }
 </style>

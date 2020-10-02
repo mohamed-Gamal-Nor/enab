@@ -15,14 +15,8 @@
     margin: auto;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.5s;
-}
-
-.fade-enter,
-.fade-leave-to {
-    opacity: 0;
+.overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom{
+    background-color: var(--seconed-color) !important;
 }
 
 

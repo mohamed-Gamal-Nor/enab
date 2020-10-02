@@ -8,10 +8,8 @@ export default {
   name: "buttonUp",
   methods: {
     scrollNow() {
-      let sliderFirstHeight = document.querySelector(".swiper-slide")
-        .offsetHeight;
       let buttonUp = document.querySelector(".button-up");
-      if (window.pageYOffset > sliderFirstHeight) {
+      if (window.pageYOffset > 400) {
         buttonUp.style.display = "block";
       } else {
         buttonUp.style.display = "none";

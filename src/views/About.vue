@@ -1,12 +1,21 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <navbar v-bind:navbarStauts="navbarStauts" />
   </div>
+  
 </template>
 
 <script>
+import navbar from "../components/navbar.vue";
 export default {
   name: "About",
-  components: {},
+  components: {
+      navbar,
+  },
+  data() {
+    return {
+      navbarStauts: false,
+    };
+  },
 };
 </script>

@@ -7,11 +7,9 @@
         zIndex="505050"
       />
     </div>
-    <transition name="fade" mode="out-in">
-      <keep-alive>
+    <vue-page-transition name="overlay-left-right">
         <router-view></router-view>
-      </keep-alive>
-    </transition>
+    </vue-page-transition>
     <buttonUp />
     <footter />
     <loader />

@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
+import VuePageTransition from 'vue-page-transition'
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -45,6 +46,8 @@ Vue.use(normlize);
 Vue.use(VueScrollProgressBar);
 var VueScrollTo = require("vue-scrollto");
 Vue.use(VueScrollTo);
+Vue.use(VuePageTransition)
+
 Vue.config.productionTip = false;
 router.beforeEach((to, from, next) => {
     document.title = to.meta.title;
