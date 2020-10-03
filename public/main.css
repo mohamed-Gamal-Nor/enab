@@ -15,8 +15,12 @@
     margin: auto;
 }
 
-.overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom{
+.overlay-left,
+.overlay-right,
+.overlay-top,
+.overlay-bottom {
     background-color: var(--seconed-color) !important;
+    z-index: 999;
 }
 
 

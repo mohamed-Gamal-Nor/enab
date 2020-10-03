@@ -155,7 +155,7 @@ export default {
   display: none;
 }
 .navbar {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  background: rgba($color: #455c56, $alpha: 0.3) none repeat scroll 0 0;
   left: 0;
   position: absolute;
   right: 0;
@@ -257,7 +257,6 @@ export default {
       }
     }
   }
- 
 }
 @media (max-width: 990px) {
   .navbar-mini {

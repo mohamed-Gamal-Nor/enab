@@ -103,6 +103,9 @@
             }
         },
         "openinHours": "Opening Hours"
+    },
+    "intro-page": {
+        "about": "About Us"
     }
 
 }

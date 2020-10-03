@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <navbar v-bind:navbarStauts="navbarStauts" />
+    <navbar v-bind:navbarStauts="navbarStauts" :navbarRegular="navbarRegular" />
     <slider />
     <seconedSection />
     <tihrdSection />
@@ -24,11 +24,12 @@ export default {
     seconedSection,
     tihrdSection,
     forSection,
-    fiveSection
+    fiveSection,
   },
   data() {
     return {
       navbarStauts: true,
+      navbarRegular: false,
     };
   },
 };

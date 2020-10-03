@@ -55,8 +55,8 @@
           </video>
         </vue-plyr>
     .copyright
-        h3 Copyright © 2020 Enab Beirut Website. By 
-            a(href="https://www.facebook.com/MohamedJemyNour" target="_blank") Eng.Mohamed Gamal.
+      h3 Copyright © 2020 Enab Beirut Website. By
+        a(href="https://www.facebook.com/MohamedJemyNour", target="_blank") Eng.Mohamed Gamal.
 </template>
 
 <script>
@@ -163,6 +163,7 @@ export default {
     }
     .footer-video {
       width: 35%;
+      z-index: 0;
       h1 {
         color: var(--seconed-color);
         font-family: var(--main-font);
@@ -171,42 +172,41 @@ export default {
       }
     }
   }
-  .copyright{
-      h3{
-          text-align: center;
-          font-size: 13px;
-          font-weight: bold;
-          a{
-              text-decoration: none;
-              color: var(--seconed-color);
-          }
+  .copyright {
+    h3 {
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: var(--seconed-color);
       }
+    }
   }
 }
 @media (max-width: 991px) {
-    .footer {
+  .footer {
     .footer-text {
-        p {
+      p {
         width: 100%;
         font-weight: 400;
-        }
-        
+      }
     }
     .footer-links {
-        display: block;
-        width: 100%;
-        .location {
-        width: 100%;
-        margin-bottom: 10px;
-        }
-        .opening-hours {
+      display: block;
+      width: 100%;
+      .location {
         width: 100%;
         margin-bottom: 10px;
-        }
-        .footer-video {
+      }
+      .opening-hours {
         width: 100%;
-        }
+        margin-bottom: 10px;
+      }
+      .footer-video {
+        width: 100%;
+      }
     }
-}
+  }
 }
 </style>
