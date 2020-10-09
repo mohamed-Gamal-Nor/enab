@@ -20,7 +20,10 @@ import {
     faCameraRetro,
     faCaretUp,
     faMapMarkerAlt,
-    faMobileAlt
+    faMobileAlt,
+    faSmileBeam,
+    faBookOpen,
+    faStore
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF,faInstagram,faGoogle} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -37,8 +40,10 @@ library.add(
     faInstagram,
     faGoogle,
     faMapMarkerAlt,
-    faMobileAlt
-
+    faMobileAlt,
+    faSmileBeam,
+    faBookOpen,
+    faStore
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(BootstrapVue);

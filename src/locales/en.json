@@ -106,6 +106,24 @@
     },
     "intro-page": {
         "about": "About Us"
+    },
+    "about-counter": {
+        "count1": {
+            "num": "1000",
+            "title": "HAPPY CUSTOMERS"
+        },
+        "count2": {
+            "num": "850",
+            "title": "DISHES MENU"
+        },
+        "count3": {
+            "num": "4",
+            "title": "Branches"
+        },
+        "count4": {
+            "num": "1000",
+            "title": "HAPPY CUSTOMERS"
+        }
     }
 
 }

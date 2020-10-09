@@ -39,7 +39,6 @@
 <script>
 export default {
   name: "seconedSection",
-  mounted() {},
   methods: {
     scrollNow() {
       const seconedSectionOffset = document.getElementById("seconed-section")

@@ -33,7 +33,7 @@ export default {
     .text {
       text-align: center;
       width: 30%;
-      margin: 200px auto;
+      margin: 22.5vh auto;
       h1 {
         font-family: var(--font-title);
         font-weight: bold;
