@@ -18,15 +18,16 @@
           }}</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.MenuBook")
+          <router-link :to="{ name: 'gallery' }">{{
+            $t("menuLinks.gallery")
           }}</router-link>
         </li>
         <li>
           <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.gallery")
+            $t("menuLinks.MenuBook")
           }}</router-link>
         </li>
+
         <li>
           <router-link to="/">{{ $t("menuLinks.contact") }}</router-link>
         </li>
@@ -57,11 +58,11 @@
           <router-link :to="{ name: 'About' }">{{
             $t("menuLinks.about")
           }}</router-link>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.MenuBook")
+          <router-link :to="{ name: 'gallery' }">{{
+            $t("menuLinks.gallery")
           }}</router-link>
           <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.gallery")
+            $t("menuLinks.MenuBook")
           }}</router-link>
         </div>
         <div class="logo">

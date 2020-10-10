@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
+import gallery from "../views/gallery.vue";
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,12 @@ const routes = [{
         name: "About",
         component: About,
         meta: { title: "Enab Beirut - About Page" }
+    },
+    {
+        path: "/gallery",
+        name: "gallery",
+        component: gallery,
+        meta: { title: "Enab Beirut - Gallery Image" }
     }
 ];
 

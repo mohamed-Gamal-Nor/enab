@@ -103,7 +103,8 @@
         }
     },
     "intro-page": {
-        "about": "نبذة عننا"
+        "about": "نبذة عننا",
+        "gallery": "صور"
     },
     "about-counter": {
         "count1": {
