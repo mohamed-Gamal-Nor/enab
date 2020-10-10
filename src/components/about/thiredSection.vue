@@ -13,8 +13,8 @@
             .year
               span {{ our.year }}
             .text
-              h1 {{ our.head }}
-              p {{ our.paragraph }}
+              h1 {{ $t(our.head) }}
+              p {{ $t(our.paragraph) }}
 </template>
 <script>
 export default {
@@ -22,28 +22,24 @@ export default {
     return {
       ourData: [
         {
-          year: "2018",
-          head: "A Beginning of new ERA",
-          paragraph:
-            "As we move toward our 6 anniversary in 2019, the restaurant has employs 50 people and server 350 customers daily.",
+          year: "2014",
+          head: "about-history.branch1.head",
+          paragraph: "about-history.branch1.paragraph",
         },
         {
-          year: "2018",
-          head: "A Beginning of new ERA",
-          paragraph:
-            "As we move toward our 6 anniversary in 2019, the restaurant has employs 50 people and server 350 customers daily.",
+          year: "2015",
+          head: "about-history.branch2.head",
+          paragraph: "about-history.branch2.paragraph",
         },
         {
-          year: "2019",
-          head: "A Beginning of new ERA",
-          paragraph:
-            "As we move toward our 6 anniversary in 2019, the restaurant has employs 50 people and server 350 customers daily.",
+          year: "2016",
+          head: "about-history.branch3.head",
+          paragraph: "about-history.branch3.paragraph",
         },
         {
-          year: "2018",
-          head: "A Beginning of new ERA",
-          paragraph:
-            "As we move toward our 6 anniversary in 2019, the restaurant has employs 50 people and server 350 customers daily.",
+          year: "2020",
+          head: "about-history.branch4.head",
+          paragraph: "about-history.branch4.paragraph",
         },
       ],
     };
@@ -72,10 +68,10 @@ export default {
     flex-wrap: nowrap;
     .img {
       width: 40%;
-      margin-right: 50px;
+      margin: 200px 50px 0px 0px;
       img {
         width: 100%;
-        min-height: 100%;
+        border: 10px solid var(--main-color);
       }
     }
     .our-history {
@@ -141,7 +137,7 @@ export default {
             h1 {
               font-family: var(--font-title);
               font-weight: bold;
-              font-size: 45px;
+              font-size: 30px;
               color: #fff;
               margin-bottom: 20px;
             }
@@ -149,6 +145,69 @@ export default {
               font-family: var(--main-title);
               font-weight: bold;
               color: var(--main-color);
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .history {
+    .history-content {
+      display: block;
+      .img {
+        display: none;
+      }
+      .our-history {
+        width: 100%;
+        padding: 25px;
+        & > h1 {
+          font-size: 35px;
+        }
+        .year-history {
+          .year-content {
+            .text {
+              h1 {
+                font-size: 25px;
+              }
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 667px) {
+  .history {
+    .history-content {
+      .our-history {
+        .year-history {
+          .year-content {
+            .year {
+              width: 15%;
+              text-align: center;
+              margin-right: 20px;
+              span {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 15px;
+              }
+            }
+            .text {
+              padding-bottom: 15px;
+              h1 {
+                font-size: 20px;
+              }
+              p {
+                font-size: 10px;
+              }
             }
           }
         }

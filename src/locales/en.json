@@ -124,6 +124,24 @@
             "num": "1000",
             "title": "HAPPY CUSTOMERS"
         }
+    },
+    "about-history": {
+        "branch1": {
+            "head": "Enab Beirut Al-Rehab City Square",
+            "paragraph": "The opening of our first branch in our beloved Egypt, in Al Rehab City, City Square Mall"
+        },
+        "branch2": {
+            "head": "Enab Beirut Tivoli Dome Heliopolis",
+            "paragraph": "The second opening of the Enab Beirut chain in Egypt in Heliopolis, Tivoli Dome"
+        },
+        "branch3": {
+            "head": "Enab Beirut Inn Cairo Festival City Mall, New Cairo",
+            "paragraph": "Our third branch was opened in Cairo Festival City Mall, New Cairo, in front of the dancing fountain"
+        },
+        "branch4": {
+            "head": "Enab Beirut at the O1 Mall",
+            "paragraph": "Our fourth branch was opened in Mohamed Naguib Axis, Fifth Settlement, in O1 Mall"
+        }
     }
 
 }
