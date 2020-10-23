@@ -37,6 +37,7 @@
 
 .silentbox-item img {
     transition: 0.3s;
+    object-position: center top;
 }
 
 .silentbox-item:hover img {

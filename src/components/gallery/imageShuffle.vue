@@ -12,327 +12,319 @@
         button(v-on:click="filter('tag6'); active()") Oven
         button(v-on:click="filter('tag7'); active()") Sweets
         button(v-on:click="filter('tag8'); active()") Drinkes
-      <transition-group name="list-complete" class="list-complete" tag="section">
-        <div v-for="item in filteredItems" v-bind:key="item.id" class="list-complete-item">
-          lazy-image.list-complete-img.AppImage(
-            :src="item.src",
-            :placeholder="loading"
-          )
-        </div>
-      </transition-group>
+      silent-box.gallery(:gallery="filteredItems")
 </template>
 <script>
 import Vue from "vue";
-import VueLazyImage from "vue-lazy-images";
-Vue.use(VueLazyImage);
+import VueSilentbox from "vue-silentbox";
+Vue.use(VueSilentbox);
 export default {
   data() {
     return {
       items: [
         {
-          id: 1,
           tags: ["all", "all"],
           src: require("../../assets/gallery/1.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 2,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/2.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 3,
           tags: ["all", "all"],
           src: require("../../assets/gallery/3.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 4,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/4.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 5,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/5.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 6,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/6.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 7,
           tags: ["all", "tag1"],
           src: require("../../assets/gallery/7.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 8,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/8.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 9,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/9.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 10,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/10.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 11,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/11.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 12,
           tags: ["all", "tag6"],
           src: require("../../assets/gallery/12.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 13,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/13.jpg"),
+          thumbnailWidth: "300",
         },
 
         {
-          id: 14,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/14.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 15,
           tags: ["all", "tag1"],
           src: require("../../assets/gallery/15.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 16,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/16.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 17,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/17.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 18,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/18.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 19,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/19.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 20,
           tags: ["all", "tag8"],
           src: require("../../assets/gallery/20.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 21,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/21.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 22,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/22.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 23,
           tags: ["all", "tag1"],
           src: require("../../assets/gallery/23.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 24,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/24.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 25,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/25.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 26,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/26.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 27,
           tags: ["all", "tag6"],
           src: require("../../assets/gallery/27.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 28,
           tags: ["all", "tag1"],
           src: require("../../assets/gallery/28.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 29,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/29.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 30,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/30.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 31,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/31.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 32,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/32.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 33,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/33.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 34,
           tags: ["all", "tag1"],
           src: require("../../assets/gallery/34.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 35,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/35.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 36,
           tags: ["all", "tag6"],
           src: require("../../assets/gallery/36.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 37,
           tags: ["all", "tag4"],
           src: require("../../assets/gallery/37.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 38,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/38.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 39,
           tags: ["all", "tag5"],
           src: require("../../assets/gallery/39.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 40,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/40.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 41,
           tags: ["all", "tag8"],
           src: require("../../assets/gallery/41.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 42,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/42.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 43,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/43.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 44,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/44.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 45,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/45.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 46,
           tags: ["all", "tag8"],
           src: require("../../assets/gallery/46.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 47,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/47.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 48,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/48.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 49,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/49.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 50,
           tags: ["all", "tag6"],
           src: require("../../assets/gallery/50.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 51,
           tags: ["all", "tag4"],
           src: require("../../assets/gallery/51.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 52,
           tags: ["all", "tag4", "tag6"],
           src: require("../../assets/gallery/52.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 53,
           tags: ["all", "tag4"],
           src: require("../../assets/gallery/53.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 54,
           tags: ["all", "tag8"],
           src: require("../../assets/gallery/54.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 55,
           tags: ["all", "tag8"],
           src: require("../../assets/gallery/55.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 56,
           tags: ["all", "tag3"],
           src: require("../../assets/gallery/56.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 57,
           tags: ["all", "tag6"],
           src: require("../../assets/gallery/57.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 58,
           tags: ["all", "tag2"],
           src: require("../../assets/gallery/58.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 59,
           tags: ["all", "tag8"],
           src: require("../../assets/gallery/59.jpg"),
+          thumbnailWidth: "300",
         },
         {
-          id: 60,
           tags: ["all", "tag7"],
           src: require("../../assets/gallery/60.jpg"),
+          thumbnailWidth: "300",
         },
       ],
       currentTag: "all",
-      loading: require("../../assets/gallery/gallery_loading.gif"),
     };
   },
   computed: {
@@ -396,33 +388,10 @@ export default {
       }
     }
   }
-  .list-complete {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .list-complete-item {
-      transition: transform 1s;
-      width: 25%;
-      height: 200px;
-      padding: 10px;
-      .list-complete-img {
-        height: 100%;
-        width: 100%;
-      }
-    }
+  .gallery {
+    text-align: center;
   }
 }
-
-.list-complete-enter, .list-complete-leave-to
-/* .list-complete-leave-active for <2.1.8 */ {
-  opacity: 0;
-  transform: translateY(30px);
-}
-.list-complete-leave-active {
-  position: absolute;
-}
-
 @media (max-width: 991px) {
   .demo {
     .button-area {
@@ -432,11 +401,6 @@ export default {
         margin: 5px;
         padding: 5px 10px 5px 10px;
         font-size: 12px;
-      }
-    }
-    .list-complete {
-      .list-complete-item {
-        width: 50%;
       }
     }
   }
