@@ -23,7 +23,7 @@
           }}</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'About' }">{{
+          <router-link :to="{ name: 'menu' }">{{
             $t("menuLinks.MenuBook")
           }}</router-link>
         </li>
@@ -61,7 +61,7 @@
           <router-link :to="{ name: 'gallery' }">{{
             $t("menuLinks.gallery")
           }}</router-link>
-          <router-link :to="{ name: 'About' }">{{
+          <router-link :to="{ name: 'menu' }">{{
             $t("menuLinks.MenuBook")
           }}</router-link>
         </div>

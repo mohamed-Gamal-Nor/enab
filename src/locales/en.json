@@ -2,7 +2,7 @@
     "menuLinks": {
         "home": "Home",
         "about": "About",
-        "MenuBook": "Menu Book",
+        "MenuBook": "Menu",
         "gallery": "Gallery",
         "contact": "Contact",
         "stores": "Stores",
@@ -106,7 +106,8 @@
     },
     "intro-page": {
         "about": "About Us",
-        "gallery": "Gallery"
+        "gallery": "Gallery",
+        "menu": "Menu"
     },
     "about-counter": {
         "count1": {
@@ -143,6 +144,17 @@
             "head": "Enab Beirut at the O1 Mall",
             "paragraph": "Our fourth branch was opened in Mohamed Naguib Axis, Fifth Settlement, in O1 Mall"
         }
+    },
+    "gallryLink": {
+        "All": "All",
+        "Breakfast": "Breakfast",
+        "ColdMeza": "Cold Meza",
+        "HotMeza": "Hot Meza",
+        "Salads": "Salads",
+        "Grill": "Grill",
+        "Oven": "Oven",
+        "Sweets": "Sweets",
+        "Drinkes": "Drinkes"
     }
 
 }

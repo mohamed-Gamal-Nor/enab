@@ -3,15 +3,15 @@
   .container-fluid
     #list-complete-demo.demo
       .button-area
-        button.active(v-on:click="filter('all'); active()") All
-        button(v-on:click="filter('tag1'); active()") Breakfast
-        button(v-on:click="filter('tag2'); active()") Cold Meza
-        button(v-on:click="filter('tag3'); active()") Hot Meza
-        button(v-on:click="filter('tag4'); active()") Salads
-        button(v-on:click="filter('tag5'); active()") Grill
-        button(v-on:click="filter('tag6'); active()") Oven
-        button(v-on:click="filter('tag7'); active()") Sweets
-        button(v-on:click="filter('tag8'); active()") Drinkes
+        button.active(v-on:click="filter('all'); active()") {{ $t('gallryLink.All') }}
+        button(v-on:click="filter('tag1'); active()") {{ $t('gallryLink.Breakfast') }}
+        button(v-on:click="filter('tag2'); active()") {{ $t('gallryLink.ColdMeza') }}
+        button(v-on:click="filter('tag3'); active()") {{ $t('gallryLink.HotMeza') }}
+        button(v-on:click="filter('tag4'); active()") {{ $t('gallryLink.Salads') }}
+        button(v-on:click="filter('tag5'); active()") {{ $t('gallryLink.Grill') }}
+        button(v-on:click="filter('tag6'); active()") {{ $t('gallryLink.Oven') }}
+        button(v-on:click="filter('tag7'); active()") {{ $t('gallryLink.Sweets') }}
+        button(v-on:click="filter('tag8'); active()") {{ $t('gallryLink.Drinkes') }}
       silent-box.gallery(:gallery="filteredItems")
 </template>
 <script>
