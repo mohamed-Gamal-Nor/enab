@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .intro-page {
-  min-height: 45vh;
+  min-height: 55vh;
   background-image: url("../assets/about/intro2.jpg");
   background-size: cover;
   position: relative;

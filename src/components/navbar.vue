@@ -42,6 +42,7 @@
           }}</router-link>
         </li>
       </ul>
+      
     </div>
     <div
       v-bind:class="{
@@ -259,7 +260,7 @@ export default {
     }
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .navbar-mini {
     padding: 0;
     display: block;
@@ -319,7 +320,7 @@ export default {
       width: 30%;
       text-align: center;
       img {
-        max-width: 100%;
+        max-width: 50%;
       }
     }
     .menu-icon {
@@ -353,7 +354,7 @@ export default {
       }
       .logo {
         img {
-          max-width: 60%;
+          max-width: 40%;
         }
       }
     }

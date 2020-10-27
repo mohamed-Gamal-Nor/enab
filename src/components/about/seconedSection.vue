@@ -48,7 +48,7 @@ export default {
       );
       const currentScrollPos = window.pageYOffset;
       const speed = 1;
-      if (currentScrollPos >= counterOffset - 200) {
+      if (currentScrollPos >= counterOffset - 200 ) {
         counterItem.forEach((counter) => {
           const updateCount = () => {
             const counterTarget = +counter.dataset.count;
