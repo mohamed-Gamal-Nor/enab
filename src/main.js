@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
-import VuePageTransition from 'vue-page-transition'
+import VuePageTransition from "vue-page-transition";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -25,7 +25,11 @@ import {
     faBookOpen,
     faStore
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF,faInstagram,faGoogle} from '@fortawesome/free-brands-svg-icons'
+import {
+    faFacebookF,
+    faInstagram,
+    faGoogle
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
     faUtensils,
@@ -51,11 +55,18 @@ Vue.use(normlize);
 Vue.use(VueScrollProgressBar);
 var VueScrollTo = require("vue-scrollto");
 Vue.use(VueScrollTo);
-Vue.use(VuePageTransition)
+Vue.use(VuePageTransition);
 
 Vue.config.productionTip = false;
 router.beforeEach((to, from, next) => {
     document.title = to.meta.title;
+
+    let language = to.params.lang;
+    if (!language) {
+        language = "en";
+    }
+
+    i18n.locale = language;
     next();
 });
 new Vue({

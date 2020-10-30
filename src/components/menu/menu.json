@@ -1,61 +1,121 @@
 {
     "breakFast": {
-        "heading": "Breakfast",
-        "paragraph": "The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread",
+        "heading": "menu.breakFast.heading",
+        "paragraph": "menu.breakFast.paragraph",
         "items": {
             "item1": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item1.name",
+                "price": "menu.breakFast.items.item1.price",
+                "desc": "menu.breakFast.items.item1.desc"
             },
             "item2": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item2.name",
+                "price": "menu.breakFast.items.item2.price",
+                "desc": "menu.breakFast.items.item2.desc"
             },
             "item3": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item3.name",
+                "price": "menu.breakFast.items.item3.price",
+                "desc": "menu.breakFast.items.item3.desc"
             },
             "item4": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item4.name",
+                "price": "menu.breakFast.items.item4.price",
+                "desc": "menu.breakFast.items.item4.desc"
             },
             "item5": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item5.name",
+                "price": "menu.breakFast.items.item5.price",
+                "desc": "menu.breakFast.items.item5.desc"
             },
             "item6": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item6.name",
+                "price": "menu.breakFast.items.item6.price",
+                "desc": "menu.breakFast.items.item6.desc"
             },
             "item7": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item7.name",
+                "price": "menu.breakFast.items.item7.price",
+                "desc": "menu.breakFast.items.item7.desc"
             },
             "item8": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item8.name",
+                "price": "menu.breakFast.items.item8.price",
+                "desc": "menu.breakFast.items.item8.desc"
             },
             "item9": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item9.name",
+                "price": "menu.breakFast.items.item9.price",
+                "desc": "menu.breakFast.items.item9.desc"
             },
             "item10": {
-                "name": "Tex-Mex Chicken Wings",
-                "price": "15.00 L.E",
-                "desc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames"
+                "name": "menu.breakFast.items.item10.name",
+                "price": "menu.breakFast.items.item10.price",
+                "desc": "menu.breakFast.items.item10.desc"
+            },
+            "item11": {
+                "name": "menu.breakFast.items.item11.name",
+                "price": "menu.breakFast.items.item11.price",
+                "desc": "menu.breakFast.items.item11.desc"
+            },
+            "item12": {
+                "name": "menu.breakFast.items.item12.name",
+                "price": "menu.breakFast.items.item12.price",
+                "desc": "menu.breakFast.items.item12.desc"
+            },
+            "item13": {
+                "name": "menu.breakFast.items.item13.name",
+                "price": "menu.breakFast.items.item13.price",
+                "desc": "menu.breakFast.items.item13.desc"
+            },
+            "item14": {
+                "name": "menu.breakFast.items.item14.name",
+                "price": "menu.breakFast.items.item14.price",
+                "desc": "menu.breakFast.items.item14.desc"
+            },
+            "item15": {
+                "name": "menu.breakFast.items.item15.name",
+                "price": "menu.breakFast.items.item15.price",
+                "desc": "menu.breakFast.items.item15.desc"
+            },
+            "item16": {
+                "name": "menu.breakFast.items.item16.name",
+                "price": "menu.breakFast.items.item16.price",
+                "desc": "menu.breakFast.items.item16.desc"
+            },
+            "item17": {
+                "name": "menu.breakFast.items.item17.name",
+                "price": "menu.breakFast.items.item17.price",
+                "desc": "menu.breakFast.items.item17.desc"
+            },
+            "item18": {
+                "name": "menu.breakFast.items.item18.name",
+                "price": "menu.breakFast.items.item18.price",
+                "desc": "menu.breakFast.items.item18.desc"
+            },
+            "item19": {
+                "name": "menu.breakFast.items.item19.name",
+                "price": "menu.breakFast.items.item19.price",
+                "desc": "menu.breakFast.items.item19.desc"
+            },
+            "item20": {
+                "name": "menu.breakFast.items.item20.name",
+                "price": "menu.breakFast.items.item20.price",
+                "desc": "menu.breakFast.items.item20.desc"
+            },
+            "item21": {
+                "name": "menu.breakFast.items.item21.name",
+                "price": "menu.breakFast.items.item21.price",
+                "desc": "menu.breakFast.items.item21.desc"
+            },
+            "item22": {
+                "name": "menu.breakFast.items.item22.name",
+                "price": "menu.breakFast.items.item22.price",
+                "desc": "menu.breakFast.items.item22.desc"
             }
         }
     },
-    "coldMeza": {
+    "coldMeza":{
         "heading": "Cold Mezza",
         "paragraph": "The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread",
         "items": {

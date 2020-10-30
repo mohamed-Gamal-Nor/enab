@@ -2,15 +2,15 @@
 .menu
   .container
     .capture
-      h6 Download Menu
-      h1 Scan the code with the phone's camera to download the menu
+      h6 {{ $t("introMenu.head") }}
+      h1 {{ $t("introMenu.head1") }}
       .image-menu
         div
           img(:src="gif", alt="alt")
         div
           img(:src="menuImage", alt="alt")
       .button-download
-        a(href="https://scnv.io/GkvE?qr=1", target="_blank") Download Menu Now
+        a(href="https://scnv.io/GkvE?qr=1", target="_blank") {{ $t("introMenu.buttonDownload") }}
 </template>
 
 <script>

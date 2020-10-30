@@ -1,8 +1,8 @@
 <template>
   <div class="about">
-    <navbar v-bind:navbarStauts="navbarStauts" />
+    <navbar />
     <introPage :introPage="introPage" />
-    <imageShuffle/>
+    <imageShuffle />
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   components: {
     navbar,
     introPage,
-    imageShuffle
+    imageShuffle,
   },
   data() {
     return {

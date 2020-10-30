@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <navbar v-bind:navbarStauts="navbarStauts" :navbarRegular="navbarRegular" />
+    <navbar />
     <slider />
     <seconedSection />
     <tihrdSection />

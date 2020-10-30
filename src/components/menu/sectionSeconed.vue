@@ -5,15 +5,15 @@
       .img
         img(src="../../assets/logo.png", alt="alt")
       .text
-        h4 {{ catogry.heading }}
-        p {{ catogry.paragraph }}
+        h4 {{ $t(catogry.heading) }}
+        p {{ $t(catogry.paragraph) }}
       .items
         .item(v-for="item in catogry.items")
           .item-name
-            h6 {{ item.name }}
-            p {{ item.price }}
+            h6 {{ $t(item.name) }}
+            p {{ $t(item.price) }}
           .descrption
-            p {{ item.desc }}
+            p {{ $t(item.desc) }}
 </template>
 
 <script>
@@ -32,6 +32,12 @@ export default {
   padding-top: 50px;
   .item-part {
     text-align: center;
+    
+    &:nth-of-type(2n+1){
+        background-image: url('../../assets/Home/seconed-back.png');
+        background-position: center top;
+        background-size: cover;
+    }
     .img {
       margin-bottom: 15px;
     }
@@ -41,22 +47,24 @@ export default {
         color: var(--seconed-color);
         font-weight: bold;
         font-size: 30px;
+        text-transform: capitalize;
       }
       p {
         font-family: var(--font-title);
         color: #9a9a9a;
         font-size: 25px;
+        text-transform: capitalize;
       }
     }
     .items {
       width: 100%;
       display: inline-flex;
       flex-wrap: wrap;
-      padding-top: 50px;
+      padding-top: 10px;
       .item {
-        width: 24%;
+        width: 23%;
         text-align: left;
-        margin-right: 15px;
+        margin-right: 25px;
         margin-top: 15px;
         .item-name {
           display: flex;
@@ -68,6 +76,8 @@ export default {
             font-family: var(--main-font);
             font-weight: bold;
             color: var(--seconed-color);
+            text-transform: capitalize;
+            line-height: 20px;
           }
           p {
             width: 25%;
@@ -75,12 +85,14 @@ export default {
             font-weight: bold;
             filter: brightness(90%);
             text-align: right;
+            text-transform: capitalize;
           }
         }
         .descrption {
           font-family: var(--main-font);
           font-weight: 600;
           color: #9a9a9a;
+          text-transform: capitalize;
         }
       }
     }

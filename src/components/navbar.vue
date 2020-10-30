@@ -1,108 +1,67 @@
-<template>
-  <div class="navbar-all">
-    <div class="navbar-mini">
-      <div class="close-button">
-        <router-link to="/">
-          <img src="../assets/logo.png" />
-        </router-link>
-        <font-awesome-icon icon="times" @click="closeMenu()" />
-      </div>
-
-      <ul class="pages-link-mini">
-        <li>
-          <router-link to="/">{{ $t("menuLinks.home") }}</router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.about")
-          }}</router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'gallery' }">{{
-            $t("menuLinks.gallery")
-          }}</router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'menu' }">{{
-            $t("menuLinks.MenuBook")
-          }}</router-link>
-        </li>
-
-        <li>
-          <router-link to="/">{{ $t("menuLinks.contact") }}</router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.stores")
-          }}</router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.map")
-          }}</router-link>
-        </li>
-      </ul>
-      
-    </div>
-    <div
-      v-bind:class="{
-        navbar: navbarStauts,
-        'navbar-fixed': getMainNavClasses,
-      }"
-    >
-      <div class="container-fluid">
-        <div class="menu-icon">
-          <font-awesome-icon icon="bars" @click="openMenu()" />
-        </div>
-        <div class="pages-link one">
-          <router-link to="/">{{ $t("menuLinks.home") }}</router-link>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.about")
-          }}</router-link>
-          <router-link :to="{ name: 'gallery' }">{{
-            $t("menuLinks.gallery")
-          }}</router-link>
-          <router-link :to="{ name: 'menu' }">{{
-            $t("menuLinks.MenuBook")
-          }}</router-link>
-        </div>
-        <div class="logo">
-          <router-link to="/">
-            <img src="../assets/logo.png" />
-          </router-link>
-        </div>
-        <div class="pages-link two">
-          <router-link to="/">{{ $t("menuLinks.contact") }}</router-link>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.stores")
-          }}</router-link>
-          <router-link :to="{ name: 'About' }">{{
-            $t("menuLinks.map")
-          }}</router-link>
-        </div>
-        <ul class="translate">
-          <li
-            v-for="locale in locales"
-            :key="locale"
-            @click="switchLocale(locale)"
-          >
-            {{ locale }}
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+div
+  .mini-navbar(:class="{ active: menu }")
+    .logo
+      router-link(:to="`/${$i18n.locale}`")
+        img(src="../assets/logo.png")
+      .close
+        font-awesome-icon(icon="times", @click="closeMenu()")
+    .links
+      router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}
+      router-link(:to="`/${$i18n.locale}/about`") {{ $t('menuLinks.about') }}
+      router-link(:to="`/${$i18n.locale}/gallery`") {{ $t('menuLinks.gallery') }}
+      router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
+      router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}
+      router-link(:to="`/${$i18n.locale}/about`") {{ $t('menuLinks.about') }}
+      router-link(:to="`/${$i18n.locale}/gallery`") {{ $t('menuLinks.gallery') }}
+      router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
+    .lang(v-if="$i18n.locale == 'en'")
+      button(@click="setLocale('ar')")
+        country-flag(country="eg")
+        span AR
+    .lang(v-else="$i18n.locale == 'ar'")
+      button(@click="setLocale('en')")
+        country-flag(country="us")
+        span EN
+  .navbar(:class="{ 'navbar-fixed': getMainNavClasses }")
+    .container-fluid
+      .links.link1
+        router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}
+        router-link(:to="`/${$i18n.locale}/about`") {{ $t('menuLinks.about') }}
+        router-link(:to="`/${$i18n.locale}/gallery`") {{ $t('menuLinks.gallery') }}
+        router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
+      .logo
+        router-link(:to="`/${$i18n.locale}`")
+          img(src="../assets/logo.png")
+      .links.link2
+        router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}
+        router-link(:to="`/${$i18n.locale}/about`") {{ $t('menuLinks.about') }}
+        router-link(:to="`/${$i18n.locale}/gallery`") {{ $t('menuLinks.gallery') }}
+        router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
+      .lang(v-if="$i18n.locale == 'en'")
+        button(@click="setLocale('ar')")
+          country-flag(country="eg")
+          span AR
+      .lang(v-else="$i18n.locale == 'ar'")
+        button(@click="setLocale('en')")
+          country-flag(country="us")
+          span EN
+      .menu-icon
+        font-awesome-icon(icon="bars", @click="openMenu()")
 </template>
 
 <script>
-const locallangStorge = localStorage.getItem("lang");
+import CountryFlag from "vue-country-flag";
+
 export default {
   name: "navbar",
-  props: ["navbarStauts"],
+  components: {
+    CountryFlag,
+  },
   data() {
     return {
-      locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
       scrollingDown: false,
+      menu: false,
     };
   },
   computed: {
@@ -111,22 +70,6 @@ export default {
     },
   },
   methods: {
-    switchLocale(locale) {
-      if (this.$i18n.locale !== locale) {
-        localStorage.setItem("lang", locale);
-        this.$i18n.locale = locale;
-      }
-    },
-    openMenu() {
-      document
-        .querySelector(".navbar-all .navbar-mini")
-        .classList.add("active");
-    },
-    closeMenu() {
-      document
-        .querySelector(".navbar-all .navbar-mini")
-        .classList.remove("active");
-    },
     scrollNow() {
       const currentScrollPos = window.pageYOffset;
       if (currentScrollPos === 0) {
@@ -135,13 +78,18 @@ export default {
         this.scrollingDown = true;
       }
     },
-  },
-  beforeCreate() {
-    if (locallangStorge !== null) {
-      this.$i18n.locale = locallangStorge;
-    } else {
-      this.$i18n.locale = "en";
-    }
+    setLocale(locale) {
+      this.$i18n.locale = locale;
+      this.$router.push({
+        params: { lang: locale },
+      });
+    },
+    openMenu() {
+      this.menu = true;
+    },
+    closeMenu() {
+      this.menu = false;
+    },
   },
   created() {
     window.addEventListener("scroll", this.scrollNow);
@@ -153,42 +101,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navbar-mini {
+.mini-navbar {
   display: none;
 }
 .navbar {
-  background: rgba($color: #455c56, $alpha: 0.3) none repeat scroll 0 0;
-  left: 0;
   position: absolute;
-  right: 0;
-  z-index: 999;
-  display: inline-flex;
-  flex-wrap: nowrap;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 999;
+  background-color: rgba($color: #455c56, $alpha: 0.3);
+  justify-content: flex-start;
   .menu-icon {
     display: none;
   }
   .logo {
     width: 20%;
     text-align: center;
-    img {
-      max-width: 50%;
-    }
   }
-  .pages-link {
-    width: 40%;
-    text-align: right;
+  .links {
+    &.link1 {
+      width: 40%;
+      text-align: right;
+    }
+    &.link2 {
+      width: 30%;
+      text-align: left;
+    }
     a {
       text-decoration: none;
-      margin: 15px;
       font-family: var(--font-title);
       color: var(--main-color);
+      margin: 0px 15px;
       font-size: 30px;
-      text-transform: capitalize;
-      transition: 0.3s;
-      padding-bottom: 5px;
       position: relative;
-
+      text-transform: capitalize;
       &::after {
         left: 0;
         top: 100%;
@@ -207,154 +154,154 @@ export default {
         }
       }
     }
-    &.two {
-      width: 30%;
-      text-align: left;
-    }
   }
-  .translate {
+  .lang {
     width: 10%;
-    list-style: none;
-
-    li {
-      display: inline-block;
-      margin: 5px;
-      color: var(--seconed-color);
-      font-weight: bold;
-      text-transform: uppercase;
-      cursor: pointer;
-      background-color: var(--main-color);
-      padding: 5px;
+    button {
+      background-color: transparent;
+      outline: none;
+      display: flex;
+      border: none;
+      justify-content: center;
+      span {
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        color: var(--main-color);
+      }
     }
   }
   &.navbar-fixed {
     position: fixed;
     width: 100%;
-    background-color: rgba($color: #eee3c7, $alpha: 0.9);
-    transition: 0.3s;
-    .menu-icon {
-      color: var(--seconed-color);
-    }
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #eee3c7, $alpha: 0.8);
     .logo {
       img {
-        max-width: 30%;
+        width: 30%;
       }
     }
-    .pages-link {
+    .links {
       a {
         color: var(--seconed-color);
+        margin: 0px 15px;
         font-size: 25px;
         &::after {
           background-color: var(--seconed-color);
         }
       }
     }
-    .translate {
-      li {
-        color: var(--main-color);
-        font-weight: 400;
-        background-color: var(--seconed-color);
-        padding: 3px;
-        font-size: 13px;
-      }
-    }
   }
-}
-@media (max-width: 991px) {
-  .navbar-mini {
-    padding: 0;
-    display: block;
-    position: fixed;
-    z-index: 1050505;
-    background-color: var(--main-color);
-    width: 100%;
-    left: -100%;
-    top: 0;
-    height: 100vh;
-    border-right: 1px solid var(--seconed-color);
-    transition: 0.5s;
-    &.active {
-      left: 0%;
-    }
-    .pages-link-mini {
-      list-style: none;
-      width: 100%;
-      padding-left: 20px;
-      li {
-        margin: 20px 0px 0px 0px;
-        &:nth-of-type(1) {
-          margin: 0;
-        }
-        a {
-          color: var(--seconed-color);
-          text-decoration: none;
-          font-weight: bold;
-          font-family: var(--font-title);
-          font-size: 20px;
-        }
-      }
-    }
-    .close-button {
-      text-align: right;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      a {
-        text-align: left;
-        width: 70%;
-        display: inline-block;
-      }
-      svg {
-        width: 20%;
-        display: inline-block;
-        text-align: right;
-        font-weight: bold;
-        font-size: 23px;
-        margin: 10px;
-        cursor: pointer;
+  .lang {
+    button {
+      span {
         color: var(--seconed-color);
       }
     }
   }
+}
+
+@media (max-width: 991px) {
   .navbar {
-    .logo {
-      width: 30%;
-      text-align: center;
-      img {
-        max-width: 50%;
-      }
-    }
     .menu-icon {
       display: block;
-      width: 35%;
-      height: 40px;
       svg {
         color: var(--main-color);
-        font-weight: bold;
         font-size: 25px;
-        line-height: 25px;
-        cursor: pointer;
       }
     }
-    .pages-link {
+    .logo {
+      width: 80%;
+      text-align: left;
+      img {
+        width: 30%;
+      }
+    }
+    .links {
       display: none;
     }
-    .translate {
-      width: 35%;
-      text-align: right;
-      li {
-        margin: 4px;
-        padding: 3px;
-      }
+    .lang {
+      display: none;
     }
     &.navbar-fixed {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba($color: #eee3c7, $alpha: 0.8);
+      .logo {
+        img {
+          width: 25%;
+        }
+      }
       .menu-icon {
         svg {
           color: var(--seconed-color);
         }
       }
-      .logo {
-        img {
-          max-width: 40%;
+    }
+  }
+
+  .mini-navbar {
+    display: block;
+    position: fixed;
+    padding: 5px;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #eee3c7, $alpha: 1);
+    z-index: 9999;
+    transition: 0.3s;
+    &.active {
+      transition: 0.3s;
+      left: 0%;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      a {
+        width: 80%;
+      }
+      .close {
+        width: 20%;
+        text-align: center;
+        padding: 5px;
+        line-height: 40px;
+        svg {
+          color: var(--seconed-color);
+          font-size: 30px;
+        }
+      }
+    }
+    .links {
+      padding-top: 25px;
+      padding: 5px;
+      border-bottom: 1px solid var(--seconed-color);
+      a {
+        display: block;
+        text-decoration: none;
+        font-family: var(--font-title);
+        color: var(--seconed-color);
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+    }
+    .lang {
+      text-align: center;
+      button {
+        background-color: transparent;
+        outline: none;
+        display: flex;
+        border: none;
+        justify-content: center;
+        span {
+          height: 40px;
+          line-height: 40px;
+          font-weight: bold;
+          color: var(--seconed-color);
         }
       }
     }

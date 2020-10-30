@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <navbar v-bind:navbarStauts="navbarStauts" />
+    <navbar />
     <introPage :introPage="introPage" />
     <sectionFirst />
     <sectionSeconed />

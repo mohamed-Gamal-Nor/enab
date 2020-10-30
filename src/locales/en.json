@@ -155,6 +155,129 @@
         "Oven": "Oven",
         "Sweets": "Sweets",
         "Drinkes": "Drinkes"
+    },
+    "introMenu":{
+        "head":"Download Menu",
+        "head1":"Scan the code with the phone's camera to download the menu",
+        "buttonDownload":"Download Menu Now"
+    },
+    "menu":{
+        "breakFast":{
+            "heading": "Breakfast",
+            "paragraph": "Leave the green plate on us",
+            "items": {
+                "item1": {
+                    "name": "Fava Beans",
+                    "price": "36.00 L.E",
+                    "desc": "Labanese Stewed fave beans"
+                },
+                "item2": {
+                    "name": "Chickpea Medammas (Balila)",
+                    "price": "42.00 L.E",
+                    "desc": "steamed chickpeas marinated in cumin,garlic,olive oil,spices and pine nuts"
+                },
+                "item3": {
+                    "name": "Falafel",
+                    "price": "32.00 L.E",
+                    "desc": "falafel with tarator"
+                },
+                "item4": {
+                    "name": "Labneh with olive oil",
+                    "price": "36.00 L.E",
+                    "desc": "falafel with tarator"
+                },
+                "item5": {
+                    "name": "Labneh with vegetables",
+                    "price": "38.00 L.E",
+                    "desc": "Labneh with vegetables"
+                },
+                "item6": {
+                    "name": "Goat cheese",
+                    "price": "45.00 L.E",
+                    "desc": "Goat cheese"
+                },
+                "item7": {
+                    "name": "Goat Labneh",
+                    "price": "42.00 L.E",
+                    "desc": "Goat Labneh"
+                },
+                "item8": {
+                    "name": "grilled halloumi",
+                    "price": "47.00 L.E",
+                    "desc": "grilled halloumi"
+                },
+                "item9": {
+                    "name": "Mafraka eggs and potatoes",
+                    "price": "40.00 L.E",
+                    "desc": "scrambled eggs mixed with potato cubes green onion, pepper"
+                },
+                "item10": {
+                    "name": "eggs & lebanese sausages",
+                    "price": "44.00 L.E",
+                    "desc": "eggs & lebanese sausages"
+                },
+                "item11": {
+                    "name": "eggs & soujok",
+                    "price": "44.00 L.E",
+                    "desc": "eggs & soujok"
+                },
+                "item12": {
+                    "name": "eggs & basterma",
+                    "price": "44.00 L.E",
+                    "desc": "eggs & basterma"
+                },
+                "item13": {
+                    "name": "Feta in the oven",
+                    "price": "51.00 L.E",
+                    "desc": "feta cheese with tomato and thyme"
+                },
+                "item14": {
+                    "name": "thyme manouche",
+                    "price": "44.00 L.E",
+                    "desc": "thyme manouche"
+                },
+                "item15": {
+                    "name": "Manoushe thyme with onions and tomatoes",
+                    "price": "44.00 L.E",
+                    "desc": "Manoushe thyme with onions and tomatoes"
+                },
+                "item16": {
+                    "name": "akawy cheese manouche",
+                    "price": "46.00 L.E",
+                    "desc": "akawy cheese manouche"
+                },
+                "item17": {
+                    "name": "kashawan cheese manouche",
+                    "price": "47.00 L.E",
+                    "desc": "kashawan cheese manouche"
+                },
+                "item18": {
+                    "name": "cheese manouche mix",
+                    "price":"47.00 L.E",
+                    "desc": "cheese manouche mix"
+                },
+                "item19": {
+                    "name": "cheese & thyme manouche",
+                    "price": "46.00 L.E",
+                    "desc": "cheese & thyme manouche"
+                },
+                "item20": {
+                    "name": "spinach sfiha",
+                    "price": "44.00 L.E",
+                    "desc": "spinach sfiha"
+                },
+                "item21": {
+                    "name": "cheese & sojouk manouche",
+                    "price": "60.00 L.E",
+                    "desc": "cheese & sojouk manouche"
+                },
+                "item22": {
+                    "name": "lahem bi ajin",
+                    "price": "59.00 L.E",
+                    "desc": "lahem bi ajin"
+                }
+            }
+        }
     }
 
 }
