@@ -92,6 +92,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   padding-top: 50px;
+  background-color: #fff;
   .footer-text {
     text-align: center;
     padding-bottom: 25px;

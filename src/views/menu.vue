@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="menu">
     <navbar />
     <introPage :introPage="introPage" />
     <sectionFirst />

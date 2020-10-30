@@ -1,7 +1,14 @@
 <template lang="pug">
 .menu-item
   .container-fluid
-    .item-part(v-for="catogry in enabMenu")
+    .item-link
+      .link(v-for="(catogry, i) in enabMenu", @click="classActive(i)")
+        a {{ $t(catogry.heading) }}
+    .item-part(
+      v-for="(catogry, i) in enabMenu",
+      :id="i",
+      :class="catogry.class"
+    )
       .img
         img(src="../../assets/logo.png", alt="alt")
       .text
@@ -24,19 +31,61 @@ export default {
       enabMenu: menu,
     };
   },
+  methods: {
+    classActive(id) {
+      let item = document.querySelectorAll(".menu-item .item-part");
+      item.forEach((ele) => {
+        ele.classList.remove("active");
+      });
+      document.getElementById(id).classList.add("active");
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .menu-item {
   padding-top: 50px;
-  .item-part {
+
+  .container-fluid {
+    position: relative;
+    height: 120vh;
+  }
+  .item-link {
     text-align: center;
-    
-    &:nth-of-type(2n+1){
-        background-image: url('../../assets/Home/seconed-back.png');
-        background-position: center top;
-        background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .link {
+      padding: 10px;
+      background-color: #fff;
+      color: var(--seconed-color);
+      border: 1px solid var(--seconed-color);
+      margin: 0 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      a {
+        font-family: var(--main-font);
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      &:hover {
+        background-color: var(--seconed-color);
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+      }
+    }
+  }
+  .item-part {
+    padding-top: 50px;
+    text-align: center;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.3s;
+    &.active {
+      opacity: 1;
+      transition: 0.3s;
     }
     .img {
       margin-bottom: 15px;

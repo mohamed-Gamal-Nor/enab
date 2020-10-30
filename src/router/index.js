@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import gallery from "../views/gallery.vue";
 import menu from "../views/menu.vue";
+import store from "../views/store.vue";
+import faq from "../views/faq.vue";
 import i18n from "../i18n";
 
 Vue.use(VueRouter);
@@ -42,6 +44,18 @@ const routes = [{
                 name: "menu",
                 component: menu,
                 meta: { title: "Enab Beirut - Menu" }
+            },
+            {
+                path: "store",
+                name: "store",
+                component: store,
+                meta: { title: "Enab Beirut - Stores" }
+            },
+            {
+                path: "faq",
+                name: "faq",
+                component: faq,
+                meta: { title: "Enab Beirut - Faq" }
             }
         ]
     }
@@ -49,7 +63,6 @@ const routes = [{
 
 const router = new VueRouter({
     routes,
-    mode: "history",
     base: process.env.BASE_URL
 });
 

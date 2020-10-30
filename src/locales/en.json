@@ -4,8 +4,8 @@
         "about": "About",
         "MenuBook": "Menu",
         "gallery": "Gallery",
-        "contact": "Contact",
         "stores": "Stores",
+        "faq": "Faq",
         "map": "Map"
     },
 
@@ -107,7 +107,9 @@
     "intro-page": {
         "about": "About Us",
         "gallery": "Gallery",
-        "menu": "Menu"
+        "menu": "Menu",
+        "store": "Stores",
+        "faq": "Faq"
     },
     "about-counter": {
         "count1": {
@@ -156,13 +158,13 @@
         "Sweets": "Sweets",
         "Drinkes": "Drinkes"
     },
-    "introMenu":{
-        "head":"Download Menu",
-        "head1":"Scan the code with the phone's camera to download the menu",
-        "buttonDownload":"Download Menu Now"
+    "introMenu": {
+        "head": "Download Menu",
+        "head1": "Scan the code with the phone's camera to download the menu",
+        "buttonDownload": "Download Menu Now"
     },
-    "menu":{
-        "breakFast":{
+    "menu": {
+        "breakFast": {
             "heading": "Breakfast",
             "paragraph": "Leave the green plate on us",
             "items": {
@@ -184,17 +186,17 @@
                 "item4": {
                     "name": "Labneh with olive oil",
                     "price": "36.00 L.E",
-                    "desc": "falafel with tarator"
+                    "desc": "labneh with garlic or plain"
                 },
                 "item5": {
                     "name": "Labneh with vegetables",
                     "price": "38.00 L.E",
-                    "desc": "Labneh with vegetables"
+                    "desc": "Labneh mixed with tomato cucmber,aromatic greens"
                 },
                 "item6": {
                     "name": "Goat cheese",
                     "price": "45.00 L.E",
-                    "desc": "Goat cheese"
+                    "desc": "goat chesse with green thyme, olive"
                 },
                 "item7": {
                     "name": "Goat Labneh",
@@ -253,7 +255,7 @@
                 },
                 "item18": {
                     "name": "cheese manouche mix",
-                    "price":"47.00 L.E",
+                    "price": "47.00 L.E",
                     "desc": "cheese manouche mix"
                 },
                 "item19": {
@@ -275,6 +277,82 @@
                     "name": "lahem bi ajin",
                     "price": "59.00 L.E",
                     "desc": "lahem bi ajin"
+                }
+            }
+        },
+        "coldMezza": {
+            "heading": "cold mezza",
+            "paragraph": "Enab Beirut is the story of every Lebanese home",
+            "items": {
+                "item1": {
+                    "name": "hummos",
+                    "price": "40.00 L.E",
+                    "desc": "mashed chickpeas with tehine , olive oil"
+                },
+                "item2": {
+                    "name": "spicy hummos",
+                    "price": "41.00 L.E",
+                    "desc": "mashed chickpeas , spicy paste"
+                },
+                "item3": {
+                    "name": "hummos meat and pinenuts",
+                    "price": "59.00 L.E",
+                    "desc": "mashed chickpeas topped with meat , pine nuts"
+                },
+                "item4": {
+                    "name": "baba ghannouj",
+                    "price": "39.00 L.E",
+                    "desc": "grilled and crushed eggplant mixed with tahina, and pomegranate"
+                },
+                "item5": {
+                    "name": "warak enab",
+                    "price": "44.00 L.E",
+                    "desc": "vine leaves rolled with rice, tomato,olive oil"
+                },
+                "item6": {
+                    "name": "Goat cheese",
+                    "price": "45.00 L.E",
+                    "desc": "goat chesse with green thyme, olive"
+                },
+                "item7": {
+                    "name": "Labneh with vegetables",
+                    "price": "38.00 L.E",
+                    "desc": "Labneh mixed with tomato cucmber,aromatic greens"
+                },
+                "item8": {
+                    "name": "Labneh with olive oil",
+                    "price": "36.00 L.E",
+                    "desc": "labneh with garlic or plain"
+                },
+                "item9": {
+                    "name": "Goat Labneh",
+                    "price": "42.00 L.E",
+                    "desc": "Goat Labneh"
+                },
+                "item10": {
+                    "name": "shanklish",
+                    "price": "34.00 L.E",
+                    "desc": "shanklish with onion ,tomato,olive oil, and parsley"
+                },
+                "item11": {
+                    "name": "batata mahrousseh",
+                    "price": "36.00 L.E",
+                    "desc": "mashed potatoes mixed with green onion ,olive oil"
+                },
+                "item12": {
+                    "name": "moudardara",
+                    "price": "31.00 L.E",
+                    "desc": "lentil moudardara with rice, onions,olive oil"
+                },
+                "item13": {
+                    "name": "loubieh bil zeit",
+                    "price": "32.00 L.E",
+                    "desc": "green  beans cooked with tomato sauce and garlic"
+                },
+                "item14": {
+                    "name": "mhamarra",
+                    "price": "44.00 L.E",
+                    "desc": "crushed walnuts with mixed spicy paste"
                 }
             }
         }

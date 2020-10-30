@@ -7,9 +7,11 @@
         zIndex="505050"
       />
     </div>
+
     <vue-page-transition name="overlay-left-right">
-        <router-view></router-view>
+      <router-view> </router-view>
     </vue-page-transition>
+
     <buttonUp />
     <footter />
     <loader />

@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="gallery">
     <navbar />
     <introPage :introPage="introPage" />
     <imageShuffle />
