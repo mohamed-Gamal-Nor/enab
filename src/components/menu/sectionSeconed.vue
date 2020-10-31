@@ -46,11 +46,6 @@ export default {
 <style lang="scss" scoped>
 .menu-item {
   padding-top: 50px;
-
-  .container-fluid {
-    position: relative;
-    height: 120vh;
-  }
   .item-link {
     text-align: center;
     display: flex;
@@ -79,13 +74,15 @@ export default {
   .item-part {
     padding-top: 50px;
     text-align: center;
-    position: absolute;
+    //position: absolute;
     background-color: #fff;
     opacity: 0;
     transition: 0.3s;
+    display: none;
     &.active {
       opacity: 1;
       transition: 0.3s;
+      display: block;
     }
     .img {
       margin-bottom: 15px;
