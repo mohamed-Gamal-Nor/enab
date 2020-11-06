@@ -6,6 +6,7 @@
     <seconedSection />
     <forSection />
     <thiredSection />
+    <loader />
   </div>
 </template>
 
@@ -16,7 +17,7 @@ import firstSection from "../components/about/firstSection.vue";
 import seconedSection from "../components/about/seconedSection.vue";
 import thiredSection from "../components/about/thiredSection.vue";
 import forSection from "../components/home/fore-section.vue";
-
+import loader from "../components/loader.vue";
 export default {
   name: "About",
   components: {
@@ -26,6 +27,7 @@ export default {
     seconedSection,
     thiredSection,
     forSection,
+    loader,
   },
   data() {
     return {

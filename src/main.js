@@ -9,6 +9,8 @@ import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
 import VuePageTransition from "vue-page-transition";
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'  
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faUtensils,
@@ -23,7 +25,8 @@ import {
     faMobileAlt,
     faSmileBeam,
     faBookOpen,
-    faStore
+    faStore,
+    faPhoneAlt
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faFacebookF,
@@ -47,7 +50,8 @@ library.add(
     faMobileAlt,
     faSmileBeam,
     faBookOpen,
-    faStore
+    faStore,
+    faPhoneAlt
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(BootstrapVue);
@@ -88,3 +92,5 @@ Vue.use(VueScrollTo, {
     x: false,
     y: true
 });
+
+AOS.init();

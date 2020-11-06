@@ -39,6 +39,7 @@ export default {
         font-weight: bold;
         font-size: 60px;
         color: #fff;
+        text-transform: capitalize;
       }
       .link {
         margin-top: 15px;
@@ -51,6 +52,7 @@ export default {
           margin-right: 15px;
         }
         span {
+            text-transform: capitalize;
           &:nth-of-type(1) {
             font-weight: bold;
             color: #fff;

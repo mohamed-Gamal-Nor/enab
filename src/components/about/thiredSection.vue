@@ -2,12 +2,12 @@
 .history
   .ovarlay
   .container
-    .history-content
+    .history-content(data-aos="fade-left")
       .img
         img(src="../../assets/about/our-year.jpg", alt="alt")
       .our-history
-        h4 OUR JOURNEY
-        h1 Check Our History
+        h4 {{ $t("about-history.head1") }}
+        h1 {{ $t("about-history.head2") }}
         .year-history
           .year-content(v-for="our in ourData", :key="our.lenght")
             .year

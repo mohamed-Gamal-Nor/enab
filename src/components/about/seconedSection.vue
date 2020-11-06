@@ -2,7 +2,7 @@
 .about-counter
   .ovarlay
   .container
-    .counter
+    .counter(data-aos="fade-right")
       .count(v-for="count in counterData", :key="count.lenght")
         .icon
           font-awesome-icon(:icon="count.icon")

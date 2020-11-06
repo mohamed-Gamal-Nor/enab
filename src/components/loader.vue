@@ -1,7 +1,7 @@
 <template lang="pug">
     .loader(v-if="show")
         fulfilling-bouncing-circle-spinner( :animation-duration="2000" :size="100" color="#eee3c7")
-        h1 Loading Page...
+        h1 {{ $t("introloading") }}
 </template>
 <script>
 import { FulfillingBouncingCircleSpinner } from 'epic-spinners'

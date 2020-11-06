@@ -1,19 +1,19 @@
 <template lang="pug">
 .welocme-store
   .container
-    .content
+    .content(data-aos="zoom-in")
       .img
         img(src="../../assets/about/firstSection.jpg", alt="alt")
       .message
         .content
           .heading
-            h6 our story
-            h1 Welcome To Enab Beirut
+            h6 {{ $t('ourStory.title') }}
+            h1 {{ $t('ourStory.litleTitle') }}
             span &diams; &diams; &diams; &diams; &diams; &diams;
           .paragraph
             p {{ $t('ourStory.paragraph') }}
           .logo
-            h4 Enab Beirut Team
+            h4 {{ $t('ourStory.team') }}
             img(src="../../assets/logo.png", alt="alt")
 </template>
 <script>

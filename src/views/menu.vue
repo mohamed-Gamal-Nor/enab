@@ -4,6 +4,7 @@
     <introPage :introPage="introPage" />
     <sectionFirst />
     <sectionSeconed />
+    <loader />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import navbar from "../components/navbar.vue";
 import introPage from "../components/introPage.vue";
 import sectionFirst from "../components/menu/sectionFirst.vue";
 import sectionSeconed from "../components/menu/sectionSeconed.vue";
+import loader from "../components/loader.vue";
 export default {
   name: "About",
   components: {
@@ -19,6 +21,7 @@ export default {
     introPage,
     sectionFirst,
     sectionSeconed,
+    loader,
   },
   data() {
     return {

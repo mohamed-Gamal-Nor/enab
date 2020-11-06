@@ -11,10 +11,8 @@ div
       router-link(:to="`/${$i18n.locale}/about`") {{ $t('menuLinks.about') }}
       router-link(:to="`/${$i18n.locale}/gallery`") {{ $t('menuLinks.gallery') }}
       router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
-      router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}
-      router-link(:to="`/${$i18n.locale}/about`") {{ $t('menuLinks.about') }}
-      router-link(:to="`/${$i18n.locale}/gallery`") {{ $t('menuLinks.gallery') }}
-      router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
+      router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.branches') }}
+      router-link(:to="`/${$i18n.locale}/faq`") {{ $t('menuLinks.faq') }}
     .lang(v-if="$i18n.locale == 'en'")
       button(@click="setLocale('ar')")
         country-flag(country="eg")
@@ -34,7 +32,7 @@ div
         router-link(:to="`/${$i18n.locale}`")
           img(src="../assets/logo.png")
       .links.link2
-        router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.stores') }}
+        router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.branches') }}
         router-link(:to="`/${$i18n.locale}/faq`") {{ $t('menuLinks.faq') }}
       .lang(v-if="$i18n.locale == 'en'")
         button(@click="setLocale('ar')")

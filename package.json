@@ -16,6 +16,7 @@
     "@growthbunker/vueflags": "^0.1.14",
     "@guillaumebriday/vue-scroll-progress-bar": "^1.0.0",
     "animate.css": "^4.1.0",
+    "aos": "^2.3.4",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.16.0",

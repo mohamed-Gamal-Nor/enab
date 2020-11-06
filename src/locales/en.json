@@ -1,10 +1,11 @@
 {
+    "introloading":"Loading Page...",
     "menuLinks": {
         "home": "Home",
         "about": "About",
         "MenuBook": "Menu",
         "gallery": "Gallery",
-        "stores": "Stores",
+        "branches": "Branches",
         "faq": "Faq",
         "map": "Map"
     },
@@ -33,7 +34,8 @@
         "litleTitle": "Welcome To Enab Beriut",
         "paragraph": "Enab Beirut is the story of every Lebanese house, the most famous Lebanese chain of restaurants in Egypt and Cairo, in terms of authentic Lebanese food and juices in the Lebanese way. The place is very quiet to relax and change the mood with the Lebanese house decor. Enab Beirut .. the story of every Lebanese house",
         "countFood": "Food items",
-        "countbev": "Beverages"
+        "countbev": "Beverages",
+        "team":"Enab Beirut Team"
     },
     "ourExlosive": {
         "intro": {
@@ -108,7 +110,7 @@
         "about": "About Us",
         "gallery": "Gallery",
         "menu": "Menu",
-        "store": "Stores",
+        "branches": "branches",
         "faq": "Faq"
     },
     "about-counter": {
@@ -130,6 +132,8 @@
         }
     },
     "about-history": {
+        "head1":"OUR JOURNEY",
+        "head2":"Check Our History",
         "branch1": {
             "head": "Enab Beirut Al-Rehab City Square",
             "paragraph": "The opening of our first branch in our beloved Egypt, in Al Rehab City, City Square Mall"
