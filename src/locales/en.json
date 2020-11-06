@@ -1,5 +1,5 @@
 {
-    "introloading":"Loading Page...",
+    "introloading": "Loading Page...",
     "menuLinks": {
         "home": "Home",
         "about": "About",
@@ -9,13 +9,11 @@
         "faq": "Faq",
         "map": "Map"
     },
-
     "slider": {
         "slider1": {
             "firstHead": "Welcome To Enab Beirut",
             "seconedHead": "Lebanese restaurant in Egypt",
             "paragraph": "The most famous Lebanese food chain in Egypt is waiting for you to visit us at the nearest branch"
-
         },
         "slider2": {
             "firstHead": "Best Lebanese Food",
@@ -35,7 +33,7 @@
         "paragraph": "Enab Beirut is the story of every Lebanese house, the most famous Lebanese chain of restaurants in Egypt and Cairo, in terms of authentic Lebanese food and juices in the Lebanese way. The place is very quiet to relax and change the mood with the Lebanese house decor. Enab Beirut .. the story of every Lebanese house",
         "countFood": "Food items",
         "countbev": "Beverages",
-        "team":"Enab Beirut Team"
+        "team": "Enab Beirut Team"
     },
     "ourExlosive": {
         "intro": {
@@ -132,8 +130,8 @@
         }
     },
     "about-history": {
-        "head1":"OUR JOURNEY",
-        "head2":"Check Our History",
+        "head1": "OUR JOURNEY",
+        "head2": "Check Our History",
         "branch1": {
             "head": "Enab Beirut Al-Rehab City Square",
             "paragraph": "The opening of our first branch in our beloved Egypt, in Al Rehab City, City Square Mall"
@@ -359,7 +357,147 @@
                     "desc": "crushed walnuts with mixed spicy paste"
                 }
             }
+        },
+        "hotMezza": {
+            "heading": "Hot Mezza",
+            "paragraph": "You are the gifts in ... the boxes",
+            "items": {
+                "item1": {
+                    "name": "chicken wings",
+                    "price": "44.00 L.E",
+                    "desc": "chicken wings fried or with coriander , garlic and lemon"
+                },
+                "item2": {
+                    "name": "beef cuts",
+                    "price": "62.00 L.E",
+                    "desc": "pan-fried meat cubes with lemon or pomegranate"
+                },
+                "item3": {
+                    "name": "sawdat djeij",
+                    "price": "61.00 L.E",
+                    "desc": "chicken liver sauteed with lemon or pomegranate"
+                },
+                "item4": {
+                    "name": "chicken cuts",
+                    "price": "51.00 L.E",
+                    "desc": "pan-fried chicken breast cubes with lemon coriander and garlic"
+                },
+                "item5": {
+                    "name": "cheese rolls (6 pcs)",
+                    "price": "52.00 L.E",
+                    "desc": "deep fried or grilled cheese rolls in special crusty dough"
+                },
+                "item6": {
+                    "name": "basterma cheese rolls (6 pcs)",
+                    "price": "55.00 L.E",
+                    "desc": "deep fried or grilled cheese rolls stuffed with basterma in special crusty dough"
+                },
+                "item7": {
+                    "name": "mix rolls (6 pcs)",
+                    "price": "53.00 L.E",
+                    "desc": "combination of cheese rolls and basterma rolls"
+                },
+                "item8": {
+                    "name": "makanek labanese sausages lemon",
+                    "price": "61.00 L.E",
+                    "desc": "labanese sausages sauteed with lemon"
+                },
+                "item9": {
+                    "name": "makanek labanese sausages pomegranate",
+                    "price": "64.00 L.E",
+                    "desc": "labanese sausages sauteed with pomegranate"
+                },
+                "item10": {
+                    "name": "grilled kebbeh with labneh",
+                    "price": "52.00 L.E",
+                    "desc": "grilled kebbeh stuffed with labneh"
+                },
+                "item11": {
+                    "name": "grilled kebbeh with kawarma",
+                    "price": "52.00 L.E",
+                    "desc": "grilled kebbeh stuffed with kawarma"
+                },
+                "item12": {
+                    "name": "batata coriander",
+                    "price": "45.00 L.E",
+                    "desc": "potato cubes sauteed with coriander,garlic,chilly spices"
+                },
+                "item13": {
+                    "name": "batata cubes",
+                    "price": "42.00 L.E",
+                    "desc": "fried potato cubes with onion rings and paprika"
+                },
+                "item14": {
+                    "name": "birds",
+                    "price": "205.00 L.E",
+                    "desc": "pan-fried birds cooked with lemon or pomegranate"
+                },
+                "item15": {
+                    "name": "kebbeh in spices",
+                    "price": "51.00 L.E",
+                    "desc": "fried kebbeh stuffed with chilly spices"
+                },
+                "item16": {
+                    "name": "soujok hot pot",
+                    "price": "57.00 L.E",
+                    "desc": "seasoned soujok in hot pot"
+                },
+                "item17": {
+                    "name": "kebbeh akras",
+                    "price": "57.00 L.E",
+                    "desc": "stuffed kebbeh akras with meat,pinenuts"
+                },
+                "item18": {
+                    "name": "mante",
+                    "price": "67.00 L.E",
+                    "desc": "dough stuffed with minced meat served with yogurt and spicy sauce"
+                },
+                "item19": {
+                    "name": "djeij w batata",
+                    "price": "42.00 L.E",
+                    "desc": "sauteed chicken with potato mix and almonds"
+                },
+                "item20": {
+                    "name": "Grilled Halloumi",
+                    "price": "47.00 L.E",
+                    "desc": "traditional grilled halloumi cheese"
+                },
+                "item21": {
+                    "name": "fried eggs with basterma",
+                    "price": "44.00 L.E",
+                    "desc": "fried eggs mixed with basterma or kawarma"
+                },
+                "item22": {
+                    "name": "fried eggs with soujok or sausages",
+                    "price": "44.00 L.E",
+                    "desc": "fried eggs mixed with soujok or sausages"
+                },
+                "item23": {
+                    "name": "Mafraka Eggs And Potatoes mix",
+                    "price": "40.00 L.E",
+                    "desc": "Scrambled Eggs Mixed With Potato Cubes Green Onion, Pepper"
+                },
+                "item24": {
+                    "name": "fattet hummos",
+                    "price": "65.00 L.E",
+                    "desc": "steamed chickpeas soked in garlic yogurt, toasted lebanese bread ,pine nuts"
+                },
+                "item25": {
+                    "name": "fattet bazenjan",
+                    "price": "58.00 L.E",
+                    "desc": "fried eggplant cubes soaked in garlic yogurt ,toasted lebanese bread,pine nuts"
+                },
+                "item26": {
+                    "name": "Chickpea Medammas (Balila)",
+                    "price": "42.00 L.E",
+                    "desc": "Steamed Chickpeas Marinated In Cumin,Garlic,Olive Oil,Spices And Pine Nuts"
+                },
+                "item27": {
+                    "name": "arnabit miqli",
+                    "price": "39.00 L.E",
+                    "desc": "fried cauliflower served with tarator"
+                }
+            }
         }
     }
-
 }
