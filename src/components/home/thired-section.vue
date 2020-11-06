@@ -42,22 +42,22 @@ export default {
     return {
       ourData: [
         {
-          image: require("@/assets/Home/dinner.png"),
+          image: "https://i.ibb.co/NpRrWT0/dinner.png",
           heading: "ourExlosive.our1.heading",
           pragraph: "ourExlosive.our1.pargraph",
         },
         {
-          image: require("@/assets/Home/serv.png"),
+          image: "https://i.ibb.co/YhpLKcx/serv.png",
           heading: "ourExlosive.our2.heading",
           pragraph: "ourExlosive.our2.pargraph",
         },
         {
-          image: require("@/assets/Home/delv.png"),
+          image: "https://i.ibb.co/p2vwV8n/delv.png",
           heading: "ourExlosive.our3.heading",
           pragraph: "ourExlosive.our3.pargraph",
         },
         {
-          image: require("@/assets/Home/menu.png"),
+          image: "https://i.ibb.co/CwNccff/menu.png",
           heading: "ourExlosive.our4.heading",
           pragraph: "ourExlosive.our4.pargraph",
         },
@@ -93,7 +93,7 @@ export default {
 
 <style lang="scss" scoped>
 .our-exclusive {
-  background-image: url("../../assets/Home/our-services.jpg");
+  background-image: url("https://i.ibb.co/HhGqsc3/our-services.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -116,8 +116,8 @@ export default {
       left: 50%;
       top: 0px;
       width: 254px;
-      background: url(../../assets/Home/pattern-white.png) no-repeat center
-        center;
+      background: url("https://i.ibb.co/C1bp3nn/pattern-white.png") no-repeat
+        center center;
       -webkit-transform: translateX(-50%) rotate(180deg);
       -moz-transform: translateX(-50%) rotate(180deg);
       -ms-transform: translateX(-50%) rotate(180deg);

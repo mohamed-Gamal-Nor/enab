@@ -1,23 +1,30 @@
 <template>
   <swiper :options="swiperOption" @slideChange="onSlideChange">
-    <swiper-slide class="swiper-slide" v-for="slide in sliders" :key="slide.video">
+    <swiper-slide
+      class="swiper-slide"
+      v-for="slide in sliders"
+      :key="slide.video"
+    >
       <video autoplay loop muted preload="auto">
         <source :src="slide.video" type="video/mp4" />
-        <source :src="slide.video" type="video/ogg" />Your browser does not support the video tag.
+        <source :src="slide.video" type="video/ogg" />
+        Your browser does not support the video tag.
       </video>
       <div class="overlay">
         <div class="container">
           <div class="slider-intro slide-top">
-            <h3>{{$t(slide.firstHead)}}</h3>
-            <h1>{{$t(slide.seconedHead)}}</h1>
+            <h3>{{ $t(slide.firstHead) }}</h3>
+            <h1>{{ $t(slide.seconedHead) }}</h1>
             <div class="icon-slider">
               <div class="icon">
                 <font-awesome-icon icon="utensils" />
               </div>
             </div>
-            <p>{{$t(slide.paragraph)}}</p>
+            <p>{{ $t(slide.paragraph) }}</p>
             <button>
-              <router-link :to="{ name: 'About' }">{{$t(button)}}</router-link>
+              <router-link :to="{ name: 'About' }">{{
+                $t(button)
+              }}</router-link>
             </button>
           </div>
         </div>
@@ -42,19 +49,21 @@ export default {
     return {
       sliders: [
         {
-          video: require("@/assets/Home/slider1.mp4"),
+          video: require("@/assets/Home/slider2.mp4"),
           firstHead: "slider.slider1.firstHead",
           seconedHead: "slider.slider1.seconedHead",
           paragraph: "slider.slider1.paragraph",
         },
         {
-          video: require("@/assets/Home/slider2.mp4"),
+          video:
+            "https://cdn.videvo.net/videvo_files/video/free/2020-06/small_watermarked/200506_Kitchen%20Food_05_4k_043_preview.webm",
           firstHead: "slider.slider2.firstHead",
           seconedHead: "slider.slider2.seconedHead",
           paragraph: "slider.slider2.paragraph",
         },
         {
-          video: require("@/assets/Home/slider3.mp4"),
+          video:
+            "https://cdn.videvo.net/videvo_files/video/free/2015-05/small_watermarked/FoodPack1_12_Videvo_preview.webm",
           firstHead: "slider.slider3.firstHead",
           seconedHead: "slider.slider3.seconedHead",
           paragraph: "slider.slider3.paragraph",

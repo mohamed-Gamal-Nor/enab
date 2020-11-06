@@ -9,69 +9,21 @@
         <h1>{{ $t("album.head") }}</h1>
         <p>{{ $t("album.pragraph") }}</p>
       </div>
-      <silent-box class="album" :gallery="gallery"></silent-box>
+      <vue-picture-swipe :items="items"></vue-picture-swipe>
     </div>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import VueSilentbox from "vue-silentbox";
-Vue.use(VueSilentbox);
+import VuePictureSwipe from "vue-picture-swipe";
+Vue.component("vue-picture-swipe", VuePictureSwipe);
+import imageJson from "./image.json";
 export default {
   name: "fiveSection",
   data() {
     return {
-      gallery: [
-        {
-          src: require("@/assets/Home/album/1.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/2.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/3.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/4.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/5.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/6.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/7.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/8.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/9.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/10.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/11.jpg"),
-          thumbnailWidth: "220px",
-        },
-        {
-          src: require("@/assets/Home/album/12.jpg"),
-          thumbnailWidth: "220px",
-        },
-      ],
+      items: imageJson,
     };
   },
 };
@@ -79,12 +31,12 @@ export default {
 
 <style lang="scss" scoped>
 .enab-album {
-  background-image: url("../../assets/Home/album.jpg");
-  min-height: 100vh;
+  background-image: url("https://i.ibb.co/p16p1JF/album.jpg");
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
   position: relative;
+  padding-bottom: 50px;
   .overlay {
     position: absolute;
     width: 100%;
@@ -98,7 +50,8 @@ export default {
     left: 50%;
     top: 0px;
     width: 254px;
-    background: url(../../assets/Home/pattern-white.png) no-repeat center center;
+    background: url("https://i.ibb.co/C1bp3nn/pattern-white.png") no-repeat
+      center center;
     -webkit-transform: translateX(-50%) rotate(180deg);
     -moz-transform: translateX(-50%) rotate(180deg);
     -ms-transform: translateX(-50%) rotate(180deg);

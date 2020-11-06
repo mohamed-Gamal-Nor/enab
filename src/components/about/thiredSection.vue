@@ -2,12 +2,12 @@
 .history
   .ovarlay
   .container
-    .history-content(data-aos="fade-left")
+    .history-content
       .img
-        img(src="../../assets/about/our-year.jpg", alt="alt")
+        img(src="https://i.ibb.co/GWy6dYk/our-year.jpg", alt="alt")
       .our-history
-        h4 {{ $t("about-history.head1") }}
-        h1 {{ $t("about-history.head2") }}
+        h4 {{ $t('about-history.head1') }}
+        h1 {{ $t('about-history.head2') }}
         .year-history
           .year-content(v-for="our in ourData", :key="our.lenght")
             .year
@@ -47,8 +47,48 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.ar {
+  .history {
+    .history-content {
+      .img {
+        order: 2;
+      }
+      .our-history {
+        text-align: right;
+        .year-history {
+          .year-content {
+            .year {
+              order: 2;
+              margin-left: 20px;
+            }
+            .text {
+              width: 85%;
+              border-right: 2px solid rgba($color: #eee3c7, $alpha: 0.7);
+              border-left: none;
+              padding-right: 20px;
+              &::after {
+                content: " ";
+                position: absolute;
+                right: -10px;
+                top: 10%;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: var(--main-color);
+                border: 1px solid var(--seconed-color);
+              }
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .history {
-  background-image: url("../../assets/about/our.jpg");
+  background-image: url("https://i.ibb.co/3B34wv5/our.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

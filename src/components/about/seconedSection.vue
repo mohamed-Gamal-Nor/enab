@@ -48,7 +48,7 @@ export default {
       );
       const currentScrollPos = window.pageYOffset;
       const speed = 1;
-      if (currentScrollPos >= counterOffset - 200 ) {
+      if (currentScrollPos >= counterOffset - 200) {
         counterItem.forEach((counter) => {
           const updateCount = () => {
             const counterTarget = +counter.dataset.count;
@@ -74,7 +74,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .about-counter {
-  background-image: url("../../assets/about/counter.jpg");
+  background-image: url("https://i.ibb.co/XyRwKV4/counter.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;

@@ -10,7 +10,7 @@
       :class="catogry.class"
     )
       .img
-        img(src="../../assets/logo.png", alt="alt")
+        img(src="https://i.ibb.co/8B58bPB/logo.png", alt="alt")
       .text
         h4 {{ $t(catogry.heading) }}
         p {{ $t(catogry.paragraph) }}

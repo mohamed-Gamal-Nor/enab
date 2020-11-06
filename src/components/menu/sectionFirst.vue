@@ -2,23 +2,23 @@
 .menu
   .container
     .capture
-      h6 {{ $t("introMenu.head") }}
-      h1 {{ $t("introMenu.head1") }}
+      h6 {{ $t('introMenu.head') }}
+      h1 {{ $t('introMenu.head1') }}
       .image-menu
         div
           img(:src="gif", alt="alt")
         div
           img(:src="menuImage", alt="alt")
       .button-download
-        a(href="https://scnv.io/GkvE?qr=1", target="_blank") {{ $t("introMenu.buttonDownload") }}
+        a(href="https://scnv.io/GkvE?qr=1", target="_blank") {{ $t('introMenu.buttonDownload') }}
 </template>
 
 <script>
 export default {
   data() {
     return {
-      gif: require("@/assets/menu/menu.gif"),
-      menuImage: require("@/assets/menu/enab.jpeg"),
+      gif: "https://i.ibb.co/Ldg8Vh6/menu.gif",
+      menuImage: "https://i.ibb.co/x8vhTH0/enab.jpg",
     };
   },
 };
@@ -28,11 +28,11 @@ export default {
   .capture {
     padding-top: 50px;
     text-align: center;
-    h6{
-        font-family: var(--font-title);
-        font-size: 25px;
-        color: var(--main-color);
-        filter: brightness(90%);
+    h6 {
+      font-family: var(--font-title);
+      font-size: 25px;
+      color: var(--main-color);
+      filter: brightness(90%);
     }
     h1 {
       font-family: var(--main-title);
@@ -68,9 +68,9 @@ export default {
         text-decoration: none;
         cursor: pointer;
         transition: 0.3s;
-        &:hover{
-            background-color: var(--main-color);
-            color: var(--seconed-color);
+        &:hover {
+          background-color: var(--main-color);
+          color: var(--seconed-color);
         }
       }
     }
@@ -78,36 +78,35 @@ export default {
 }
 
 @media (max-width: 991px) {
-    .menu {
-        .capture {
-            h1 {
-                font-size: 14px;
-            }
-            .image-menu {
-                display: block;
-                div {
-                    width: 100%;
-                    &:nth-of-type(1) {
-                    text-align: center;
-                    }
+  .menu {
+    .capture {
+      h1 {
+        font-size: 14px;
+      }
+      .image-menu {
+        display: block;
+        div {
+          width: 100%;
+          &:nth-of-type(1) {
+            text-align: center;
+          }
 
-                    &:nth-of-type(2) {
-                    text-align: center;
-                    }
-                    img{
-                        width: 50%;
-                    }
-                }
-            }
-            .button-download {
-                margin-top: 20px;
-                a {
-                    
-                    padding: 10px;
-                    font-size: 11px;
-                }
-            }
+          &:nth-of-type(2) {
+            text-align: center;
+          }
+          img {
+            width: 50%;
+          }
         }
+      }
+      .button-download {
+        margin-top: 20px;
+        a {
+          padding: 10px;
+          font-size: 11px;
+        }
+      }
     }
+  }
 }
 </style>

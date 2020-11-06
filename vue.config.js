@@ -18,14 +18,5 @@ module.exports = {
         config.module
             .rule("media")
             .test(/\.(vtt|mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/);
-    },
-    publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
-    pluginOptions: {
-        i18n: {
-            locale: "en",
-            fallbackLocale: "ar",
-            localeDir: "locales",
-            enableInSFC: false
-        }
     }
 };

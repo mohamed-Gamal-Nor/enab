@@ -8,9 +8,8 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
 import VuePageTransition from "vue-page-transition";
-
-import AOS from 'aos'
-import 'aos/dist/aos.css'  
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
     faUtensils,

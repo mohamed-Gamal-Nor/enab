@@ -27,9 +27,8 @@
           </div>
         </div>
         <div class="image-story">
-            
-          <img src="@/assets/Home/store1.jpg" />
-          <img src="@/assets/Home/store2.jpg" />
+          <img src="https://i.ibb.co/nDLRFN4/store1.jpg" />
+          <img src="https://i.ibb.co/56t3gmz/store2.jpg" />
         </div>
       </div>
     </div>
@@ -76,8 +75,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ar {
+  .our-story {
+    background-position: right center;
+    .story-conent {
+      .text {
+        order: 2;
+        text-align: right;
+        h6 {
+          margin-bottom: 15px;
+        }
+        h1 {
+          margin-bottom: 15px;
+        }
+        p {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
 .our-story {
-  background-image: url("../..//assets/Home/seconed-back.png");
+  background-image: url("https://i.ibb.co/L65GzpX/seconed-back.png");
   background-repeat: no-repeat;
   background-position: left;
   min-height: 100vh;
@@ -165,7 +184,8 @@ export default {
     left: 50%;
     top: -59px;
     width: 254px;
-    background: url(../../assets/Home/pattern-white.png) no-repeat center center;
+    background: url("https://i.ibb.co/C1bp3nn/pattern-white.png") no-repeat
+      center center;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);

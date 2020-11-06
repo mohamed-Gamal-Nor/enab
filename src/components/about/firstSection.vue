@@ -1,9 +1,9 @@
 <template lang="pug">
 .welocme-store
   .container
-    .content(data-aos="zoom-in")
+    .content
       .img
-        img(src="../../assets/about/firstSection.jpg", alt="alt")
+        img(src="https://i.ibb.co/pWdcNdW/first-Section.jpg", alt="alt")
       .message
         .content
           .heading
@@ -14,7 +14,7 @@
             p {{ $t('ourStory.paragraph') }}
           .logo
             h4 {{ $t('ourStory.team') }}
-            img(src="../../assets/logo.png", alt="alt")
+            img(src="https://i.ibb.co/8B58bPB/logo.png", alt="alt")
 </template>
 <script>
 export default {
@@ -36,7 +36,7 @@ export default {
       }
     }
     .message {
-      background-image: url("../../assets/Home/seconed-back.png");
+      background-image: url("https://i.ibb.co/L65GzpX/seconed-back.png");
       background-color: #fff;
       background-repeat: no-repeat;
       background-position: center;

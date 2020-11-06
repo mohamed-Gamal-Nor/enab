@@ -3,7 +3,7 @@ div
   .mini-navbar(:class="{ active: menu }")
     .logo
       router-link(:to="`/${$i18n.locale}`")
-        img(src="../assets/logo.png")
+        img(src="https://i.ibb.co/8B58bPB/logo.png")
       .close
         font-awesome-icon(icon="times", @click="closeMenu()")
     .links
@@ -30,7 +30,7 @@ div
         router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
       .logo
         router-link(:to="`/${$i18n.locale}`")
-          img(src="../assets/logo.png")
+          img(src="https://i.ibb.co/8B58bPB/logo.png")
       .links.link2
         router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.branches') }}
         router-link(:to="`/${$i18n.locale}/faq`") {{ $t('menuLinks.faq') }}
@@ -99,6 +99,37 @@ export default {
 <style lang="scss" scoped>
 .mini-navbar {
   display: none;
+}
+.ar {
+  .navbar {
+    justify-content: center;
+    .logo {
+      order: 3;
+    }
+    .links {
+      &.link1 {
+        text-align: left;
+        order: 4;
+      }
+      &.link2 {
+        text-align: right;
+        order: 2;
+      }
+      a {
+        padding-bottom: 2px;
+      }
+    }
+    .lang {
+      order: 1;
+      button {
+        span {
+          &:nth-of-type(1) {
+            order: 2;
+          }
+        }
+      }
+    }
+  }
 }
 .navbar {
   position: absolute;
@@ -199,6 +230,32 @@ export default {
 }
 
 @media (max-width: 991px) {
+  .ar {
+    .navbar {
+      .logo {
+        text-align: right;
+      }
+    }
+    .mini-navbar {
+      .logo {
+        display: flex;
+        justify-content: center;
+        a {
+          width: 80%;
+          order: 2;
+          text-align: right;
+        }
+        .close {
+          order: 1;
+        }
+      }
+      .links {
+        a {
+          text-align: right;
+        }
+      }
+    }
+  }
   .navbar {
     .menu-icon {
       display: block;

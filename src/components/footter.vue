@@ -3,7 +3,7 @@
   .container-fluid 
     .footer-text
       .logo
-        img(src="@/assets/logo.png")
+        img(src="https://i.ibb.co/8B58bPB/logo.png")
       .text
         p {{ $t('footer.pargraph') }}
       .socail-media
@@ -49,7 +49,7 @@
       .footer-video
         h1 #Enab Beruit Video
         <vue-plyr>
-          <video poster="../assets/Home/footer-video.jpg" src="video.mp4">
+          <video poster="https://i.ibb.co/K6BdWhj/footer-video.jpg" src="video.mp4">
             <source src="../assets/Home/footer-video.mp4" type="video/mp4" size="720">
             <source src="../assets/Home/footer-video.mp4" type="video/mp4" size="1080">
           </video>
@@ -90,6 +90,53 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.ar {
+  .footer {
+    .footer-links {
+      justify-content: center;
+      .location {
+        order: 3;
+        text-align: right;
+        .address {
+          border-bottom: 1px solid rgba($color: #455c56, $alpha: 0.3);
+          max-width: 100%;
+          margin-left: 10px;
+          .info,
+          .phone {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+
+            .icon {
+              width: 2%;
+              order: 2;
+              margin-left: 10px;
+              text-align: right;
+            }
+            .text {
+              width: 98%;
+              text-align: right;
+            }
+          }
+        }
+      }
+      .opening-hours {
+        width: 30%;
+        order: 2;
+        text-align: right;
+      }
+      .footer-video {
+        width: 35%;
+        z-index: 0;
+        order: 1;
+        margin-right: 10px;
+        h1 {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
 .footer {
   padding-top: 50px;
   background-color: #fff;
@@ -126,6 +173,7 @@ export default {
     }
   }
   .footer-links {
+    justify-content: center;
     display: inline-flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -186,6 +234,31 @@ export default {
   }
 }
 @media (max-width: 991px) {
+  .ar {
+    .footer {
+      .footer-text {
+        p {
+          width: 100%;
+          font-weight: 400;
+        }
+      }
+      .footer-links {
+        display: block;
+        width: 100%;
+        .location {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .opening-hours {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .footer-video {
+          width: 100%;
+        }
+      }
+    }
+  }
   .footer {
     .footer-text {
       p {

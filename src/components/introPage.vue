@@ -5,7 +5,7 @@
       .text
         h1 {{ $t(introPage) }}
         .link
-          router-link(to="/") {{ $t('menuLinks.home') }}
+          router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}
           span -
           span {{ $t(introPage) }}
 </template>
@@ -18,9 +18,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ar {
+  .intro-page {
+    .overlay {
+      .text {
+        .link {
+          a {
+            margin-left: 15px;
+          }
+          span {
+            text-transform: capitalize;
+            &:nth-of-type(1) {
+              font-weight: bold;
+              color: #fff;
+            }
+            &:nth-of-type(2) {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .intro-page {
   min-height: 55vh;
-  background-image: url("../assets/about/intro2.jpg");
+  background-image: url("https://i.ibb.co/74h4c0f/intro2.jpg");
   background-size: cover;
   position: relative;
   .overlay {
@@ -52,7 +75,7 @@ export default {
           margin-right: 15px;
         }
         span {
-            text-transform: capitalize;
+          text-transform: capitalize;
           &:nth-of-type(1) {
             font-weight: bold;
             color: #fff;

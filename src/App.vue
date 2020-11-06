@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="$i18n.locale">
     <div>
       <vue-scroll-progress-bar
         height="4px"
@@ -7,11 +7,10 @@
         zIndex="505050"
       />
     </div>
-     <router-view> </router-view>
+    <router-view> </router-view>
 
     <buttonUp />
     <footter />
-    
   </div>
 </template>
 <script>
@@ -23,7 +22,6 @@ export default {
   components: {
     buttonUp,
     footter,
-    
   },
 };
 </script>

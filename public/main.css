@@ -1,8 +1,16 @@
 :root {
     --main-color: #eee3c7;
     --seconed-color: #455C56;
+}
+
+.en {
+    --main-font: 'PT Sans', sans-serif;
     --font-title: 'Dancing Script', cursive;
-    --main-font: 'Hind', sans-serif;
+}
+
+.ar {
+    --main-font: 'Tajawal', sans-serif;
+    --font-title: 'Aref Ruqaa', cursive;
 }
 
 * {
@@ -43,4 +51,39 @@
 .silentbox-item:hover img {
     transition: 0.3s ease-in-out;
     transform: scale(1.2);
+}
+
+
+/*gallry*/
+
+.my-gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.my-gallery figure {
+    width: 23%;
+    margin: 5px 10px;
+    height: 25%;
+    display: block;
+    height: 250px;
+    overflow: hidden;
+}
+
+.my-gallery figure img {
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .my-gallery figure {
+        width: 44%;
+        margin: 0px 5px;
+        height: 25%;
+        display: block;
+        height: 120px;
+        overflow: hidden;
+    }
 }
