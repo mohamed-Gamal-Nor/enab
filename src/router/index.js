@@ -6,7 +6,7 @@ import gallery from "../views/gallery.vue";
 import menu from "../views/menu.vue";
 import store from "../views/store.vue";
 import faq from "../views/faq.vue";
-import facebook from "../views/facebook.vue"
+import facebook from "../views/facebook.vue";
 import i18n from "../i18n";
 
 Vue.use(VueRouter);
