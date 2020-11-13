@@ -1,10 +1,8 @@
 <template>
-  <div class="menu">
+  <div class="facebook">
     <navbar />
     <introPage :introPage="introPage" />
-    <sectionFirst />
-    <sectionSeconed />
-    <sectionThird />
+    <firstSection/>
     <loader />
   </div>
 </template>
@@ -12,24 +10,19 @@
 <script>
 import navbar from "../components/navbar.vue";
 import introPage from "../components/introPage.vue";
-import sectionFirst from "../components/menu/sectionFirst.vue";
-import sectionSeconed from "../components/menu/sectionSeconed.vue";
-import sectionThird from "../components/menu/sectionThird.vue";
 import loader from "../components/loader.vue";
+import firstSection from "../components/facebook/firstSection.vue";
 export default {
   name: "About",
   components: {
     navbar,
     introPage,
-    sectionFirst,
-    sectionSeconed,
-    sectionThird,
     loader,
+    firstSection
   },
   data() {
     return {
-      navbarStauts: true,
-      introPage: "intro-page.menu",
+      introPage: "intro-page.facebook",
     };
   },
 };

@@ -334,5 +334,305 @@
                 "desc": "menu.hotMezza.items.item27.desc"
             }
         ]
+    },
+    "salads": {
+        "heading": "menu.salads.heading",
+        "paragraph": "menu.salads.paragraph",
+        "items": [{
+                "name": "menu.salads.items.item1.name",
+                "price": "menu.salads.items.item1.price",
+                "desc": "menu.salads.items.item1.desc"
+            },
+            {
+                "name": "menu.salads.items.item2.name",
+                "price": "menu.salads.items.item2.price",
+                "desc": "menu.salads.items.item2.desc"
+            },
+            {
+                "name": "menu.salads.items.item3.name",
+                "price": "menu.salads.items.item3.price",
+                "desc": "menu.salads.items.item3.desc"
+            },
+            {
+                "name": "menu.salads.items.item4.name",
+                "price": "menu.salads.items.item4.price",
+                "desc": "menu.salads.items.item4.desc"
+            },
+            {
+                "name": "menu.salads.items.item5.name",
+                "price": "menu.salads.items.item5.price",
+                "desc": "menu.salads.items.item5.desc"
+            },
+            {
+                "name": "menu.salads.items.item6.name",
+                "price": "menu.salads.items.item6.price",
+                "desc": "menu.salads.items.item6.desc"
+            }
+        ]
+    },
+    "grill": {
+        "heading": "menu.grill.heading",
+        "paragraph": "menu.grill.paragraph",
+        "items": [{
+                "name": "menu.grill.items.item1.name",
+                "price": "menu.grill.items.item1.price",
+                "desc": "menu.grill.items.item1.desc"
+            },
+            {
+                "name": "menu.grill.items.item2.name",
+                "price": "menu.grill.items.item2.price",
+                "desc": "menu.grill.items.item2.desc"
+            },
+            {
+                "name": "menu.grill.items.item3.name",
+                "price": "menu.grill.items.item3.price",
+                "desc": "menu.grill.items.item3.desc"
+            },
+            {
+                "name": "menu.grill.items.item4.name",
+                "price": "menu.grill.items.item4.price",
+                "desc": "menu.grill.items.item4.desc"
+            },
+            {
+                "name": "menu.grill.items.item5.name",
+                "price": "menu.grill.items.item5.price",
+                "desc": "menu.grill.items.item5.desc"
+            },
+            {
+                "name": "menu.grill.items.item6.name",
+                "price": "menu.grill.items.item6.price",
+                "desc": "menu.grill.items.item6.desc"
+            },
+            {
+                "name": "menu.grill.items.item7.name",
+                "price": "menu.grill.items.item7.price",
+                "desc": "menu.grill.items.item7.desc"
+            },
+            {
+                "name": "menu.grill.items.item8.name",
+                "price": "menu.grill.items.item8.price",
+                "desc": "menu.grill.items.item8.desc"
+            },
+            {
+                "name": "menu.grill.items.item9.name",
+                "price": "menu.grill.items.item9.price",
+                "desc": "menu.grill.items.item9.desc"
+            },
+            {
+                "name": "menu.grill.items.item10.name",
+                "price": "menu.grill.items.item10.price",
+                "desc": "menu.grill.items.item10.desc"
+            },
+            {
+                "name": "menu.grill.items.item11.name",
+                "price": "menu.grill.items.item11.price",
+                "desc": "menu.grill.items.item11.desc"
+            },
+            {
+                "name": "menu.grill.items.item12.name",
+                "price": "menu.grill.items.item12.price",
+                "desc": "menu.grill.items.item12.desc"
+            },
+            {
+                "name": "menu.grill.items.item13.name",
+                "price": "menu.grill.items.item13.price",
+                "desc": "menu.grill.items.item13.desc"
+            }
+        ]
+    },
+    "oven": {
+        "heading": "menu.oven.heading",
+        "paragraph": "menu.oven.paragraph",
+        "items": [{
+                "name": "menu.oven.items.item1.name",
+                "price": "menu.oven.items.item1.price",
+                "desc": "menu.oven.items.item1.desc"
+            },
+            {
+                "name": "menu.oven.items.item2.name",
+                "price": "menu.oven.items.item2.price",
+                "desc": "menu.oven.items.item2.desc"
+            },
+            {
+                "name": "menu.oven.items.item3.name",
+                "price": "menu.oven.items.item3.price",
+                "desc": "menu.oven.items.item3.desc"
+            },
+            {
+                "name": "menu.oven.items.item4.name",
+                "price": "menu.oven.items.item4.price",
+                "desc": "menu.oven.items.item4.desc"
+            },
+            {
+                "name": "menu.oven.items.item5.name",
+                "price": "menu.oven.items.item5.price",
+                "desc": "menu.oven.items.item5.desc"
+            },
+            {
+                "name": "menu.oven.items.item6.name",
+                "price": "menu.oven.items.item6.price",
+                "desc": "menu.oven.items.item6.desc"
+            },
+            {
+                "name": "menu.oven.items.item7.name",
+                "price": "menu.oven.items.item7.price",
+                "desc": "menu.oven.items.item7.desc"
+            },
+            {
+                "name": "menu.oven.items.item8.name",
+                "price": "menu.oven.items.item8.price",
+                "desc": "menu.oven.items.item8.desc"
+            },
+            {
+                "name": "menu.oven.items.item9.name",
+                "price": "menu.oven.items.item9.price",
+                "desc": "menu.oven.items.item9.desc"
+            },
+            {
+                "name": "menu.oven.items.item10.name",
+                "price": "menu.oven.items.item10.price",
+                "desc": "menu.oven.items.item10.desc"
+            },
+            {
+                "name": "menu.oven.items.item11.name",
+                "price": "menu.oven.items.item11.price",
+                "desc": "menu.oven.items.item11.desc"
+            },
+            {
+                "name": "menu.oven.items.item12.name",
+                "price": "menu.oven.items.item12.price",
+                "desc": "menu.oven.items.item12.desc"
+            },
+            {
+                "name": "menu.oven.items.item13.name",
+                "price": "menu.oven.items.item13.price",
+                "desc": "menu.oven.items.item13.desc"
+            },
+            {
+                "name": "menu.oven.items.item14.name",
+                "price": "menu.oven.items.item14.price",
+                "desc": "menu.oven.items.item14.desc"
+            }
+        ]
+    },
+    "meat": {
+        "heading": "menu.meat.heading",
+        "paragraph": "menu.meat.paragraph",
+        "items": [{
+                "name": "menu.meat.items.item1.name",
+                "price": "menu.meat.items.item1.price",
+                "desc": "menu.meat.items.item1.desc"
+            },
+            {
+                "name": "menu.meat.items.item2.name",
+                "price": "menu.meat.items.item2.price",
+                "desc": "menu.meat.items.item2.desc"
+            }
+        ]
+    },
+    "varirty": {
+        "heading": "menu.varirty.heading",
+        "paragraph": "menu.varirty.paragraph",
+        "items": [{
+                "name": "menu.varirty.items.item1.name",
+                "price": "menu.varirty.items.item1.price",
+                "desc": "menu.varirty.items.item1.desc"
+            },
+            {
+                "name": "menu.varirty.items.item2.name",
+                "price": "menu.varirty.items.item2.price",
+                "desc": "menu.varirty.items.item2.desc"
+            },
+            {
+                "name": "menu.varirty.items.item3.name",
+                "price": "menu.varirty.items.item3.price",
+                "desc": "menu.varirty.items.item3.desc"
+            },
+            {
+                "name": "menu.varirty.items.item4.name",
+                "price": "menu.varirty.items.item4.price",
+                "desc": "menu.varirty.items.item4.desc"
+            },
+            {
+                "name": "menu.varirty.items.item5.name",
+                "price": "menu.varirty.items.item5.price",
+                "desc": "menu.varirty.items.item5.desc"
+            },
+            {
+                "name": "menu.varirty.items.item6.name",
+                "price": "menu.varirty.items.item6.price",
+                "desc": "menu.varirty.items.item6.desc"
+            },
+            {
+                "name": "menu.varirty.items.item7.name",
+                "price": "menu.varirty.items.item7.price",
+                "desc": "menu.varirty.items.item7.desc"
+            }
+        ]
+    },
+    "sweets": {
+        "heading": "menu.sweets.heading",
+        "paragraph": "menu.sweets.paragraph",
+        "items": [{
+                "name": "menu.sweets.items.item1.name",
+                "price": "menu.sweets.items.item1.price",
+                "desc": "menu.sweets.items.item1.desc"
+            },
+            {
+                "name": "menu.sweets.items.item2.name",
+                "price": "menu.sweets.items.item2.price",
+                "desc": "menu.sweets.items.item2.desc"
+            },
+            {
+                "name": "menu.sweets.items.item3.name",
+                "price": "menu.sweets.items.item3.price",
+                "desc": "menu.sweets.items.item3.desc"
+            },
+            {
+                "name": "menu.sweets.items.item4.name",
+                "price": "menu.sweets.items.item4.price",
+                "desc": "menu.sweets.items.item4.desc"
+            },
+            {
+                "name": "menu.sweets.items.item5.name",
+                "price": "menu.sweets.items.item5.price",
+                "desc": "menu.sweets.items.item5.desc"
+            },
+            {
+                "name": "menu.sweets.items.item6.name",
+                "price": "menu.sweets.items.item6.price",
+                "desc": "menu.sweets.items.item6.desc"
+            },
+            {
+                "name": "menu.sweets.items.item7.name",
+                "price": "menu.sweets.items.item7.price",
+                "desc": "menu.sweets.items.item7.desc"
+            },
+            {
+                "name": "menu.sweets.items.item8.name",
+                "price": "menu.sweets.items.item8.price",
+                "desc": "menu.sweets.items.item8.desc"
+            },
+            {
+                "name": "menu.sweets.items.item9.name",
+                "price": "menu.sweets.items.item9.price",
+                "desc": "menu.sweets.items.item9.desc"
+            },
+            {
+                "name": "menu.sweets.items.item10.name",
+                "price": "menu.sweets.items.item10.price",
+                "desc": "menu.sweets.items.item10.desc"
+            },
+            {
+                "name": "menu.sweets.items.item11.name",
+                "price": "menu.sweets.items.item11.price",
+                "desc": "menu.sweets.items.item11.desc"
+            },
+            {
+                "name": "menu.sweets.items.item12.name",
+                "price": "menu.sweets.items.item12.price",
+                "desc": "menu.sweets.items.item12.desc"
+            }
+        ]
     }
 }

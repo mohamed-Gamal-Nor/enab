@@ -11,21 +11,21 @@
         .map
           iframe(:src="mapi.map", width="500", height="300")
         .data
-          h1 {{ mapi.name }}
+          h1 {{ $t(mapi.name) }}
           .address
             font-awesome-icon(icon="map-marker-alt")
-            p {{ mapi.address }}
+            p {{ $t(mapi.address) }}
           .address
             font-awesome-icon(icon="mobile-alt")
             p (+2) {{ mapi.phone }}
 
           .address
             font-awesome-icon(icon="utensils")
-            p {{ mapi.opening }}
+            p {{ $t(mapi.opening) }}
           .call
             button
               font-awesome-icon(icon="phone-alt")
-              a(:href="`tel:+${mapi.phone}`") Call now
+              a(:href="`tel:+${mapi.phone}`") {{ $t("branche.call") }}
 </template>
 
 <script>
@@ -34,35 +34,34 @@ export default {
     return {
       mapData: [
         {
-          name: "enab beirut - cairo festival city mall",
-          address:
-            "Cairo Festival City , New Cairo - In front of the dancing fountain",
+          name: "branche.store1.name",
+          address:"branche.store1.address",
           phone: "01228444424",
-          opening: "all weak : 10AM - 12AM",
+          opening: "branche.store1.time",
           map:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1221.283278349753!2d31.410055389636824!3d30.02794149694484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cfd6c86f5cf%3A0xabe83f4255455938!2z2LnZhtioINio2YrYsdmI2Ko!5e0!3m2!1sar!2seg!4v1604567189392!5m2!1sar!2seg",
         },
         {
-          name: "enab beirut - Tivoli Dome , Heliopolis",
-          address: "Heliopolis , Tivoli Dome",
+          name: "branche.store2.name",
+          address:"branche.store2.address",
           phone: "01270884444",
-          opening: "all weak : 10AM - 12AM",
+          opening: "branche.store2.time",
           map:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1026.3686903494013!2d31.34838234123095!3d30.0861946789067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e020341787f%3A0x1fd6a16d1fe120a0!2z2LnZhtioINmD2KfZgdmK2Yc!5e0!3m2!1sar!2seg!4v1604567025295!5m2!1sar!2seg",
         },
         {
-          name: "enab beirut - City Square Elrehab",
-          address: "Elrehab - City Square",
+          name: "branche.store3.name",
+          address:"branche.store3.address",
           phone: "01208144441",
-          opening: "all weak : 10AM - 12AM",
+          opening: "branche.store3.time",
           map:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13812.835959476213!2d31.495168417485203!3d30.059543410027274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581906027d307f%3A0x14e3a863d897c7a2!2sEnab%20Beirut%20City%20Square%20Elrehab!5e0!3m2!1sar!2seg!4v1604566793299!5m2!1sar!2seg",
         },
         {
-          name: "enab beirut - O1 mall",
-          address: "Mall, Mohamed Naguieb Axes, New Cairo - O1",
+          name: "branche.store4.name",
+          address:"branche.store4.address",
           phone: "01277042444",
-          opening: "all weak : 10AM - 12AM",
+          opening: "branche.store4.time",
           map:
             "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1221.0235864951726!2d31.47562119090838!3d30.049013123721263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145823d85b03053f%3A0xace286c1d006a3fe!2sEnab%20Beirut!5e0!3m2!1sar!2seg!4v1604567303945!5m2!1sar!2seg",
         },
@@ -73,6 +72,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ar{
+  .branch {
+    .content {
+      .data {
+        text-align: right;
+        .address {
+          display: flex;
+          flex-wrap: nowrap;
+          margin: 10px 0;
+          svg {
+            order: 2;
+            margin-left: 5px;
+          }
+          p {
+            order: 1;
+            width: 93%;
+          }
+        }
+      }
+    }
+  }
+}
 .branch {
   padding-top: 50px;
   .content {

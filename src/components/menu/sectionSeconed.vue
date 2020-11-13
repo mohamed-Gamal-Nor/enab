@@ -44,6 +44,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ar {
+  .menu-item {
+    .item-part {
+      .items {
+        justify-content: flex-end;
+        .item {
+          text-align: right;
+          .item-name {
+            h6 {
+              order: 2;
+            }
+            p {
+              order: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .menu-item {
   padding-top: 50px;
   .item-link {
@@ -107,6 +127,7 @@ export default {
       display: inline-flex;
       flex-wrap: wrap;
       padding-top: 10px;
+      justify-content: left;
       .item {
         width: 23%;
         text-align: left;
@@ -148,6 +169,16 @@ export default {
 @media (max-width: 991px) {
   .menu-item {
     padding-top: 50px;
+    .item-link {
+      flex-wrap: wrap;
+      .link {
+        padding: 5px;
+        margin: 5px;
+        a {
+          font-size: 11px;
+        }
+      }
+    }
     .item-part {
       .text {
         h4 {

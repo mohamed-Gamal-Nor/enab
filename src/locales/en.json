@@ -7,7 +7,7 @@
         "gallery": "Gallery",
         "branches": "Branches",
         "faq": "Faq",
-        "map": "Map"
+        "facebook": "facebook"
     },
     "slider": {
         "slider1": {
@@ -109,7 +109,8 @@
         "gallery": "Gallery",
         "menu": "Menu",
         "branches": "branches",
-        "faq": "Faq"
+        "faq": "Faq",
+        "facebook": "facebook"
     },
     "about-counter": {
         "count1": {
@@ -149,6 +150,29 @@
             "paragraph": "Our fourth branch was opened in Mohamed Naguib Axis, Fifth Settlement, in O1 Mall"
         }
     },
+    "branche": {
+        "call": "call now",
+        "store1": {
+            "name": "enab beirut - cairo festival city mall",
+            "address": "Cairo Festival City , New Cairo - In front of the dancing fountain",
+            "time": "all weak : 10AM - 12AM"
+        },
+        "store2": {
+            "name": "enab beirut - Tivoli Dome , Heliopolis",
+            "address": "Heliopolis , Tivoli Dome",
+            "time": "all weak : 10AM - 12AM"
+        },
+        "store3": {
+            "name": "enab beirut - City Square Elrehab",
+            "address": "Elrehab - City Square",
+            "time": "all weak : 10AM - 12AM"
+        },
+        "store4": {
+            "name": "enab beirut - O1 mall",
+            "address": "Mall, Mohamed Naguieb Axes, New Cairo - O1",
+            "time": "all weak : 10AM - 12AM"
+        }
+    },
     "gallryLink": {
         "All": "All",
         "Breakfast": "Breakfast",
@@ -159,6 +183,10 @@
         "Oven": "Oven",
         "Sweets": "Sweets",
         "Drinkes": "Drinkes"
+    },
+    "facebook": {
+        "head1": "Our Facebook",
+        "head2": "Some Posts In Facebook Page"
     },
     "introMenu": {
         "head": "Download Menu",
@@ -496,6 +524,312 @@
                     "name": "arnabit miqli",
                     "price": "39.00 L.E",
                     "desc": "fried cauliflower served with tarator"
+                }
+            }
+        },
+        "salads": {
+            "heading": "salads",
+            "paragraph": "My dream is your dream, oh Lebanon",
+            "items": {
+                "item1": {
+                    "name": "tabbouleh",
+                    "price": "46.00 L.E",
+                    "desc": "mix of parsley , onion, tomato, cracked wheat, lemon juice, olive oil"
+                },
+                "item2": {
+                    "name": "fattoush",
+                    "price": "48.00 L.E",
+                    "desc": "mix of lettuce, onion, tomato,cucumber,summac,parsley"
+                },
+                "item3": {
+                    "name": "jabalieh salad",
+                    "price": "48.00 L.E",
+                    "desc": "mix of tomato, onion,egglant,purslane or rocka , apple vinegar, olive oil"
+                },
+                "item4": {
+                    "name": "raheb eggplant",
+                    "price": "37.00 L.E",
+                    "desc": "grilled eggplant , onion, tomato,mixed pepper, olive oil,lemon"
+                },
+                "item5": {
+                    "name": "beetroot salad",
+                    "price": "45.00 L.E",
+                    "desc": "beetroot with rocca, walnuts, olive oil, lemon and garlic"
+                },
+                "item6": {
+                    "name": "egglant salad with pomegranate",
+                    "price": "37.00 L.E",
+                    "desc": "grilled eggplant with pomegranate, olive oil and garlic"
+                }
+            }
+        },
+        "grill": {
+            "heading": "lebanese grill",
+            "paragraph": "As a reddish in all of Lebanon",
+            "items": {
+                "item1": {
+                    "name": "mixed grill (400 grams)",
+                    "price": "165.00 L.E",
+                    "desc": "marinated veal, chicken cubes and kafta meat served with grilled vegetables and potatoes"
+                },
+                "item2": {
+                    "name": "mixed grill (800 grams)",
+                    "price": "259.00 L.E",
+                    "desc": "marinated veal, chicken cubes and kafta meat served with grilled vegetables and potatoes"
+                },
+                "item3": {
+                    "name": "meat skewers",
+                    "price": "158.00 L.E",
+                    "desc": "veal cuts served with grilled vegetables, potatos"
+                },
+                "item4": {
+                    "name": "shish taouk",
+                    "price": "115.00 L.E",
+                    "desc": "marinated chicken brochettes served with potatoes, garilc and grilled vegetables"
+                },
+                "item5": {
+                    "name": "spicy shish taouk",
+                    "price": "117.00 L.E",
+                    "desc": "spicy marinated chicken brochettes served with potatoes, garilc and grilled vegetables"
+                },
+                "item6": {
+                    "name": "lamb cutlets",
+                    "price": "259.00 L.E",
+                    "desc": "marinated lamb cutlets with seasonal spices, vegetables"
+                },
+                "item7": {
+                    "name": "grilled fish",
+                    "price": "170.00 L.E",
+                    "desc": "marinated fish with spicy tomato sauce, saffron rice"
+                },
+                "item8": {
+                    "name": "grilled fish with tehine",
+                    "price": "174.00 L.E",
+                    "desc": "grilled fish with tehine, pinenuts and crusty bread"
+                },
+                "item9": {
+                    "name": "spicy kabab platter",
+                    "price": "104.00 L.E",
+                    "desc": "minced spicy beef skewers served with grilled vegetables and potatoes"
+                },
+                "item10": {
+                    "name": "chicken kafta",
+                    "price": "93.00 L.E",
+                    "desc": "grilled chicken kafta with served with lemon , garlic and potatos"
+                },
+                "item11": {
+                    "name": "kafta bil tehine",
+                    "price": "104.00 L.E",
+                    "desc": "grilled kafta with tehine , onions and pinenuts"
+                },
+                "item12": {
+                    "name": "kafta platter",
+                    "price": "104.00 L.E",
+                    "desc": "grilled kafta skewers served with vegetables, potatoes"
+                },
+                "item13": {
+                    "name": "kafta in yogurt",
+                    "price": "104.00 L.E",
+                    "desc": "minced beef mixed with parsley, onions and spices on a bed of crusty lebanese bread topped with yogurt, pine nuts"
+                }
+            }
+        },
+        "oven": {
+            "heading": "in the oven",
+            "paragraph": "The whole family is loving",
+            "items": {
+                "item1": {
+                    "name": "grilled vegetables",
+                    "price": "50.00 L.E",
+                    "desc": "mix of grilled vegetables zucchini, tomato,onion,potato,carrot,broccoli eggplant with lemon, pomegranate molasses"
+                },
+                "item2": {
+                    "name": "kafta arayes",
+                    "price": "73.00 L.E",
+                    "desc": "minced grilled meat in lebanese bread served with yogurt"
+                },
+                "item3": {
+                    "name": "grilled potatoes",
+                    "price": "40.00 L.E",
+                    "desc": "lebanese style grilled potatoes"
+                },
+                "item4": {
+                    "name": "feta in the oven",
+                    "price": "51.00 L.E",
+                    "desc": "feta cheese with tomato and thyme"
+                },
+                "item5": {
+                    "name": "lahem bi ajin",
+                    "price": "59.00 L.E",
+                    "desc": "lahem bi ajin"
+                },
+                "item6": {
+                    "name": "quzi bil ajin",
+                    "price": "95.00 L.E",
+                    "desc": "oriental rice with veal wrapped in dough and served with yogurt"
+                },
+                "item7": {
+                    "name": "thyme manouche",
+                    "price": "44.00 L.E",
+                    "desc": "thyme manouche"
+                },
+                "item8": {
+                    "name": "Manoushe thyme with onions and tomatoes",
+                    "price": "44.00 L.E",
+                    "desc": "Manoushe thyme with onions and tomatoes"
+                },
+                "item9": {
+                    "name": "akawy cheese manouche",
+                    "price": "46.00 L.E",
+                    "desc": "akawy cheese manouche"
+                },
+                "item10": {
+                    "name": "kashawan cheese manouche",
+                    "price": "47.00 L.E",
+                    "desc": "kashawan cheese manouche"
+                },
+                "item11": {
+                    "name": "cheese manouche mix",
+                    "price": "47.00 L.E",
+                    "desc": "cheese manouche mix"
+                },
+                "item12": {
+                    "name": "cheese & thyme manouche",
+                    "price": "46.00 L.E",
+                    "desc": "cheese & thyme manouche"
+                },
+                "item13": {
+                    "name": "cheese & sojouk manouche",
+                    "price": "60.00 L.E",
+                    "desc": "cheese & sojouk manouche"
+                },
+                "item14": {
+                    "name": "spinach sfiha",
+                    "price": "44.00 L.E",
+                    "desc": "spinach sfiha"
+                }
+            }
+        },
+        "meat": {
+            "heading": "lebanese raw meat",
+            "paragraph": "Corridor time always brings us together.",
+            "items": {
+                "item1": {
+                    "name": "kebbeh nayyeh",
+                    "price": "79.00 L.E",
+                    "desc": "raw meat with borghol,herbs and spices"
+                },
+                "item2": {
+                    "name": "frakeh jnoubieh",
+                    "price": "80.00 L.E",
+                    "desc": "fine raw meat with spices"
+                }
+            }
+        },
+        "varirty": {
+            "heading": "varirty",
+            "paragraph": "Dishes sweeten your day.",
+            "items": {
+                "item1": {
+                    "name": "chicken fatteh",
+                    "price": "76.00 L.E",
+                    "desc": "chicken with garlic yogurt, toasted labanese bread, pine nuts"
+                },
+                "item2": {
+                    "name": "chicken fariik",
+                    "price": "100.00 L.E",
+                    "desc": "chicken fariik with yogurt and nuts"
+                },
+                "item3": {
+                    "name": "warak enab & koussa",
+                    "price": "60.00 L.E",
+                    "desc": "Stuuffed vine leaves & zucchini with rice and meat"
+                },
+                "item4": {
+                    "name": "meat fariik",
+                    "price": "130.00 L.E",
+                    "desc": "meat fariik with yogurt and nuts"
+                },
+                "item5": {
+                    "name": "kebbeh labnieh",
+                    "price": "90.00 L.E",
+                    "desc": "Stuffed kebbeh akras with meat and pinenuts in yogurt and mint"
+                },
+                "item6": {
+                    "name": "koussa bil laban",
+                    "price": "80.00 L.E",
+                    "desc": "Stuffed zucchini with meat and rice in yogurt, mint and pinenuts"
+                },
+                "item7": {
+                    "name": "batata souffle",
+                    "price": "80.00 L.E",
+                    "desc": "Two layers of mashed potatoes stuffed with minced meat and baked in oven , served with cabbage tomatoes salad"
+                }
+            }
+        },
+        "sweets": {
+            "heading": "Lebanese Sweets",
+            "paragraph": "Of the best",
+            "items": {
+                "item1": {
+                    "name": "aiche el saraya",
+                    "price": "47.00 L.E",
+                    "desc": ""
+                },
+                "item2": {
+                    "name": "halawet el jebn",
+                    "price": "46.00 L.E",
+                    "desc": ""
+                },
+                "item3": {
+                    "name": "riz be halib",
+                    "price": "33.00 L.E",
+                    "desc": ""
+                },
+                "item4": {
+                    "name": "mafroukeh bil ashta",
+                    "price": "51.00 L.E",
+                    "desc": ""
+                },
+                "item5": {
+                    "name": "chocolate rolls",
+                    "price": "48.00 L.E",
+                    "desc": ""
+                },
+                "item6": {
+                    "name": "pistachio madlouaa bil ashta",
+                    "price": "63.00 L.E",
+                    "desc": ""
+                },
+                "item7": {
+                    "name": "ashtalieh",
+                    "price": "41.00 L.E",
+                    "desc": ""
+                },
+                "item8": {
+                    "name": "lebanese icecream(1scoop)",
+                    "price": "41.00 L.E",
+                    "desc": ""
+                },
+                "item9": {
+                    "name": "osmalieh",
+                    "price": "49.00 L.E",
+                    "desc": ""
+                },
+                "item10": {
+                    "name": "ashta bil assal",
+                    "price": "45.00 L.E",
+                    "desc": ""
+                },
+                "item11": {
+                    "name": "meghli",
+                    "price": "38.00 L.E",
+                    "desc": ""
+                },
+                "item12": {
+                    "name": "ghazal",
+                    "price": "49.00 L.E",
+                    "desc": ""
                 }
             }
         }

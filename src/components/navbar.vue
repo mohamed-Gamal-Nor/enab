@@ -13,6 +13,7 @@ div
       router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
       router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.branches') }}
       router-link(:to="`/${$i18n.locale}/faq`") {{ $t('menuLinks.faq') }}
+      router-link(:to="`/${$i18n.locale}/facebook-posts`") {{ $t('menuLinks.facebook') }}
     .lang(v-if="$i18n.locale == 'en'")
       button(@click="setLocale('ar')")
         country-flag(country="eg")
@@ -34,6 +35,7 @@ div
       .links.link2
         router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.branches') }}
         router-link(:to="`/${$i18n.locale}/faq`") {{ $t('menuLinks.faq') }}
+        router-link(:to="`/${$i18n.locale}/facebook-posts`") {{ $t('menuLinks.facebook') }}
       .lang(v-if="$i18n.locale == 'en'")
         button(@click="setLocale('ar')")
           country-flag(country="eg")

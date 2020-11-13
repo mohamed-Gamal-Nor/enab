@@ -6,6 +6,7 @@ import gallery from "../views/gallery.vue";
 import menu from "../views/menu.vue";
 import store from "../views/store.vue";
 import faq from "../views/faq.vue";
+import facebook from "../views/facebook.vue"
 import i18n from "../i18n";
 
 Vue.use(VueRouter);
@@ -56,6 +57,12 @@ const routes = [{
                 name: "faq",
                 component: faq,
                 meta: { title: "Enab Beirut - Faq" }
+            },
+            {
+                path: "facebook-posts",
+                name: "facebook",
+                component: facebook,
+                meta: { title: "Enab Beirut - FaceBook Posts" }
             }
         ]
     }
