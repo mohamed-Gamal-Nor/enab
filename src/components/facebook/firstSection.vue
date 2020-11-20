@@ -3,11 +3,11 @@
   .container-fluid
     .posts
       .text 
-        h6 {{ $t("facebook.head1") }}
-        h1 {{ $t("facebook.head2") }}
+        h6 {{ $t('facebook.head1') }}
+        h1 {{ $t('facebook.head2') }}
       .post
         iframe(
-          v-for="(post, i) in faceposts.posts",
+          v-for="(post, i) in pageOfItems",
           :key="i",
           :src="post.link",
           :height="post.height",
@@ -17,14 +17,26 @@
           allowTransparency="true",
           allow="encrypted-media"
         )
+      .pagination-posts
+        jw-pagination(:items="faceposts", @changePage="onChangePage")
 </template>
 <script>
+import Vue from "vue";
 import post from "./posts.json";
+import JwPagination from "jw-vue-pagination";
+Vue.component("jw-pagination", JwPagination);
 export default {
   data() {
     return {
+      pageOfItems: [],
       faceposts: post,
     };
+  },
+  methods: {
+    onChangePage(pageOfItems) {
+      // update page of items
+      this.pageOfItems = pageOfItems;
+    },
   },
 };
 </script>
@@ -58,6 +70,10 @@ export default {
         margin: 0px 5px;
         width: 24%;
       }
+    }
+    .pagination-posts {
+      text-align: center;
+      margin-top: 25px;
     }
   }
 }

@@ -7,6 +7,7 @@ import menu from "../views/menu.vue";
 import store from "../views/store.vue";
 import faq from "../views/faq.vue";
 import facebook from "../views/facebook.vue";
+import Page404 from "../views/404.vue"
 import i18n from "../i18n";
 
 Vue.use(VueRouter);
@@ -63,6 +64,12 @@ const routes = [{
                 name: "facebook",
                 component: facebook,
                 meta: { title: "Enab Beirut - FaceBook Posts" }
+            },
+            {
+                path: "*",
+                name: "404",
+                component: Page404,
+                meta: { title: "Enab Beirut - 404 Page Not Found" }
             }
         ]
     }

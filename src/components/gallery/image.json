@@ -1,23 +1,6 @@
 [{
         "tags": [
             "all",
-            "tag1",
-            "tag2",
-            "tag3",
-            "tag4",
-            "tag5",
-            "tag6",
-            "tag7",
-            "tag8"
-        ],
-        "src": "",
-        "thumbnail": "",
-        "w": 2000,
-        "h": 1200
-    },
-    {
-        "tags": [
-            "all",
             "all"
         ],
         "src": "https://i.ibb.co/tmDHBRb/1.jpg",

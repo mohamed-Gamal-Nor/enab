@@ -193,6 +193,12 @@
         "head1": "Scan the code with the phone's camera to download the menu",
         "buttonDownload": "Download Menu Now"
     },
+    "eror404": {
+        "head": "PAGE NOT FOUND",
+        "paragraph": "Sorry, We couldn't find the page you're looking for. ",
+        "para": "Try returning to the",
+        "button": "homepage"
+    },
     "menu": {
         "breakFast": {
             "heading": "Breakfast",

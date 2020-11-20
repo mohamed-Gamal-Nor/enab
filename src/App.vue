@@ -8,9 +8,9 @@
       />
     </div>
     <router-view> </router-view>
-
-    <buttonUp />
+    
     <footter />
+    <buttonUp />
   </div>
 </template>
 <script>

@@ -32,6 +32,28 @@
 }
 
 
+/*this slien box css code make global in five section*/
+
+.silentbox-item {
+    max-height: 145px;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.silentbox-item img {
+    transition: 0.3s;
+    object-position: center top;
+}
+
+.silentbox-item:hover img {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+
 /*gallry*/
 
 .my-gallery {
@@ -41,7 +63,6 @@
     text-align: center;
     justify-content: center;
     position: relative;
-    z-index: 1;
 }
 
 .my-gallery figure {
@@ -66,4 +87,24 @@
         height: 120px;
         overflow: hidden;
     }
+}
+
+.Page404+.footer {
+    display: none;
+}
+
+.pagination .page-item .page-link {
+    background-color: var(--main-color);
+    color: var(--seconed-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--seconed-color);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: var(--main-color);
+    color: var(--seconed-color);
 }
