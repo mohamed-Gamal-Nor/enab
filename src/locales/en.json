@@ -30,7 +30,8 @@
     "ourStory": {
         "title": "our story",
         "litleTitle": "Welcome To Enab Beriut",
-        "paragraph": "Enab Beirut is the story of every Lebanese house, the most famous Lebanese chain of restaurants in Egypt and Cairo, in terms of authentic Lebanese food and juices in the Lebanese way. The place is very quiet to relax and change the mood with the Lebanese house decor. Enab Beirut .. the story of every Lebanese house",
+        "paragraph": "A home is the warmth of a loving family united...<br/>  A home is a spring of memories, a place to escape reality...<br/> A home is family gathered around the dinner table filled with traditional home Cooked meals...<br/> A home is a gathering of friends, on echoing laugh and an everlasting feel of kindness and safety.<br/> This is enab,",
+        "seconedPara":"Enab in English means Grapes. The idea behind the concept is that Enab Beirut will serve as a destination at which families, friends (old 8. new), co-workers, etc. can rneet for a traditionally prepared Lebanese meal, bringing them together to share, create and add to their rnemories thus furThering their bond each as a member of the 'Grape Vine.'",
         "countFood": "Food items",
         "countbev": "Beverages",
         "team": "Enab Beirut Team"
@@ -80,7 +81,7 @@
         "pragraph": "Enjoyed your stay at Enab Beirut? Share your moments with us. Follow us on Instagram and FaceBook"
     },
     "footer": {
-        "pargraph": "Lebanese ambiance with Lebanese decor for dining, bar! Experienced staff are waiting to give you a unique dining experience."
+        "pargraph": "To our Franchisees, we offer our know-how and aid them step by step through each phase of setting up and operating their outlet, providing the Franchisee with the opportunity to own and operate a tried and tested system that has proven successful."
     },
     "footerText": {
         "location": {
@@ -134,20 +135,20 @@
         "head1": "OUR JOURNEY",
         "head2": "Check Our History",
         "branch1": {
-            "head": "Enab Beirut Al-Rehab City Square",
-            "paragraph": "The opening of our first branch in our beloved Egypt, in Al Rehab City, City Square Mall"
+            "head": "What are grapes?",
+            "paragraph": "Enab In English Means Grapes. The Idea Behind The Concept Is That Enab Beirut Will Serve As A Destination At Which Families, Friends (Old 8. New), Co-Workers, Etc. Can Rneet For A Traditionally Prepared Lebanese Meal, Bringing Them Together To Share, Create And Add To Their Rnemories Thus FurThering Their Bond Each As A Member Of The 'Grape Vine.'"
         },
         "branch2": {
-            "head": "Enab Beirut Tivoli Dome Heliopolis",
-            "paragraph": "The second opening of the Enab Beirut chain in Egypt in Heliopolis, Tivoli Dome"
+            "head": "When was Enab Beirut established and why is enab?",
+            "paragraph": "Established in 2012, Enab Beirut is the go to place for people seeking the taste of a traditional home cooked labanese meal. The concept was built on the need to provide customers with. experience that not only included the taste they sought, but also the ambiance that was missing at other lebanese restaurants within the market."
         },
         "branch3": {
-            "head": "Enab Beirut Inn Cairo Festival City Mall, New Cairo",
-            "paragraph": "Our third branch was opened in Cairo Festival City Mall, New Cairo, in front of the dancing fountain"
+            "head": "What about our branches in the Middle East and North Africa?",
+            "paragraph": "In keeping with the traditionslam of our concept our Interior decor has been chosen to further add to the experience of being at home although not all locations can be identical, we guarantee that our customers will have  the some experience whether at our Flagship Outlet in Beirut, or in any one of our Franchisee's Outlets within the Middle East and North Africa Region. We maintain our standards  through a highly-trained team that are dedicated to ensuring our standards are as they were when we established our Flagship Outlet in 2012."
         },
         "branch4": {
-            "head": "Enab Beirut at the O1 Mall",
-            "paragraph": "Our fourth branch was opened in Mohamed Naguib Axis, Fifth Settlement, in O1 Mall"
+            "head": "Our success at the local and regional levels",
+            "paragraph": "After succeeding in the locally, the next step was to expand regionally. Enab has established a name for itself through constantly providing its clientele with impeccable food and outstanding service. This reputation has drawn interest from around the region and we now successfully have 5 Franchised Outlets both locally and regionally, with more still to come,"
         }
     },
     "branche": {
@@ -206,113 +207,154 @@
             "items": {
                 "item1": {
                     "name": "Fava Beans",
-                    "price": "36.00 L.E",
+                    "price": "40.00 L.E",
                     "desc": "Labanese Stewed fave beans"
                 },
                 "item2": {
                     "name": "Chickpea Medammas (Balila)",
-                    "price": "42.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "steamed chickpeas marinated in cumin,garlic,olive oil,spices and pine nuts"
                 },
                 "item3": {
                     "name": "Falafel",
-                    "price": "32.00 L.E",
+                    "price": "38.00 L.E",
                     "desc": "falafel with tarator"
                 },
                 "item4": {
                     "name": "Labneh with olive oil",
-                    "price": "36.00 L.E",
+                    "price": "42.00 L.E",
                     "desc": "labneh with garlic or plain"
                 },
                 "item5": {
                     "name": "Labneh with vegetables",
-                    "price": "38.00 L.E",
+                    "price": "43.00 L.E",
                     "desc": "Labneh mixed with tomato cucmber,aromatic greens"
                 },
                 "item6": {
                     "name": "Goat cheese",
-                    "price": "45.00 L.E",
+                    "price": "51.00 L.E",
                     "desc": "goat chesse with green thyme, olive"
                 },
                 "item7": {
                     "name": "Goat Labneh",
-                    "price": "42.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "Goat Labneh"
                 },
                 "item8": {
                     "name": "grilled halloumi",
-                    "price": "47.00 L.E",
+                    "price": "53.00 L.E",
                     "desc": "grilled halloumi"
                 },
                 "item9": {
                     "name": "Mafraka eggs and potatoes",
-                    "price": "40.00 L.E",
+                    "price": "44.00 L.E",
                     "desc": "scrambled eggs mixed with potato cubes green onion, pepper"
                 },
                 "item10": {
                     "name": "eggs & lebanese sausages",
-                    "price": "44.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "eggs & lebanese sausages"
                 },
                 "item11": {
                     "name": "eggs & soujok",
-                    "price": "44.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "eggs & soujok"
                 },
                 "item12": {
                     "name": "eggs & basterma",
-                    "price": "44.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "eggs & basterma"
                 },
                 "item13": {
                     "name": "Feta in the oven",
-                    "price": "51.00 L.E",
+                    "price": "57.00 L.E",
                     "desc": "feta cheese with tomato and thyme"
                 },
                 "item14": {
                     "name": "thyme manouche",
-                    "price": "44.00 L.E",
+                    "price": "49.00 L.E",
                     "desc": "thyme manouche"
                 },
                 "item15": {
                     "name": "Manoushe thyme with onions and tomatoes",
-                    "price": "44.00 L.E",
+                    "price": "50.00 L.E",
                     "desc": "Manoushe thyme with onions and tomatoes"
                 },
                 "item16": {
                     "name": "akawy cheese manouche",
-                    "price": "46.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": "akawy cheese manouche"
                 },
                 "item17": {
                     "name": "kashawan cheese manouche",
-                    "price": "47.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": "kashawan cheese manouche"
                 },
                 "item18": {
                     "name": "cheese manouche mix",
-                    "price": "47.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": "cheese manouche mix"
                 },
                 "item19": {
                     "name": "cheese & thyme manouche",
-                    "price": "46.00 L.E",
+                    "price": "51.00 L.E",
                     "desc": "cheese & thyme manouche"
                 },
                 "item20": {
                     "name": "spinach sfiha",
-                    "price": "44.00 L.E",
+                    "price": "51.00 L.E",
                     "desc": "spinach sfiha"
                 },
                 "item21": {
                     "name": "cheese & sojouk manouche",
-                    "price": "60.00 L.E",
+                    "price": "63.00 L.E",
                     "desc": "cheese & sojouk manouche"
                 },
                 "item22": {
                     "name": "lahem bi ajin",
-                    "price": "59.00 L.E",
+                    "price": "66.00 L.E",
                     "desc": "lahem bi ajin"
+                }
+            }
+        },
+        "salads": {
+            "heading": "salads",
+            "paragraph": "My dream is your dream, oh Lebanon",
+            "items": {
+                "item1": {
+                    "name": "tabbouleh",
+                    "price": "50.00 L.E",
+                    "desc": "mix of parsley , onion, tomato, cracked wheat, lemon juice, olive oil"
+                },
+                "item2": {
+                    "name": "fattoush",
+                    "price": "53.00 L.E",
+                    "desc": "mix of lettuce, onion, tomato,cucumber,summac,parsley"
+                },
+                "item3": {
+                    "name": "fattoush with halloum",
+                    "price": "72.00 L.E",
+                    "desc": "mix of lettuce, onion, tomato,cucumber,summac,with halloum chesse"
+                },
+                "item4": {
+                    "name": "jabalieh salad",
+                    "price": "53.00 L.E",
+                    "desc": "mix of tomato, onion,egglant,purslane or rocka , apple vinegar, olive oil"
+                },
+                "item5": {
+                    "name": "raheb eggplant",
+                    "price": "41.00 L.E",
+                    "desc": "grilled eggplant , onion, tomato,mixed pepper, olive oil,lemon"
+                },
+                "item6": {
+                    "name": "beetroot salad",
+                    "price": "50.00 L.E",
+                    "desc": "beetroot with rocca, walnuts, olive oil, lemon and garlic"
+                },
+                "item7": {
+                    "name": "egglant salad with pomegranate",
+                    "price": "41.00 L.E",
+                    "desc": "grilled eggplant with pomegranate, olive oil and garlic"
                 }
             }
         },
@@ -322,72 +364,72 @@
             "items": {
                 "item1": {
                     "name": "hummos",
-                    "price": "40.00 L.E",
+                    "price": "45.00 L.E",
                     "desc": "mashed chickpeas with tehine , olive oil"
                 },
                 "item2": {
                     "name": "spicy hummos",
-                    "price": "41.00 L.E",
+                    "price": "46.00 L.E",
                     "desc": "mashed chickpeas , spicy paste"
                 },
                 "item3": {
                     "name": "hummos meat and pinenuts",
-                    "price": "59.00 L.E",
+                    "price": "65.00 L.E",
                     "desc": "mashed chickpeas topped with meat , pine nuts"
                 },
                 "item4": {
                     "name": "baba ghannouj",
-                    "price": "39.00 L.E",
+                    "price": "44.00 L.E",
                     "desc": "grilled and crushed eggplant mixed with tahina, and pomegranate"
                 },
                 "item5": {
                     "name": "warak enab",
-                    "price": "44.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": "vine leaves rolled with rice, tomato,olive oil"
                 },
                 "item6": {
                     "name": "Goat cheese",
-                    "price": "45.00 L.E",
+                    "price": "51.00 L.E",
                     "desc": "goat chesse with green thyme, olive"
                 },
                 "item7": {
                     "name": "Labneh with vegetables",
-                    "price": "38.00 L.E",
+                    "price": "43.00 L.E",
                     "desc": "Labneh mixed with tomato cucmber,aromatic greens"
                 },
                 "item8": {
                     "name": "Labneh with olive oil",
-                    "price": "36.00 L.E",
+                    "price": "42.00 L.E",
                     "desc": "labneh with garlic or plain"
                 },
                 "item9": {
                     "name": "Goat Labneh",
-                    "price": "42.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "Goat Labneh"
                 },
                 "item10": {
                     "name": "shanklish",
-                    "price": "34.00 L.E",
+                    "price": "45.00 L.E",
                     "desc": "shanklish with onion ,tomato,olive oil, and parsley"
                 },
                 "item11": {
                     "name": "batata mahrousseh",
-                    "price": "36.00 L.E",
+                    "price": "42.00 L.E",
                     "desc": "mashed potatoes mixed with green onion ,olive oil"
                 },
                 "item12": {
                     "name": "moudardara",
-                    "price": "31.00 L.E",
+                    "price": "40.00 L.E",
                     "desc": "lentil moudardara with rice, onions,olive oil"
                 },
                 "item13": {
                     "name": "loubieh bil zeit",
-                    "price": "32.00 L.E",
+                    "price": "40.00 L.E",
                     "desc": "green  beans cooked with tomato sauce and garlic"
                 },
                 "item14": {
                     "name": "mhamarra",
-                    "price": "44.00 L.E",
+                    "price": "54.00 L.E",
                     "desc": "crushed walnuts with mixed spicy paste"
                 }
             }
@@ -398,209 +440,184 @@
             "items": {
                 "item1": {
                     "name": "chicken wings",
-                    "price": "44.00 L.E",
+                    "price": "49.00 L.E",
                     "desc": "chicken wings fried or with coriander , garlic and lemon"
                 },
                 "item2": {
                     "name": "beef cuts",
-                    "price": "62.00 L.E",
+                    "price": "72.00 L.E",
                     "desc": "pan-fried meat cubes with lemon or pomegranate"
                 },
                 "item3": {
                     "name": "sawdat djeij",
-                    "price": "61.00 L.E",
+                    "price": "66.00 L.E",
                     "desc": "chicken liver sauteed with lemon or pomegranate"
                 },
                 "item4": {
                     "name": "chicken cuts",
-                    "price": "51.00 L.E",
+                    "price": "55.00 L.E",
                     "desc": "pan-fried chicken breast cubes with lemon coriander and garlic"
                 },
                 "item5": {
                     "name": "cheese rolls (6 pcs)",
-                    "price": "52.00 L.E",
+                    "price": "56.00 L.E",
                     "desc": "deep fried or grilled cheese rolls in special crusty dough"
                 },
                 "item6": {
                     "name": "basterma cheese rolls (6 pcs)",
-                    "price": "55.00 L.E",
+                    "price": "59.00 L.E",
                     "desc": "deep fried or grilled cheese rolls stuffed with basterma in special crusty dough"
                 },
                 "item7": {
                     "name": "mix rolls (6 pcs)",
-                    "price": "53.00 L.E",
+                    "price": "58.00 L.E",
                     "desc": "combination of cheese rolls and basterma rolls"
                 },
                 "item8": {
                     "name": "makanek labanese sausages lemon",
-                    "price": "61.00 L.E",
+                    "price": "67.00 L.E",
                     "desc": "labanese sausages sauteed with lemon"
                 },
                 "item9": {
                     "name": "makanek labanese sausages pomegranate",
-                    "price": "64.00 L.E",
+                    "price": "69.00 L.E",
                     "desc": "labanese sausages sauteed with pomegranate"
                 },
                 "item10": {
                     "name": "grilled kebbeh with labneh",
-                    "price": "52.00 L.E",
+                    "price": "58.00 L.E",
                     "desc": "grilled kebbeh stuffed with labneh"
                 },
                 "item11": {
                     "name": "grilled kebbeh with kawarma",
-                    "price": "52.00 L.E",
+                    "price": "58.00 L.E",
                     "desc": "grilled kebbeh stuffed with kawarma"
                 },
                 "item12": {
                     "name": "batata coriander",
-                    "price": "45.00 L.E",
+                    "price": "49.00 L.E",
                     "desc": "potato cubes sauteed with coriander,garlic,chilly spices"
                 },
                 "item13": {
                     "name": "batata cubes",
-                    "price": "42.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "fried potato cubes with onion rings and paprika"
                 },
                 "item14": {
-                    "name": "birds",
-                    "price": "205.00 L.E",
-                    "desc": "pan-fried birds cooked with lemon or pomegranate"
+                    "name": "chicken osmalieh",
+                    "price": "72.00 L.E",
+                    "desc": "chicken osmalieh"
                 },
                 "item15": {
                     "name": "kebbeh in spices",
-                    "price": "51.00 L.E",
+                    "price": "57.00 L.E",
                     "desc": "fried kebbeh stuffed with chilly spices"
                 },
                 "item16": {
                     "name": "soujok hot pot",
-                    "price": "57.00 L.E",
+                    "price": "65.00 L.E",
                     "desc": "seasoned soujok in hot pot"
                 },
                 "item17": {
                     "name": "kebbeh akras",
-                    "price": "57.00 L.E",
+                    "price": "62.00 L.E",
                     "desc": "stuffed kebbeh akras with meat,pinenuts"
                 },
                 "item18": {
                     "name": "mante",
-                    "price": "67.00 L.E",
+                    "price": "71.00 L.E",
                     "desc": "dough stuffed with minced meat served with yogurt and spicy sauce"
                 },
                 "item19": {
                     "name": "djeij w batata",
-                    "price": "42.00 L.E",
+                    "price": "46.00 L.E",
                     "desc": "sauteed chicken with potato mix and almonds"
                 },
                 "item20": {
                     "name": "Grilled Halloumi",
-                    "price": "47.00 L.E",
+                    "price": "53.00 L.E",
                     "desc": "traditional grilled halloumi cheese"
                 },
                 "item21": {
                     "name": "fried eggs with basterma",
-                    "price": "44.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "fried eggs mixed with basterma or kawarma"
                 },
                 "item22": {
                     "name": "fried eggs with soujok or sausages",
-                    "price": "44.00 L.E",
+                    "price": "48.00 L.E",
                     "desc": "fried eggs mixed with soujok or sausages"
                 },
                 "item23": {
                     "name": "Mafraka Eggs And Potatoes mix",
-                    "price": "40.00 L.E",
+                    "price": "44.00 L.E",
                     "desc": "Scrambled Eggs Mixed With Potato Cubes Green Onion, Pepper"
                 },
                 "item24": {
                     "name": "fattet hummos",
-                    "price": "65.00 L.E",
+                    "price": "69.00 L.E",
                     "desc": "steamed chickpeas soked in garlic yogurt, toasted lebanese bread ,pine nuts"
                 },
                 "item25": {
                     "name": "fattet bazenjan",
-                    "price": "58.00 L.E",
+                    "price": "63.00 L.E",
                     "desc": "fried eggplant cubes soaked in garlic yogurt ,toasted lebanese bread,pine nuts"
                 },
                 "item26": {
-                    "name": "Chickpea Medammas (Balila)",
-                    "price": "42.00 L.E",
+                    "name": "hummos Medammas (Balila)",
+                    "price": "48.00 L.E",
                     "desc": "Steamed Chickpeas Marinated In Cumin,Garlic,Olive Oil,Spices And Pine Nuts"
                 },
                 "item27": {
                     "name": "arnabit miqli",
-                    "price": "39.00 L.E",
-                    "desc": "fried cauliflower served with tarator"
-                }
-            }
-        },
-        "salads": {
-            "heading": "salads",
-            "paragraph": "My dream is your dream, oh Lebanon",
-            "items": {
-                "item1": {
-                    "name": "tabbouleh",
-                    "price": "46.00 L.E",
-                    "desc": "mix of parsley , onion, tomato, cracked wheat, lemon juice, olive oil"
-                },
-                "item2": {
-                    "name": "fattoush",
-                    "price": "48.00 L.E",
-                    "desc": "mix of lettuce, onion, tomato,cucumber,summac,parsley"
-                },
-                "item3": {
-                    "name": "jabalieh salad",
-                    "price": "48.00 L.E",
-                    "desc": "mix of tomato, onion,egglant,purslane or rocka , apple vinegar, olive oil"
-                },
-                "item4": {
-                    "name": "raheb eggplant",
-                    "price": "37.00 L.E",
-                    "desc": "grilled eggplant , onion, tomato,mixed pepper, olive oil,lemon"
-                },
-                "item5": {
-                    "name": "beetroot salad",
                     "price": "45.00 L.E",
-                    "desc": "beetroot with rocca, walnuts, olive oil, lemon and garlic"
+                    "desc": "fried cauliflower served with tarator"
                 },
-                "item6": {
-                    "name": "egglant salad with pomegranate",
-                    "price": "37.00 L.E",
-                    "desc": "grilled eggplant with pomegranate, olive oil and garlic"
+                "item28": {
+                    "name": "Fava Beans",
+                    "price": "40.00 L.E",
+                    "desc": "Labanese Stewed fave beans"
+                },
+                "item29": {
+                    "name": "Falafel",
+                    "price": "38.00 L.E",
+                    "desc": "falafel with tarator"
                 }
             }
         },
+        
         "grill": {
             "heading": "lebanese grill",
             "paragraph": "As a reddish in all of Lebanon",
             "items": {
                 "item1": {
                     "name": "mixed grill (400 grams)",
-                    "price": "165.00 L.E",
+                    "price": "172.00 L.E",
                     "desc": "marinated veal, chicken cubes and kafta meat served with grilled vegetables and potatoes"
                 },
                 "item2": {
                     "name": "mixed grill (800 grams)",
-                    "price": "259.00 L.E",
+                    "price": "268.00 L.E",
                     "desc": "marinated veal, chicken cubes and kafta meat served with grilled vegetables and potatoes"
                 },
                 "item3": {
                     "name": "meat skewers",
-                    "price": "158.00 L.E",
+                    "price": "164.00 L.E",
                     "desc": "veal cuts served with grilled vegetables, potatos"
                 },
                 "item4": {
                     "name": "shish taouk",
-                    "price": "115.00 L.E",
+                    "price": "120.00 L.E",
                     "desc": "marinated chicken brochettes served with potatoes, garilc and grilled vegetables"
                 },
                 "item5": {
                     "name": "spicy shish taouk",
-                    "price": "117.00 L.E",
+                    "price": "123.00 L.E",
                     "desc": "spicy marinated chicken brochettes served with potatoes, garilc and grilled vegetables"
                 },
                 "item6": {
                     "name": "lamb cutlets",
-                    "price": "259.00 L.E",
+                    "price": "262.00 L.E",
                     "desc": "marinated lamb cutlets with seasonal spices, vegetables"
                 },
                 "item7": {
@@ -610,33 +627,53 @@
                 },
                 "item8": {
                     "name": "grilled fish with tehine",
-                    "price": "174.00 L.E",
+                    "price": "178.00 L.E",
                     "desc": "grilled fish with tehine, pinenuts and crusty bread"
                 },
                 "item9": {
                     "name": "spicy kabab platter",
-                    "price": "104.00 L.E",
+                    "price": "115.00 L.E",
                     "desc": "minced spicy beef skewers served with grilled vegetables and potatoes"
                 },
                 "item10": {
                     "name": "chicken kafta",
-                    "price": "93.00 L.E",
+                    "price": "98.00 L.E",
                     "desc": "grilled chicken kafta with served with lemon , garlic and potatos"
                 },
                 "item11": {
                     "name": "kafta bil tehine",
-                    "price": "104.00 L.E",
+                    "price": "114.00 L.E",
                     "desc": "grilled kafta with tehine , onions and pinenuts"
                 },
                 "item12": {
                     "name": "kafta platter",
-                    "price": "104.00 L.E",
+                    "price": "112.00 L.E",
                     "desc": "grilled kafta skewers served with vegetables, potatoes"
                 },
                 "item13": {
                     "name": "kafta in yogurt",
-                    "price": "104.00 L.E",
+                    "price": "114.00 L.E",
                     "desc": "minced beef mixed with parsley, onions and spices on a bed of crusty lebanese bread topped with yogurt, pine nuts"
+                },
+                "item14": {
+                    "name": "kafta with pistachio",
+                    "price": "133.00 L.E",
+                    "desc": "grilled kafta skewers served with vegetables, potatoes with pistachio"
+                },
+                "item15": {
+                    "name": "kafta arayes",
+                    "price": "79.00 L.E",
+                    "desc": "minced grilled meat in lebanese bread served with yougurt"
+                },
+                "item16": {
+                    "name": "kafta arayes with cheese",
+                    "price": "83.00 L.E",
+                    "desc": "minced grilled meat in lebanese bread with mix cheese served with tarator"
+                },
+                "item17": {
+                    "name": "grilled boneless chicken",
+                    "price": "140.00 L.E",
+                    "desc": "grilled boneless chicken"
                 }
             }
         },
@@ -650,69 +687,74 @@
                     "desc": "mix of grilled vegetables zucchini, tomato,onion,potato,carrot,broccoli eggplant with lemon, pomegranate molasses"
                 },
                 "item2": {
-                    "name": "kafta arayes",
-                    "price": "73.00 L.E",
-                    "desc": "minced grilled meat in lebanese bread served with yogurt"
-                },
-                "item3": {
                     "name": "grilled potatoes",
-                    "price": "40.00 L.E",
+                    "price": "43.00 L.E",
                     "desc": "lebanese style grilled potatoes"
                 },
-                "item4": {
+                "item3": {
                     "name": "feta in the oven",
-                    "price": "51.00 L.E",
+                    "price": "57.00 L.E",
                     "desc": "feta cheese with tomato and thyme"
                 },
-                "item5": {
+                "item4": {
                     "name": "lahem bi ajin",
-                    "price": "59.00 L.E",
+                    "price": "66.00 L.E",
                     "desc": "lahem bi ajin"
                 },
-                "item6": {
+                "item5": {
                     "name": "quzi bil ajin",
-                    "price": "95.00 L.E",
+                    "price": "99.00 L.E",
                     "desc": "oriental rice with veal wrapped in dough and served with yogurt"
                 },
-                "item7": {
+                "item6": {
                     "name": "thyme manouche",
-                    "price": "44.00 L.E",
+                    "price": "49.00 L.E",
                     "desc": "thyme manouche"
                 },
-                "item8": {
+                "item7": {
                     "name": "Manoushe thyme with onions and tomatoes",
-                    "price": "44.00 L.E",
+                    "price": "50.00 L.E",
                     "desc": "Manoushe thyme with onions and tomatoes"
                 },
-                "item9": {
+                "item8": {
                     "name": "akawy cheese manouche",
-                    "price": "46.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": "akawy cheese manouche"
                 },
-                "item10": {
+                "item9": {
                     "name": "kashawan cheese manouche",
-                    "price": "47.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": "kashawan cheese manouche"
                 },
-                "item11": {
+                "item10": {
                     "name": "cheese manouche mix",
-                    "price": "47.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": "cheese manouche mix"
                 },
-                "item12": {
+                "item11": {
                     "name": "cheese & thyme manouche",
-                    "price": "46.00 L.E",
+                    "price": "51.00 L.E",
                     "desc": "cheese & thyme manouche"
                 },
-                "item13": {
+                "item12": {
                     "name": "cheese & sojouk manouche",
-                    "price": "60.00 L.E",
+                    "price": "63.00 L.E",
                     "desc": "cheese & sojouk manouche"
                 },
-                "item14": {
+                "item13": {
                     "name": "spinach sfiha",
-                    "price": "44.00 L.E",
+                    "price": "51.00 L.E",
                     "desc": "spinach sfiha"
+                },
+                "item14": {
+                    "name": "manouche halloum",
+                    "price": "52.00 L.E",
+                    "desc": "manouche halloum"
+                },
+                "item15": {
+                    "name": "manouche labne",
+                    "price": "48.00 L.E",
+                    "desc": "manouche labne"
                 }
             }
         },
@@ -722,12 +764,12 @@
             "items": {
                 "item1": {
                     "name": "kebbeh nayyeh",
-                    "price": "79.00 L.E",
+                    "price": "85.00 L.E",
                     "desc": "raw meat with borghol,herbs and spices"
                 },
                 "item2": {
                     "name": "frakeh jnoubieh",
-                    "price": "80.00 L.E",
+                    "price": "87.00 L.E",
                     "desc": "fine raw meat with spices"
                 }
             }

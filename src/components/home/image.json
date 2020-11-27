@@ -1,4 +1,10 @@
 [{
+    "src": "https://i.ibb.co/tmDHBRb/1.jpg",
+    "thumbnail": "https://i.ibb.co/tmDHBRb/1.jpg",
+    "w": 2000,
+    "h": 1200
+},
+    {
         "src": "https://i.ibb.co/tmDHBRb/1.jpg",
         "thumbnail": "https://i.ibb.co/tmDHBRb/1.jpg",
         "w": 2000,
@@ -35,40 +41,24 @@
         "h": 1200
     },
     {
-        "tags": [
-            "all",
-            "tag5"
-        ],
         "src": "https://i.ibb.co/n3BV2hm/24.jpg",
         "thumbnail": "https://i.ibb.co/n3BV2hm/24.jpg",
         "w": 2000,
         "h": 1200
     },
     {
-        "tags": [
-            "all",
-            "tag3"
-        ],
         "src": "https://i.ibb.co/4NtGwsK/25.jpg",
         "thumbnail": "https://i.ibb.co/4NtGwsK/25.jpg",
         "w": 2000,
         "h": 1200
     },
     {
-        "tags": [
-            "all",
-            "tag5"
-        ],
         "src": "https://i.ibb.co/cTw0XVg/26.jpg",
         "thumbnail": "https://i.ibb.co/cTw0XVg/26.jpg",
         "w": 2000,
         "h": 1200
     },
     {
-        "tags": [
-            "all",
-            "tag5"
-        ],
         "src": "https://i.ibb.co/qgq7CKB/30.jpg",
         "thumbnail": "https://i.ibb.co/qgq7CKB/30.jpg",
         "w": 2000,

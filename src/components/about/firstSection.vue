@@ -11,7 +11,7 @@
             h1 {{ $t('ourStory.litleTitle') }}
             span &diams; &diams; &diams; &diams; &diams; &diams;
           .paragraph
-            p {{ $t('ourStory.paragraph') }}
+            p(v-html="$t('ourStory.paragraph')") 
           .logo
             h4 {{ $t('ourStory.team') }}
             img(src="https://i.ibb.co/8B58bPB/logo.png", alt="alt")

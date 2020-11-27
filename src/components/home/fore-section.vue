@@ -4,7 +4,7 @@
       <img src="https://i.ibb.co/p2vwV8n/delv.png" alt />
     </div>
     <div class="container-fluid">
-      <div class="time">
+      <div class="time" data-aos="fade-up" data-aos-duration="1500">
         <div class="content" v-for="time in timeData" :key="time.image">
           <img :src="time.image" alt />
           <h1>{{ $t(time.heading) }}</h1>

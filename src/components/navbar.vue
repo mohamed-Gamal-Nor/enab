@@ -149,6 +149,7 @@ export default {
     text-align: center;
   }
   .links {
+      line-height: 1px;
     &.link1 {
       width: 40%;
       text-align: right;
@@ -162,7 +163,7 @@ export default {
       font-family: var(--font-title);
       color: var(--main-color);
       margin: 0px 15px;
-      font-size: 30px;
+      font-size: 25px;
       position: relative;
       text-transform: capitalize;
       &::after {
@@ -270,7 +271,7 @@ export default {
       width: 80%;
       text-align: left;
       img {
-        width: 30%;
+        width: 20%;
       }
     }
     .links {
@@ -287,7 +288,7 @@ export default {
       background-color: rgba($color: #eee3c7, $alpha: 0.8);
       .logo {
         img {
-          width: 25%;
+          width: 20%;
         }
       }
       .menu-icon {

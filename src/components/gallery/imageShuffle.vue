@@ -2,7 +2,7 @@
 .image-shuffle
   .container-fluid
     #list-complete-demo.demo
-      .button-area
+      .button-area(data-aos="fade-right" data-aos-duration="1500")
         button.active(v-on:click="filter('all'); active()") {{ $t('gallryLink.All') }}
         button(v-on:click="filter('tag1'); active()") {{ $t('gallryLink.Breakfast') }}
         button(v-on:click="filter('tag2'); active()") {{ $t('gallryLink.ColdMeza') }}
@@ -12,7 +12,7 @@
         button(v-on:click="filter('tag6'); active()") {{ $t('gallryLink.Oven') }}
         button(v-on:click="filter('tag7'); active()") {{ $t('gallryLink.Sweets') }}
         button(v-on:click="filter('tag8'); active()") {{ $t('gallryLink.Drinkes') }}
-      vue-picture-swipe(:items="filteredItems")
+      vue-picture-swipe(:items="filteredItems" )
 </template>
 <script>
 import Vue from "vue";

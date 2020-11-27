@@ -2,16 +2,16 @@
   <div class="our-exclusive">
     <div class="overlay"></div>
     <div class="container-fluid">
-      <div class="our">
+      <div class="our" >
         <div class="icon">
           <font-awesome-icon icon="concierge-bell" />
         </div>
-        <div class="text">
+        <div class="text" data-aos="zoom-in" data-aos-duration="1500">
           <h4>{{ $t("ourExlosive.intro.head1") }}</h4>
           <h1>{{ $t("ourExlosive.intro.head2") }}</h1>
           <span>&diams; &diams; &diams; &diams; &diams; &diams;</span>
         </div>
-        <swiper class="swiper container" :options="swiperOption">
+        <swiper class="swiper container" :options="swiperOption" data-aos="zoom-in" data-aos-duration="1500">
           <swiper-slide
             class="swiper-slide"
             v-for="our in ourData"

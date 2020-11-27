@@ -9,7 +9,7 @@
         <h1>{{ $t("album.head") }}</h1>
         <p>{{ $t("album.pragraph") }}</p>
       </div>
-      <vue-picture-swipe :items="items"></vue-picture-swipe>
+      <vue-picture-swipe :items="items" ></vue-picture-swipe>
     </div>
   </div>
 </template>

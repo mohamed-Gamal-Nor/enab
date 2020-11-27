@@ -12,7 +12,7 @@
       </video>
       <div class="overlay">
         <div class="container">
-          <div class="slider-intro slide-top">
+          <div class="slider-intro" data-aos="zoom-in">
             <h3>{{ $t(slide.firstHead) }}</h3>
             <h1>{{ $t(slide.seconedHead) }}</h1>
             <div class="icon-slider">
@@ -191,7 +191,7 @@ export default {
             line-height: 72px;
             letter-spacing: 2px;
             font-weight: 700;
-            font-size: 50px;
+            font-size: 40px;
             border-color: rgba(0, 0, 0, 0.26);
             border-style: none;
             margin: 0px;
@@ -296,7 +296,7 @@ export default {
     height: 100vh;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .swiper-container {
     .swiper-button-next,
     .swiper-button-prev {

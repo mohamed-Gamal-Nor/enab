@@ -1,13 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import About from "../views/About.vue";
-import gallery from "../views/gallery.vue";
-import menu from "../views/menu.vue";
-import store from "../views/store.vue";
-import faq from "../views/faq.vue";
-import facebook from "../views/facebook.vue";
-import Page404 from "../views/404.vue"
 import i18n from "../i18n";
 
 Vue.use(VueRouter);
@@ -26,49 +18,49 @@ const routes = [{
         children: [{
                 path: "/",
                 name: "Home",
-                component: Home,
+                component: () => import('../views/Home.vue'),
                 meta: { title: "Enab Beirut - Home Page" }
             },
             {
                 path: "about",
                 name: "About",
-                component: About,
+                component: () => import('../views/About.vue'),
                 meta: { title: "Enab Beirut - About Page" }
             },
             {
                 path: "gallery",
                 name: "gallery",
-                component: gallery,
+                component: () => import('../views/gallery.vue'),
                 meta: { title: "Enab Beirut - Gallery Image" }
             },
             {
                 path: "menu",
                 name: "menu",
-                component: menu,
+                component: () => import('../views/menu.vue'),
                 meta: { title: "Enab Beirut - Menu" }
             },
             {
                 path: "store",
                 name: "store",
-                component: store,
+                component: () => import('../views/store.vue'),
                 meta: { title: "Enab Beirut - Stores" }
             },
             {
                 path: "faq",
                 name: "faq",
-                component: faq,
+                component: () => import('../views/faq.vue'),
                 meta: { title: "Enab Beirut - Faq" }
             },
             {
                 path: "facebook-posts",
                 name: "facebook",
-                component: facebook,
+                component: () => import('../views/facebook.vue'),
                 meta: { title: "Enab Beirut - FaceBook Posts" }
             },
             {
                 path: "*",
                 name: "404",
-                component: Page404,
+                component: () => import('../views/404.vue'),
                 meta: { title: "Enab Beirut - 404 Page Not Found" }
             }
         ]
@@ -77,7 +69,10 @@ const routes = [{
 
 const router = new VueRouter({
     routes,
-    base: process.env.BASE_URL
+    base: process.env.BASE_URL,
+    scrollBehavior() {
+        return {x: 0, y: 0}
+    }
 });
 
 export default router;

@@ -46,6 +46,9 @@ export default {
 <style lang="scss" scoped>
 .ar {
   .menu-item {
+    .item-link {
+      flex-direction: row-reverse;
+    }
     .item-part {
       .items {
         justify-content: flex-end;

@@ -149,7 +149,7 @@ export default {
       margin-bottom: 25px;
     }
     p {
-      width: 30%;
+      width: 100%;
       margin: auto;
       margin-bottom: 25px;
       font-weight: bold;

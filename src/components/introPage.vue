@@ -2,7 +2,7 @@
 .intro-page
   .container-fluid
     .overlay
-      .text
+      .text(data-aos="zoom-in")
         h1 {{ $t(introPage) }}
         .link
           router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}

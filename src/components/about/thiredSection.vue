@@ -1,17 +1,15 @@
 <template lang="pug">
 .history
   .ovarlay
-  .container
+  .container-fluid
     .history-content
-      .img
+      .img(data-aos="zoom-in" data-aos-duration="1500")
         img(src="https://i.ibb.co/GWy6dYk/our-year.jpg", alt="alt")
-      .our-history
+      .our-history(data-aos="fade-left" data-aos-duration="1500")
         h4 {{ $t('about-history.head1') }}
         h1 {{ $t('about-history.head2') }}
         .year-history
           .year-content(v-for="our in ourData", :key="our.lenght")
-            .year
-              span {{ our.year }}
             .text
               h1 {{ $t(our.head) }}
               p {{ $t(our.paragraph) }}
@@ -22,22 +20,18 @@ export default {
     return {
       ourData: [
         {
-          year: "2014",
           head: "about-history.branch1.head",
           paragraph: "about-history.branch1.paragraph",
         },
         {
-          year: "2015",
           head: "about-history.branch2.head",
           paragraph: "about-history.branch2.paragraph",
         },
         {
-          year: "2016",
           head: "about-history.branch3.head",
           paragraph: "about-history.branch3.paragraph",
         },
         {
-          year: "2020",
           head: "about-history.branch4.head",
           paragraph: "about-history.branch4.paragraph",
         },
@@ -57,12 +51,8 @@ export default {
         text-align: right;
         .year-history {
           .year-content {
-            .year {
-              order: 2;
-              margin-left: 20px;
-            }
             .text {
-              width: 85%;
+              width: 100%;
               border-right: 2px solid rgba($color: #eee3c7, $alpha: 0.7);
               border-left: none;
               padding-right: 20px;
@@ -107,15 +97,15 @@ export default {
     display: flex;
     flex-wrap: nowrap;
     .img {
-      width: 40%;
-      margin: 200px 50px 0px 0px;
+      width: 45%;
+      margin: 100px 25px;
       img {
         width: 100%;
         border: 10px solid var(--main-color);
       }
     }
     .our-history {
-      width: 60%;
+      width: 55%;
       padding: 50px;
       h4 {
         font-family: var(--main-font);
@@ -131,34 +121,8 @@ export default {
       }
       .year-history {
         .year-content {
-          display: flex;
-          flex-wrap: nowrap;
-          .year {
-            width: 15%;
-            text-align: center;
-            margin-right: 20px;
-            span {
-              display: block;
-              background-color: var(--main-color);
-              width: 75px;
-              height: 75px;
-              border-radius: 50%;
-              line-height: 75px;
-              font-weight: bold;
-              font-family: var(--font-title);
-              color: var(--seconed-color);
-              font-size: 20px;
-              transition: 0.3s;
-              border: 1px solid var(--seconed-color);
-              &:hover {
-                color: var(--main-color);
-                background-color: var(--seconed-color);
-                border: 1px solid var(--main-color);
-              }
-            }
-          }
           .text {
-            width: 85%;
+            width: 100%;
             border-left: 2px solid rgba($color: #eee3c7, $alpha: 0.7);
             padding-left: 20px;
             position: relative;

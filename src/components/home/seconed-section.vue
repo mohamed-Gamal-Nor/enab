@@ -4,11 +4,12 @@
       <font-awesome-icon icon="arrow-down" v-scroll-to="'#seconed-section'" />
     </div>
     <div class="container-fluid">
-      <div class="story-conent">
+      <div class="story-conent" data-aos="fade-right" data-aos-delay="10" data-aos-duration="2000">
         <div class="text">
           <h6>{{ $t("ourStory.title") }}</h6>
           <h1>{{ $t("ourStory.litleTitle") }}</h1>
-          <p>{{ $t("ourStory.paragraph") }}</p>
+          <p v-html="$t('ourStory.paragraph')"/>
+          <p v-html="$t('ourStory.seconedPara')"/>
           <div class="counter-story">
             <div class="counter">
               <font-awesome-icon icon="utensils" />
