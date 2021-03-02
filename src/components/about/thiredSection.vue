@@ -5,7 +5,7 @@
     .history-content
       .img(data-aos="zoom-in" data-aos-duration="1500")
         img(src="https://i.ibb.co/GWy6dYk/our-year.jpg", alt="alt")
-      .our-history(data-aos="fade-left" data-aos-duration="1500")
+      .our-history(data-aos="zoom-in" data-aos-duration="1500")
         h4 {{ $t('about-history.head1') }}
         h1 {{ $t('about-history.head2') }}
         .year-history

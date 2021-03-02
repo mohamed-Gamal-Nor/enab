@@ -608,6 +608,16 @@
                 "name": "menu.varirty.items.item7.name",
                 "price": "menu.varirty.items.item7.price",
                 "desc": "menu.varirty.items.item7.desc"
+            },
+            {
+                "name": "menu.varirty.items.item8.name",
+                "price": "menu.varirty.items.item8.price",
+                "desc": "menu.varirty.items.item8.desc"
+            },
+            {
+                "name": "menu.varirty.items.item9.name",
+                "price": "menu.varirty.items.item9.price",
+                "desc": "menu.varirty.items.item9.desc"
             }
         ]
     },
@@ -673,6 +683,11 @@
                 "name": "menu.sweets.items.item12.name",
                 "price": "menu.sweets.items.item12.price",
                 "desc": "menu.sweets.items.item12.desc"
+            },
+            {
+                "name": "menu.sweets.items.item13.name",
+                "price": "menu.sweets.items.item13.price",
+                "desc": "menu.sweets.items.item13.desc"
             }
         ]
     }

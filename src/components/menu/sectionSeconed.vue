@@ -59,6 +59,7 @@ export default {
               order: 2;
             }
             p {
+                
               order: 1;
             }
           }
@@ -152,7 +153,9 @@ export default {
           p {
             width: 25%;
             color: var(--main-color);
+            font-family: var(--font-title);
             font-weight: bold;
+            font-size: 14px;
             filter: brightness(90%);
             text-align: right;
             text-transform: capitalize;

@@ -48,12 +48,10 @@
           .time All Weak: ........10AM - 12AM
       .footer-video
         h1 #Enab Beruit Video
-        <vue-plyr>
-          <video poster="https://i.ibb.co/K6BdWhj/footer-video.jpg" src="video.mp4">
-            <source src="../assets/Home/footer-video.mp4" type="video/mp4" size="720">
-            <source src="../assets/Home/footer-video.mp4" type="video/mp4" size="1080">
-          </video>
-        </vue-plyr>
+        vue-plyr
+          video(poster="https://i.ibb.co/K6BdWhj/footer-video.jpg" src="video.mp4")
+            source(:src="video" type="video/mp4" size="720")
+            source(:src="video" type="video/mp4" size="1080")
     .copyright
       h3 Copyright © 2020 Enab Beirut Website. By
         a(href="https://www.facebook.com/MohamedJemyNour", target="_blank") Eng.Mohamed Gamal.
@@ -67,6 +65,7 @@ export default {
   name: "footter",
   data() {
     return {
+      video:require("@/assets/media/footer.mp4"),
       address: [
         {
           address1: "footerText.location.address1.address",

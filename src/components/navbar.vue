@@ -7,21 +7,13 @@ div
       .close
         font-awesome-icon(icon="times", @click="closeMenu()")
     .links
-      router-link(:to="`/${$i18n.locale}`") {{ $t('menuLinks.home') }}
-      router-link(:to="`/${$i18n.locale}/about`") {{ $t('menuLinks.about') }}
-      router-link(:to="`/${$i18n.locale}/gallery`") {{ $t('menuLinks.gallery') }}
-      router-link(:to="`/${$i18n.locale}/menu`") {{ $t('menuLinks.MenuBook') }}
-      router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.branches') }}
-      router-link(:to="`/${$i18n.locale}/faq`") {{ $t('menuLinks.faq') }}
-      router-link(:to="`/${$i18n.locale}/facebook-posts`") {{ $t('menuLinks.facebook') }}
-    .lang(v-if="$i18n.locale == 'en'")
-      button(@click="setLocale('ar')")
-        country-flag(country="eg")
-        span AR
-    .lang(v-else="$i18n.locale == 'ar'")
-      button(@click="setLocale('en')")
-        country-flag(country="us")
-        span EN
+      router-link(:to="`/${$i18n.locale}`" @click.native="closeMenu()") {{ $t('menuLinks.home') }}
+      router-link(:to="`/${$i18n.locale}/about`" @click.native="closeMenu()") {{ $t('menuLinks.about') }}
+      router-link(:to="`/${$i18n.locale}/gallery`" @click.native="closeMenu()") {{ $t('menuLinks.gallery') }}
+      router-link(:to="`/${$i18n.locale}/menu`" @click.native="closeMenu()") {{ $t('menuLinks.MenuBook') }}
+      router-link(:to="`/${$i18n.locale}/store`" @click.native="closeMenu()") {{ $t('menuLinks.branches') }}
+      router-link(:to="`/${$i18n.locale}/faq`" @click.native="closeMenu()") {{ $t('menuLinks.faq') }}
+      router-link(:to="`/${$i18n.locale}/facebook-posts`" @click.native="closeMenu()") {{ $t('menuLinks.facebook') }}
   .navbar(:class="{ 'navbar-fixed': getMainNavClasses }")
     .container-fluid
       .links.link1
@@ -36,14 +28,6 @@ div
         router-link(:to="`/${$i18n.locale}/store`") {{ $t('menuLinks.branches') }}
         router-link(:to="`/${$i18n.locale}/faq`") {{ $t('menuLinks.faq') }}
         router-link(:to="`/${$i18n.locale}/facebook-posts`") {{ $t('menuLinks.facebook') }}
-      .lang(v-if="$i18n.locale == 'en'")
-        button(@click="setLocale('ar')")
-          country-flag(country="eg")
-          span AR
-      .lang(v-else="$i18n.locale == 'ar'")
-        button(@click="setLocale('en')")
-          country-flag(country="us")
-          span EN
       .menu-icon
         font-awesome-icon(icon="bars", @click="openMenu()")
 </template>
@@ -75,12 +59,6 @@ export default {
       } else {
         this.scrollingDown = true;
       }
-    },
-    setLocale(locale) {
-      this.$i18n.locale = locale;
-      this.$router.push({
-        params: { lang: locale },
-      });
     },
     openMenu() {
       this.menu = true;
@@ -155,7 +133,7 @@ export default {
       text-align: right;
     }
     &.link2 {
-      width: 30%;
+      width: 40%;
       text-align: left;
     }
     a {
@@ -182,22 +160,6 @@ export default {
           width: 100%;
           opacity: 1;
         }
-      }
-    }
-  }
-  .lang {
-    width: 10%;
-    button {
-      background-color: transparent;
-      outline: none;
-      display: flex;
-      border: none;
-      justify-content: center;
-      span {
-        height: 40px;
-        line-height: 40px;
-        font-weight: bold;
-        color: var(--main-color);
       }
     }
   }
@@ -343,22 +305,6 @@ export default {
         font-size: 30px;
         text-transform: capitalize;
         margin-bottom: 10px;
-      }
-    }
-    .lang {
-      text-align: center;
-      button {
-        background-color: transparent;
-        outline: none;
-        display: flex;
-        border: none;
-        justify-content: center;
-        span {
-          height: 40px;
-          line-height: 40px;
-          font-weight: bold;
-          color: var(--seconed-color);
-        }
       }
     }
   }

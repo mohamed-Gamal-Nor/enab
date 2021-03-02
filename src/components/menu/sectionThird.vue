@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .menu-doc {
-  background-image: url("https://i.ibb.co/CbK2C6k/28423488-1329500583861728-7094109988330534056-o.jpg");
+  background-image: url("https://i.ibb.co/Qnbt2f3/menu-Background.jpg");
   background-position: center;
   background-size: cover;
   padding: 50px 0;

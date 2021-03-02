@@ -1,0 +1,110 @@
+:root {
+    --main-color: #eee3c7;
+    --seconed-color: #455C56;
+}
+
+.en {
+    --main-font: 'PT Sans', sans-serif;
+    --font-title: 'Dancing Script', cursive;
+}
+
+.ar {
+    --main-font: 'Tajawal', sans-serif;
+    --font-title: 'Aref Ruqaa', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.overlay-left,
+.overlay-right,
+.overlay-top,
+.overlay-bottom {
+    background-color: var(--seconed-color) !important;
+    z-index: 999;
+}
+
+
+/*this slien box css code make global in five section*/
+
+.silentbox-item {
+    max-height: 145px;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.silentbox-item img {
+    transition: 0.3s;
+    object-position: center top;
+}
+
+.silentbox-item:hover img {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+
+/*gallry*/
+
+.my-gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.my-gallery figure {
+    width: 23%;
+    margin: 5px 10px;
+    height: 25%;
+    display: block;
+    height: 250px;
+    overflow: hidden;
+}
+
+.my-gallery figure img {
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .my-gallery figure {
+        width: 44%;
+        margin: 0px 5px;
+        height: 25%;
+        display: block;
+        height: 120px;
+        overflow: hidden;
+    }
+}
+
+.Page404+.footer {
+    display: none;
+}
+
+.pagination .page-item .page-link {
+    background-color: var(--main-color);
+    color: var(--seconed-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--seconed-color);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: var(--main-color);
+    color: var(--seconed-color);
+}

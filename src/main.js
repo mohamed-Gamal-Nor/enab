@@ -25,7 +25,8 @@ import {
     faSmileBeam,
     faBookOpen,
     faStore,
-    faPhoneAlt
+    faPhoneAlt,
+    faCog
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faFacebookF,
@@ -50,7 +51,9 @@ library.add(
     faSmileBeam,
     faBookOpen,
     faStore,
-    faPhoneAlt
+    faPhoneAlt,
+    faCog
+    
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(BootstrapVue);

@@ -49,14 +49,15 @@ export default {
     return {
       sliders: [
         {
-          video: require("@/assets/Home/slider2.mp4"),
+          video:
+            "https://cdn.videvo.net/videvo_files/video/free/2020-06/small_watermarked/200506_Kitchen%20Food_05_4k_043_preview.webm",
           firstHead: "slider.slider1.firstHead",
           seconedHead: "slider.slider1.seconedHead",
           paragraph: "slider.slider1.paragraph",
         },
         {
-          video:
-            "https://cdn.videvo.net/videvo_files/video/free/2020-06/small_watermarked/200506_Kitchen%20Food_05_4k_043_preview.webm",
+          
+            video: require("@/assets/media/slider.mp4"),
           firstHead: "slider.slider2.firstHead",
           seconedHead: "slider.slider2.seconedHead",
           paragraph: "slider.slider2.paragraph",

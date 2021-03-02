@@ -27,6 +27,12 @@
         },
         "button": "Learn More"
     },
+    "settings":{
+        "music":"music",
+        "on":"on",
+        "off":"off",
+        "language":"language"
+    },
     "ourStory": {
         "title": "our story",
         "litleTitle": "Welcome To Enab Beriut",
@@ -584,8 +590,7 @@
                     "desc": "falafel with tarator"
                 }
             }
-        },
-        
+        },   
         "grill": {
             "heading": "lebanese grill",
             "paragraph": "As a reddish in all of Lebanon",
@@ -780,38 +785,48 @@
             "items": {
                 "item1": {
                     "name": "chicken fatteh",
-                    "price": "76.00 L.E",
+                    "price": "80.00 L.E",
                     "desc": "chicken with garlic yogurt, toasted labanese bread, pine nuts"
                 },
                 "item2": {
                     "name": "chicken fariik",
-                    "price": "100.00 L.E",
+                    "price": "110.00 L.E",
                     "desc": "chicken fariik with yogurt and nuts"
                 },
                 "item3": {
                     "name": "warak enab & koussa",
-                    "price": "60.00 L.E",
+                    "price": "65.00 L.E",
                     "desc": "Stuuffed vine leaves & zucchini with rice and meat"
                 },
                 "item4": {
                     "name": "meat fariik",
-                    "price": "130.00 L.E",
+                    "price": "138.00 L.E",
                     "desc": "meat fariik with yogurt and nuts"
                 },
                 "item5": {
                     "name": "kebbeh labnieh",
-                    "price": "90.00 L.E",
+                    "price": "102.00 L.E",
                     "desc": "Stuffed kebbeh akras with meat and pinenuts in yogurt and mint"
                 },
                 "item6": {
                     "name": "koussa bil laban",
-                    "price": "80.00 L.E",
+                    "price": "90.00 L.E",
                     "desc": "Stuffed zucchini with meat and rice in yogurt, mint and pinenuts"
                 },
                 "item7": {
                     "name": "batata souffle",
                     "price": "80.00 L.E",
                     "desc": "Two layers of mashed potatoes stuffed with minced meat and baked in oven , served with cabbage tomatoes salad"
+                },
+                "item8": {
+                    "name": "Dawood basha",
+                    "price": "98.00 L.E",
+                    "desc": "Dawood basha"
+                },
+                "item9": {
+                    "name": "okra with veal & vermiceli rice",
+                    "price": "102.00 L.E",
+                    "desc": "okra with veal & vermiceli rice"
                 }
             }
         },
@@ -821,62 +836,67 @@
             "items": {
                 "item1": {
                     "name": "aiche el saraya",
-                    "price": "47.00 L.E",
+                    "price": "51.00 L.E",
                     "desc": ""
                 },
                 "item2": {
                     "name": "halawet el jebn",
-                    "price": "46.00 L.E",
+                    "price": "50.00 L.E",
                     "desc": ""
                 },
                 "item3": {
                     "name": "riz be halib",
-                    "price": "33.00 L.E",
+                    "price": "35.00 L.E",
                     "desc": ""
                 },
                 "item4": {
                     "name": "mafroukeh bil ashta",
-                    "price": "51.00 L.E",
+                    "price": "56.00 L.E",
                     "desc": ""
                 },
                 "item5": {
                     "name": "chocolate rolls",
-                    "price": "48.00 L.E",
+                    "price": "54.00 L.E",
                     "desc": ""
                 },
                 "item6": {
                     "name": "pistachio madlouaa bil ashta",
-                    "price": "63.00 L.E",
+                    "price": "69.00 L.E",
                     "desc": ""
                 },
                 "item7": {
                     "name": "ashtalieh",
-                    "price": "41.00 L.E",
+                    "price": "46.00 L.E",
                     "desc": ""
                 },
                 "item8": {
                     "name": "lebanese icecream(1scoop)",
-                    "price": "41.00 L.E",
+                    "price": "47.00 L.E",
                     "desc": ""
                 },
                 "item9": {
                     "name": "osmalieh",
-                    "price": "49.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": ""
                 },
                 "item10": {
                     "name": "ashta bil assal",
-                    "price": "45.00 L.E",
+                    "price": "52.00 L.E",
                     "desc": ""
                 },
                 "item11": {
                     "name": "meghli",
-                    "price": "38.00 L.E",
+                    "price": "45.00 L.E",
                     "desc": ""
                 },
                 "item12": {
                     "name": "ghazal",
-                    "price": "49.00 L.E",
+                    "price": "56.00 L.E",
+                    "desc": ""
+                },
+                "item13": {
+                    "name": "ashta with ghazal and honey",
+                    "price": "72.00 L.E",
                     "desc": ""
                 }
             }
