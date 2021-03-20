@@ -27,17 +27,17 @@
         },
         "button": "Learn More"
     },
-    "settings":{
-        "music":"music",
-        "on":"on",
-        "off":"off",
-        "language":"language"
+    "settings": {
+        "music": "music",
+        "on": "on",
+        "off": "off",
+        "language": "language"
     },
     "ourStory": {
         "title": "our story",
         "litleTitle": "Welcome To Enab Beriut",
         "paragraph": "A home is the warmth of a loving family united...<br/>  A home is a spring of memories, a place to escape reality...<br/> A home is family gathered around the dinner table filled with traditional home Cooked meals...<br/> A home is a gathering of friends, on echoing laugh and an everlasting feel of kindness and safety.<br/> This is enab,",
-        "seconedPara":"Enab in English means Grapes. The idea behind the concept is that Enab Beirut will serve as a destination at which families, friends (old 8. new), co-workers, etc. can rneet for a traditionally prepared Lebanese meal, bringing them together to share, create and add to their rnemories thus furThering their bond each as a member of the 'Grape Vine.'",
+        "seconedPara": "Enab in English means Grapes. The idea behind the concept is that Enab Beirut will serve as a destination at which families, friends (old 8. new), co-workers, etc. can rneet for a traditionally prepared Lebanese meal, bringing them together to share, create and add to their rnemories thus furThering their bond each as a member of the 'Grape Vine.'",
         "countFood": "Food items",
         "countbev": "Beverages",
         "team": "Enab Beirut Team"
@@ -109,7 +109,10 @@
                 "phone": "(+2) 01277042444"
             }
         },
-        "openinHours": "Opening Hours"
+        "links": {
+            "otherPage": "Other Page In Web Site"
+        },
+        "footerVideo": "#Enab Beruit Video"
     },
     "intro-page": {
         "about": "About Us",
@@ -590,7 +593,7 @@
                     "desc": "falafel with tarator"
                 }
             }
-        },   
+        },
         "grill": {
             "heading": "lebanese grill",
             "paragraph": "As a reddish in all of Lebanon",

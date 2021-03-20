@@ -36,7 +36,6 @@ module.exports = {
             }
         }
     },
-
-    publicPath: './',
-    outputDir: 'enab'
+    publicPath: "./",
+    outputDir: "enab"
 };

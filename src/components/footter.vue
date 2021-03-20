@@ -42,16 +42,54 @@
               font-awesome-icon(icon="mobile-alt")
             .text
               p {{ $t(addres.phone) }}
-      .opening-hours
-        h1 {{ $t('footerText.openinHours') }}
-        .text
-          .time All Weak: ........10AM - 12AM
+      .links
+        .link
+          h1 {{ $t('footerText.links.otherPage') }}
+          ul
+            li
+              router-link(
+                :to="`/${$i18n.locale}`",
+                @click.native="closeMenu()"
+              ) {{ $t('menuLinks.home') }}
+            li
+              router-link(
+                :to="`/${$i18n.locale}/about`",
+                @click.native="closeMenu()"
+              ) {{ $t('menuLinks.about') }}
+            li
+              router-link(
+                :to="`/${$i18n.locale}/gallery`",
+                @click.native="closeMenu()"
+              ) {{ $t('menuLinks.gallery') }}
+            li
+              router-link(
+                :to="`/${$i18n.locale}/menu`",
+                @click.native="closeMenu()"
+              ) {{ $t('menuLinks.MenuBook') }}
+            li
+              router-link(
+                :to="`/${$i18n.locale}/store`",
+                @click.native="closeMenu()"
+              ) {{ $t('menuLinks.branches') }}
+            li
+              router-link(
+                :to="`/${$i18n.locale}/faq`",
+                @click.native="closeMenu()"
+              ) {{ $t('menuLinks.faq') }}
+            li
+              router-link(
+                :to="`/${$i18n.locale}/facebook-posts`",
+                @click.native="closeMenu()"
+              ) {{ $t('menuLinks.facebook') }}
       .footer-video
-        h1 #Enab Beruit Video
+        h1 {{ $t('footerText.footerVideo') }}
         vue-plyr
-          video(poster="https://i.ibb.co/K6BdWhj/footer-video.jpg" src="video.mp4")
-            source(:src="video" type="video/mp4" size="720")
-            source(:src="video" type="video/mp4" size="1080")
+          video(
+            poster="https://i.ibb.co/K6BdWhj/footer-video.jpg",
+            src="video.mp4"
+          )
+            source(:src="video", type="video/mp4", size="720")
+            source(:src="video", type="video/mp4", size="1080")
     .copyright
       h3 Copyright © 2020 Enab Beirut Website. By
         a(href="https://www.facebook.com/MohamedJemyNour", target="_blank") Eng.Mohamed Gamal.
@@ -65,7 +103,7 @@ export default {
   name: "footter",
   data() {
     return {
-      video:require("@/assets/media/footer.mp4"),
+      video: require("@/assets/media/footer.mp4"),
       address: [
         {
           address1: "footerText.location.address1.address",
@@ -119,10 +157,23 @@ export default {
           }
         }
       }
-      .opening-hours {
-        width: 30%;
+      .links {
         order: 2;
         text-align: right;
+        width: 30%;
+        ul {
+          li {
+            padding-right: 8px;
+            &::before {
+              content: "";
+            }
+            &::after {
+              content: "•";
+              padding-left: 8px;
+              color: var(--main-color);
+            }
+          }
+        }
       }
       .footer-video {
         width: 35%;
@@ -148,7 +199,7 @@ export default {
       margin-bottom: 25px;
     }
     p {
-      width: 100%;
+      width: 50%;
       margin: auto;
       margin-bottom: 25px;
       font-weight: bold;
@@ -206,9 +257,36 @@ export default {
         }
       }
     }
-    .opening-hours {
+    .links {
+      h1 {
+        color: var(--seconed-color);
+        font-family: var(--main-font);
+        text-transform: capitalize;
+        font-weight: bold;
+      }
       width: 30%;
+      ul {
+        list-style: none;
+        width: 100%;
+        li {
+          padding-left: 8px;
+          margin-bottom: 5px;
+          &::before {
+            content: "•";
+            padding-right: 8px;
+            color: var(--main-color);
+          }
+          a {
+            font-family: var(--font-title);
+            color: var(--seconed-color);
+            font-weight: bold;
+            font-size: 20px;
+            padding-bottom: 5px;
+          }
+        }
+      }
     }
+
     .footer-video {
       width: 35%;
       z-index: 0;
@@ -248,7 +326,7 @@ export default {
           width: 100%;
           margin-bottom: 10px;
         }
-        .opening-hours {
+        .links {
           width: 100%;
           margin-bottom: 10px;
         }
@@ -272,7 +350,7 @@ export default {
         width: 100%;
         margin-bottom: 10px;
       }
-      .opening-hours {
+      .links {
         width: 100%;
         margin-bottom: 10px;
       }

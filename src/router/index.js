@@ -18,49 +18,57 @@ const routes = [{
         children: [{
                 path: "/",
                 name: "Home",
-                component: () => import('../views/Home.vue'),
+                component: () =>
+                    import ("../views/Home.vue"),
                 meta: { title: "Enab Beirut - Home Page" }
             },
             {
                 path: "about",
                 name: "About",
-                component: () => import('../views/About.vue'),
+                component: () =>
+                    import ("../views/About.vue"),
                 meta: { title: "Enab Beirut - About Page" }
             },
             {
                 path: "gallery",
                 name: "gallery",
-                component: () => import('../views/gallery.vue'),
+                component: () =>
+                    import ("../views/gallery.vue"),
                 meta: { title: "Enab Beirut - Gallery Image" }
             },
             {
                 path: "menu",
                 name: "menu",
-                component: () => import('../views/menu.vue'),
+                component: () =>
+                    import ("../views/menu.vue"),
                 meta: { title: "Enab Beirut - Menu" }
             },
             {
                 path: "store",
                 name: "store",
-                component: () => import('../views/store.vue'),
+                component: () =>
+                    import ("../views/store.vue"),
                 meta: { title: "Enab Beirut - Stores" }
             },
             {
                 path: "faq",
                 name: "faq",
-                component: () => import('../views/faq.vue'),
+                component: () =>
+                    import ("../views/faq.vue"),
                 meta: { title: "Enab Beirut - Faq" }
             },
             {
                 path: "facebook-posts",
                 name: "facebook",
-                component: () => import('../views/facebook.vue'),
+                component: () =>
+                    import ("../views/facebook.vue"),
                 meta: { title: "Enab Beirut - FaceBook Posts" }
             },
             {
                 path: "*",
                 name: "404",
-                component: () => import('../views/404.vue'),
+                component: () =>
+                    import ("../views/404.vue"),
                 meta: { title: "Enab Beirut - 404 Page Not Found" }
             }
         ]
@@ -68,10 +76,11 @@ const routes = [{
 ];
 
 const router = new VueRouter({
+    mode: "hash",
     routes,
     base: process.env.BASE_URL,
     scrollBehavior() {
-        return {x: 0, y: 0}
+        return { x: 0, y: 0 };
     }
 });
 
